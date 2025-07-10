@@ -7,5 +7,3 @@ console.log('Ascending:', ascending);
 // Sort in descending order
 const descending = [...numbers].sort((a, b) => b - a);
 console.log('Descending:', descending);
-
-//Testthghjgjgj jhsjdhjxgf jhjfgdjfgj
