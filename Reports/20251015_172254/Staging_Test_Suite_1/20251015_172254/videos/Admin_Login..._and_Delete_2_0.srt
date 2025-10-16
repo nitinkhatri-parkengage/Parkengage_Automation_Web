@@ -1,0 +1,272 @@
+1
+00:00:00,000 --> 00:00:00,000
+1. openBrowser("")
+
+2
+00:00:00,000 --> 00:00:00,000
+5. maximizeWindow()
+
+3
+00:00:00,000 --> 00:00:00,000
+9. navigateToUrl("https://staging-new.parkengage.com/")
+
+4
+00:00:00,000 --> 00:00:00,000
+13. waitForElementPresent(findTestObject("Login_Page_Objects/Email_Password_Field"), 20)
+
+5
+00:00:00,000 --> 00:00:00,000
+17. setText(findTestObject("Login_Page_Objects/Email_Input_Field"), G_Email)
+
+6
+00:00:00,000 --> 00:00:00,000
+21. setEncryptedText(findTestObject("Login_Page_Objects/Email_Password_Field"), "Cqo1foBX0qbZ3A82kE6k0A==")
+
+7
+00:00:00,000 --> 00:00:00,000
+25. click(findTestObject("Login_Page_Objects/Login_Submit_Button"))
+
+8
+00:00:00,000 --> 00:00:00,000
+29. delay(15)
+
+9
+00:00:00,000 --> 00:00:00,000
+33. dashboard_url = getUrl()
+
+10
+00:00:00,000 --> 00:00:00,000
+37. print(dashboard_url)
+
+11
+00:00:00,000 --> 00:00:00,000
+41. verifyEqual(dashboard_url, "https://staging-new.parkengage.com/admin/partners")
+
+12
+00:00:00,000 --> 00:00:00,000
+45. waitForElementPresent(findTestObject("Login_Page_Objects/ParkEngage_Logo"), 20)
+
+13
+00:00:00,000 --> 00:00:00,000
+49. waitForElementVisible(findTestObject("Add_Partner/Add_New_Partner_BTN"), 10)
+
+14
+00:00:00,000 --> 00:00:00,000
+53. click(findTestObject("Add_Partner/Add_New_Partner_BTN"))
+
+15
+00:00:00,000 --> 00:00:00,000
+57. verifyElementPresent(findTestObject("Add_Partner/Create_New_Partner_Label"), 10)
+
+16
+00:00:00,000 --> 00:00:00,000
+61. companyName = generateCompanyName()
+
+17
+00:00:00,000 --> 00:00:00,000
+1. chars = "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz"
+
+18
+00:00:00,000 --> 00:00:00,000
+5. name = new java.lang.StringBuilder()
+
+19
+00:00:00,000 --> 00:00:00,000
+9. rand = new java.util.Random()
+
+20
+00:00:00,000 --> 00:00:00,000
+13. for ([i = 0, i < 5, (i++)])
+
+21
+00:00:00,000 --> 00:00:00,000
+1. name.append(chars.charAt(rand.nextInt(chars.length())))
+
+22
+00:00:00,000 --> 00:00:00,000
+1. name.append(chars.charAt(rand.nextInt(chars.length())))
+
+23
+00:00:00,000 --> 00:00:00,000
+1. name.append(chars.charAt(rand.nextInt(chars.length())))
+
+24
+00:00:00,000 --> 00:00:00,000
+1. name.append(chars.charAt(rand.nextInt(chars.length())))
+
+25
+00:00:00,000 --> 00:00:00,000
+1. name.append(chars.charAt(rand.nextInt(chars.length())))
+
+26
+00:00:00,000 --> 00:00:00,000
+17. return name.toString()
+
+27
+00:00:00,000 --> 00:00:00,000
+65. setText(findTestObject("Add_Partner/input_FirstName"), "Park")
+
+28
+00:00:00,000 --> 00:00:00,000
+69. setText(findTestObject("Add_Partner/input_LastName"), "Auto")
+
+29
+00:00:00,000 --> 00:00:00,000
+73. randomEmail = generateRandomEmail()
+
+30
+00:00:00,000 --> 00:00:00,000
+1. randomNum = random() * 100.toInteger()
+
+31
+00:00:00,000 --> 00:00:00,000
+5. return ((autopark1 + randomNum) + @yopmail.com)
+
+32
+00:00:00,000 --> 00:00:00,000
+77. setText(findTestObject("Add_Partner/inputEmail"), randomEmail)
+
+33
+00:00:00,000 --> 00:00:00,000
+81. randomDigits = RandomStringUtils.randomNumeric(6)
+
+34
+00:00:00,000 --> 00:00:00,000
+85. phoneNumber = "1122" + randomDigits
+
+35
+00:00:00,000 --> 00:00:00,000
+89. setText(findTestObject("Add_Partner/inputPhoneNumber"), phoneNumber)
+
+36
+00:00:00,000 --> 00:00:00,000
+93. setText(findTestObject("Add_Partner/inputSlug"), "parkauto")
+
+37
+00:00:00,000 --> 00:00:00,000
+97. setText(findTestObject("Add_Partner/input_Company"), companyName)
+
+38
+00:00:00,000 --> 00:00:00,000
+101. setText(findTestObject("Add_Partner/input_City"), "Vegas")
+
+39
+00:00:00,000 --> 00:00:00,000
+105. click(findTestObject("Add_Partner/select_Country_Drop_Down"))
+
+40
+00:00:00,000 --> 00:00:00,000
+109. delay(2)
+
+41
+00:00:00,000 --> 00:00:00,000
+113. scrollToElement(findTestObject("Add_Partner/Select_Country_USA"), 20)
+
+42
+00:00:00,000 --> 00:00:00,000
+117. click(findTestObject("Add_Partner/Select_Country_USA"))
+
+43
+00:00:00,000 --> 00:00:00,000
+121. click(findTestObject("Add_Partner/Select_Services_Drop_Dwn"))
+
+44
+00:00:00,000 --> 00:00:00,000
+125. click(findTestObject("Add_Partner/Select_Touchless_Parking"))
+
+45
+00:00:00,000 --> 00:00:00,000
+129. delay(2)
+
+46
+00:00:00,000 --> 00:00:00,000
+133. click(findTestObject("Add_Partner/Select_Plan"))
+
+47
+00:00:00,000 --> 00:00:00,000
+137. delay(2)
+
+48
+00:00:00,000 --> 00:00:00,000
+141. click(findTestObject("Add_Partner/Select_Advance_Plan"))
+
+49
+00:00:00,000 --> 00:00:00,000
+145. delay(2)
+
+50
+00:00:00,000 --> 00:00:00,000
+149. click(findTestObject("Add_Partner/Select_Pay_At_Check_Out"))
+
+51
+00:00:00,000 --> 00:00:00,000
+153. delay(3)
+
+52
+00:00:00,000 --> 00:00:00,000
+157. click(findTestObject("Add_Partner/Garage_Type_Drop_Down"))
+
+53
+00:00:00,000 --> 00:00:00,000
+161. waitForElementPresent(findTestObject("Add_Partner/Select_Facility_Type"), 10)
+
+54
+00:00:00,000 --> 00:00:00,000
+165. click(findTestObject("Add_Partner/Select_Facility_Type"))
+
+55
+00:00:00,000 --> 00:00:00,000
+169. delay(2)
+
+56
+00:00:00,000 --> 00:00:00,000
+173. click(findTestObject("Add_Partner/Select_Notification_Type_Both"))
+
+57
+00:00:00,000 --> 00:00:00,000
+177. click(findTestObject("Add_Partner/Add_Partner_Submit_BTN"))
+
+58
+00:00:00,000 --> 00:00:00,000
+181. waitForElementPresent(findTestObject("Add_Partner/Partner_Create_Alert_Text"), 20)
+
+59
+00:00:00,000 --> 00:00:00,000
+185. partnercreate_Alert_Text = getText(findTestObject("Add_Partner/Partner_Create_Alert_Text"))
+
+60
+00:00:00,000 --> 00:00:00,000
+189. print(partnercreate_Alert_Text)
+
+61
+00:00:00,000 --> 00:00:00,000
+193. delay(10)
+
+62
+00:00:00,000 --> 00:00:00,000
+197. click(findTestObject("Add_Partner/Partner_Menu_Option"))
+
+63
+00:00:00,000 --> 00:00:00,000
+201. delay(1)
+
+64
+00:00:00,000 --> 00:00:00,000
+205. click(findTestObject("Add_Partner/Delete_Partner_Menu_Option"))
+
+65
+00:00:00,000 --> 00:00:00,000
+209. delay(1)
+
+66
+00:00:00,000 --> 00:00:00,000
+213. click(findTestObject("Add_Partner/Delete_Confirm_Button"))
+
+67
+00:00:00,000 --> 00:00:00,000
+217. partner_Delete_Alert = getText(findTestObject("Add_Partner/Partner_Delete_Alert_Text"), CONTINUE_ON_FAILURE)
+
+68
+00:00:00,000 --> 00:00:00,000
+221. println(partner_Delete_Alert)
+

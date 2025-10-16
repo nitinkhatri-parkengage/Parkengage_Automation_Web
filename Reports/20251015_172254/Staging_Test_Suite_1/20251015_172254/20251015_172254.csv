@@ -1,0 +1,272 @@
+Suite/Test/Step Name,Browser,Description,Tag,Start time,End time,Duration,Status
+Staging_Test_Suite_1,Chrome 141.0.7390.67,,,15-10-2025 17:22:59,15-10-2025 17:30:27,7m - 28.554s,FAILED
+,,,,,,,
+Test Cases/New_Staging_Env/Login_Functionality,Chrome 141.0.7390.67,,,15-10-2025 17:22:59,15-10-2025 17:23:28,28.604s,PASSED
+"DATA BINDING - {""(Default) dashb..."":""""}",,,,,,,
+"openBrowser("""")",Chrome 141.0.7390.67,,,15-10-2025 17:23:00,15-10-2025 17:23:02,2.039s,PASSED
+maximizeWindow(),Chrome 141.0.7390.67,,,15-10-2025 17:23:02,15-10-2025 17:23:02,0.057s,PASSED
+"navigateToUrl(""https://staging-new.parkengage.com/"")",Chrome 141.0.7390.67,,,15-10-2025 17:23:02,15-10-2025 17:23:07,5.443s,PASSED
+"setText(findTestObject(""Login_Page_Objects/Email_Input_Field""), G_Email)",Chrome 141.0.7390.67,,,15-10-2025 17:23:07,15-10-2025 17:23:09,1.868s,PASSED
+"waitForElementPresent(findTestObject(""Login_Page_Objects/Email_Password_Field""), 20)",Chrome 141.0.7390.67,,,15-10-2025 17:23:09,15-10-2025 17:23:10,0.922s,PASSED
+"setEncryptedText(findTestObject(""Login_Page_Objects/Email_Password_Field""), ""Cqo1foBX0qbZ3A82kE6k0A=="")",Chrome 141.0.7390.67,,,15-10-2025 17:23:10,15-10-2025 17:23:11,1.342s,PASSED
+"click(findTestObject(""Login_Page_Objects/Login_Submit_Button""))",Chrome 141.0.7390.67,,,15-10-2025 17:23:11,15-10-2025 17:23:13,1.394s,PASSED
+delay(15),Chrome 141.0.7390.67,,,15-10-2025 17:23:13,15-10-2025 17:23:28,15.045s,PASSED
+dashboard_url = getUrl(),Chrome 141.0.7390.67,,,15-10-2025 17:23:28,15-10-2025 17:23:28,0.018s,PASSED
+print(dashboard_url),Chrome 141.0.7390.67,,,15-10-2025 17:23:28,15-10-2025 17:23:28,0.005s,PASSED
+"verifyEqual(dashboard_url, ""https://staging-new.parkengage.com/admin/partners"")",Chrome 141.0.7390.67,,,15-10-2025 17:23:28,15-10-2025 17:23:28,0.013s,PASSED
+,,,,,,,
+Test Cases/New_Staging_Env/Admin_Login_Partner_Creation_and_Delete,Chrome 141.0.7390.67,,,15-10-2025 17:23:28,15-10-2025 17:25:05,1m - 37.108s,PASSED
+"DATA BINDING - {""(Default) email"":""superadmin@parkengage.com\r\n"",""(Default) dashb..."":""""}",,,,,,,
+"openBrowser("""")",Chrome 141.0.7390.67,,,15-10-2025 17:23:28,15-10-2025 17:23:29,0.993s,PASSED
+maximizeWindow(),Chrome 141.0.7390.67,,,15-10-2025 17:23:29,15-10-2025 17:23:29,0.057s,PASSED
+"navigateToUrl(""https://staging-new.parkengage.com/"")",Chrome 141.0.7390.67,,,15-10-2025 17:23:29,15-10-2025 17:23:35,5.674s,PASSED
+"waitForElementPresent(findTestObject(""Login_Page_Objects/Email_Password_Field""), 20)",Chrome 141.0.7390.67,,,15-10-2025 17:23:35,15-10-2025 17:23:35,0.257s,PASSED
+"setText(findTestObject(""Login_Page_Objects/Email_Input_Field""), G_Email)",Chrome 141.0.7390.67,,,15-10-2025 17:23:35,15-10-2025 17:23:37,1.633s,PASSED
+"setEncryptedText(findTestObject(""Login_Page_Objects/Email_Password_Field""), ""Cqo1foBX0qbZ3A82kE6k0A=="")",Chrome 141.0.7390.67,,,15-10-2025 17:23:37,15-10-2025 17:23:38,1.553s,PASSED
+"click(findTestObject(""Login_Page_Objects/Login_Submit_Button""))",Chrome 141.0.7390.67,,,15-10-2025 17:23:38,15-10-2025 17:23:40,1.350s,PASSED
+delay(15),Chrome 141.0.7390.67,,,15-10-2025 17:23:40,15-10-2025 17:23:55,15.011s,PASSED
+dashboard_url = getUrl(),Chrome 141.0.7390.67,,,15-10-2025 17:23:55,15-10-2025 17:23:55,0.014s,PASSED
+print(dashboard_url),Chrome 141.0.7390.67,,,15-10-2025 17:23:55,15-10-2025 17:23:55,0.002s,PASSED
+"verifyEqual(dashboard_url, ""https://staging-new.parkengage.com/admin/partners"")",Chrome 141.0.7390.67,,,15-10-2025 17:23:55,15-10-2025 17:23:55,0.004s,PASSED
+"waitForElementPresent(findTestObject(""Login_Page_Objects/ParkEngage_Logo""), 20)",Chrome 141.0.7390.67,,,15-10-2025 17:23:55,15-10-2025 17:23:55,0.256s,PASSED
+"waitForElementVisible(findTestObject(""Add_Partner/Add_New_Partner_BTN""), 10)",Chrome 141.0.7390.67,,,15-10-2025 17:23:55,15-10-2025 17:23:55,0.318s,PASSED
+"click(findTestObject(""Add_Partner/Add_New_Partner_BTN""))",Chrome 141.0.7390.67,,,15-10-2025 17:23:55,15-10-2025 17:23:57,1.329s,PASSED
+"verifyElementPresent(findTestObject(""Add_Partner/Create_New_Partner_Label""), 10)",Chrome 141.0.7390.67,,,15-10-2025 17:23:57,15-10-2025 17:23:58,1.329s,PASSED
+companyName = generateCompanyName(),Chrome 141.0.7390.67,,,15-10-2025 17:23:58,15-10-2025 17:23:58,0.002s,PASSED
+"chars = ""ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz""",Chrome 141.0.7390.67,,,15-10-2025 17:23:58,15-10-2025 17:23:58,0.001s,PASSED
+name = new java.lang.StringBuilder(),Chrome 141.0.7390.67,,,15-10-2025 17:23:58,15-10-2025 17:23:58,0.008s,PASSED
+rand = new java.util.Random(),Chrome 141.0.7390.67,,,15-10-2025 17:23:58,15-10-2025 17:23:58,0.005s,PASSED
+"for ([i = 0, i < 5, (i++)])",Chrome 141.0.7390.67,,,15-10-2025 17:23:58,15-10-2025 17:23:58,0.018s,PASSED
+return name.toString(),Chrome 141.0.7390.67,,,15-10-2025 17:23:58,15-10-2025 17:23:58,0.002s,PASSED
+"setText(findTestObject(""Add_Partner/input_FirstName""), ""Park"")",Chrome 141.0.7390.67,,,15-10-2025 17:23:58,15-10-2025 17:24:00,1.650s,PASSED
+"setText(findTestObject(""Add_Partner/input_LastName""), ""Auto"")",Chrome 141.0.7390.67,,,15-10-2025 17:24:00,15-10-2025 17:24:01,1.666s,PASSED
+randomEmail = generateRandomEmail(),Chrome 141.0.7390.67,,,15-10-2025 17:24:01,15-10-2025 17:24:01,0.001s,PASSED
+randomNum = random() * 100.toInteger(),Chrome 141.0.7390.67,,,15-10-2025 17:24:01,15-10-2025 17:24:01,0.017s,PASSED
+return ((autopark1 + randomNum) + @yopmail.com),Chrome 141.0.7390.67,,,15-10-2025 17:24:01,15-10-2025 17:24:01,0.004s,PASSED
+"setText(findTestObject(""Add_Partner/inputEmail""), randomEmail)",Chrome 141.0.7390.67,,,15-10-2025 17:24:01,15-10-2025 17:24:03,2.091s,PASSED
+randomDigits = RandomStringUtils.randomNumeric(6),Chrome 141.0.7390.67,,,15-10-2025 17:24:03,15-10-2025 17:24:03,0.005s,PASSED
+"phoneNumber = ""1122"" + randomDigits",Chrome 141.0.7390.67,,,15-10-2025 17:24:03,15-10-2025 17:24:03,0.002s,PASSED
+"setText(findTestObject(""Add_Partner/inputPhoneNumber""), phoneNumber)",Chrome 141.0.7390.67,,,15-10-2025 17:24:03,15-10-2025 17:24:05,1.747s,PASSED
+"setText(findTestObject(""Add_Partner/inputSlug""), ""parkauto"")",Chrome 141.0.7390.67,,,15-10-2025 17:24:05,15-10-2025 17:24:07,1.766s,PASSED
+"setText(findTestObject(""Add_Partner/input_Company""), companyName)",Chrome 141.0.7390.67,,,15-10-2025 17:24:07,15-10-2025 17:24:09,1.749s,PASSED
+"setText(findTestObject(""Add_Partner/input_City""), ""Vegas"")",Chrome 141.0.7390.67,,,15-10-2025 17:24:09,15-10-2025 17:24:10,1.750s,PASSED
+"click(findTestObject(""Add_Partner/select_Country_Drop_Down""))",Chrome 141.0.7390.67,,,15-10-2025 17:24:10,15-10-2025 17:24:12,1.421s,PASSED
+delay(2),Chrome 141.0.7390.67,,,15-10-2025 17:24:12,15-10-2025 17:24:14,2.005s,PASSED
+"scrollToElement(findTestObject(""Add_Partner/Select_Country_USA""), 20)",Chrome 141.0.7390.67,,,15-10-2025 17:24:14,15-10-2025 17:24:14,0.265s,PASSED
+"click(findTestObject(""Add_Partner/Select_Country_USA""))",Chrome 141.0.7390.67,,,15-10-2025 17:24:14,15-10-2025 17:24:16,1.323s,PASSED
+"click(findTestObject(""Add_Partner/Select_Services_Drop_Dwn""))",Chrome 141.0.7390.67,,,15-10-2025 17:24:16,15-10-2025 17:24:17,1.356s,PASSED
+"click(findTestObject(""Add_Partner/Select_Touchless_Parking""))",Chrome 141.0.7390.67,,,15-10-2025 17:24:17,15-10-2025 17:24:18,1.313s,PASSED
+delay(2),Chrome 141.0.7390.67,,,15-10-2025 17:24:18,15-10-2025 17:24:20,2.011s,PASSED
+"click(findTestObject(""Add_Partner/Select_Plan""))",Chrome 141.0.7390.67,,,15-10-2025 17:24:20,15-10-2025 17:24:22,1.363s,PASSED
+delay(2),Chrome 141.0.7390.67,,,15-10-2025 17:24:22,15-10-2025 17:24:24,2.008s,PASSED
+"click(findTestObject(""Add_Partner/Select_Advance_Plan""))",Chrome 141.0.7390.67,,,15-10-2025 17:24:24,15-10-2025 17:24:25,1.317s,PASSED
+delay(2),Chrome 141.0.7390.67,,,15-10-2025 17:24:25,15-10-2025 17:24:27,2.017s,PASSED
+"click(findTestObject(""Add_Partner/Select_Pay_At_Check_Out""))",Chrome 141.0.7390.67,,,15-10-2025 17:24:27,15-10-2025 17:24:28,1.362s,PASSED
+delay(3),Chrome 141.0.7390.67,,,15-10-2025 17:24:28,15-10-2025 17:24:31,3.002s,PASSED
+"click(findTestObject(""Add_Partner/Garage_Type_Drop_Down""))",Chrome 141.0.7390.67,,,15-10-2025 17:24:31,15-10-2025 17:24:33,1.387s,PASSED
+"waitForElementPresent(findTestObject(""Add_Partner/Select_Facility_Type""), 10)",Chrome 141.0.7390.67,,,15-10-2025 17:24:33,15-10-2025 17:24:33,0.261s,PASSED
+"click(findTestObject(""Add_Partner/Select_Facility_Type""))",Chrome 141.0.7390.67,,,15-10-2025 17:24:33,15-10-2025 17:24:34,1.287s,PASSED
+delay(2),Chrome 141.0.7390.67,,,15-10-2025 17:24:34,15-10-2025 17:24:36,2.018s,PASSED
+"click(findTestObject(""Add_Partner/Select_Notification_Type_Both""))",Chrome 141.0.7390.67,,,15-10-2025 17:24:36,15-10-2025 17:24:38,1.358s,PASSED
+"click(findTestObject(""Add_Partner/Add_Partner_Submit_BTN""))",Chrome 141.0.7390.67,,,15-10-2025 17:24:38,15-10-2025 17:24:39,1.333s,PASSED
+"waitForElementPresent(findTestObject(""Add_Partner/Partner_Create_Alert_Text""), 20)",Chrome 141.0.7390.67,,,15-10-2025 17:24:39,15-10-2025 17:24:44,5.416s,PASSED
+"partnercreate_Alert_Text = getText(findTestObject(""Add_Partner/Partner_Create_Alert_Text""))",Chrome 141.0.7390.67,,,15-10-2025 17:24:44,15-10-2025 17:24:45,0.600s,PASSED
+print(partnercreate_Alert_Text),Chrome 141.0.7390.67,,,15-10-2025 17:24:45,15-10-2025 17:24:45,0.001s,PASSED
+delay(10),Chrome 141.0.7390.67,,,15-10-2025 17:24:45,15-10-2025 17:24:55,10.012s,PASSED
+"click(findTestObject(""Add_Partner/Partner_Menu_Option""))",Chrome 141.0.7390.67,,,15-10-2025 17:24:55,15-10-2025 17:24:56,1.326s,PASSED
+delay(1),Chrome 141.0.7390.67,,,15-10-2025 17:24:56,15-10-2025 17:24:57,1.015s,PASSED
+"click(findTestObject(""Add_Partner/Delete_Partner_Menu_Option""))",Chrome 141.0.7390.67,,,15-10-2025 17:24:57,15-10-2025 17:24:59,1.380s,PASSED
+delay(1),Chrome 141.0.7390.67,,,15-10-2025 17:24:59,15-10-2025 17:25:00,1.012s,PASSED
+"click(findTestObject(""Add_Partner/Delete_Confirm_Button""))",Chrome 141.0.7390.67,,,15-10-2025 17:25:00,15-10-2025 17:25:01,1.427s,PASSED
+"partner_Delete_Alert = getText(findTestObject(""Add_Partner/Partner_Delete_Alert_Text""), CONTINUE_ON_FAILURE)",Chrome 141.0.7390.67,,,15-10-2025 17:25:01,15-10-2025 17:25:05,3.930s,PASSED
+println(partner_Delete_Alert),Chrome 141.0.7390.67,,,15-10-2025 17:25:05,15-10-2025 17:25:05,0.001s,PASSED
+,,,,,,,
+Test Cases/New_Staging_Env/Admin_Login_Partner_Creation,Chrome 141.0.7390.67,,,15-10-2025 17:25:05,15-10-2025 17:26:25,1m - 19.837s,PASSED
+"DATA BINDING - {""(Default) email"":""superadmin@parkengage.com\r\n"",""(Default) dashb..."":""""}",,,,,,,
+"openBrowser("""")",Chrome 141.0.7390.67,,,15-10-2025 17:25:05,15-10-2025 17:25:06,0.934s,PASSED
+maximizeWindow(),Chrome 141.0.7390.67,,,15-10-2025 17:25:06,15-10-2025 17:25:06,0.039s,PASSED
+"navigateToUrl(""https://staging-new.parkengage.com/"")",Chrome 141.0.7390.67,,,15-10-2025 17:25:06,15-10-2025 17:25:11,5.317s,PASSED
+"waitForElementPresent(findTestObject(""Login_Page_Objects/Email_Password_Field""), 20)",Chrome 141.0.7390.67,,,15-10-2025 17:25:11,15-10-2025 17:25:12,0.253s,PASSED
+"setText(findTestObject(""Login_Page_Objects/Email_Input_Field""), G_Email)",Chrome 141.0.7390.67,,,15-10-2025 17:25:12,15-10-2025 17:25:13,1.607s,PASSED
+"setEncryptedText(findTestObject(""Login_Page_Objects/Email_Password_Field""), ""Cqo1foBX0qbZ3A82kE6k0A=="")",Chrome 141.0.7390.67,,,15-10-2025 17:25:13,15-10-2025 17:25:15,1.549s,PASSED
+"click(findTestObject(""Login_Page_Objects/Login_Submit_Button""))",Chrome 141.0.7390.67,,,15-10-2025 17:25:15,15-10-2025 17:25:16,1.333s,PASSED
+delay(15),Chrome 141.0.7390.67,,,15-10-2025 17:25:16,15-10-2025 17:25:31,15.006s,PASSED
+dashboard_url = getUrl(),Chrome 141.0.7390.67,,,15-10-2025 17:25:31,15-10-2025 17:25:31,0.011s,PASSED
+print(dashboard_url),Chrome 141.0.7390.67,,,15-10-2025 17:25:31,15-10-2025 17:25:31,0.002s,PASSED
+"verifyEqual(dashboard_url, ""https://staging-new.parkengage.com/admin/partners"")",Chrome 141.0.7390.67,,,15-10-2025 17:25:31,15-10-2025 17:25:31,0.002s,PASSED
+"waitForElementPresent(findTestObject(""Login_Page_Objects/ParkEngage_Logo""), 20)",Chrome 141.0.7390.67,,,15-10-2025 17:25:31,15-10-2025 17:25:31,0.247s,PASSED
+"waitForElementVisible(findTestObject(""Add_Partner/Add_New_Partner_BTN""), 10)",Chrome 141.0.7390.67,,,15-10-2025 17:25:31,15-10-2025 17:25:32,0.255s,PASSED
+"click(findTestObject(""Add_Partner/Add_New_Partner_BTN""))",Chrome 141.0.7390.67,,,15-10-2025 17:25:32,15-10-2025 17:25:33,1.304s,PASSED
+"verifyElementPresent(findTestObject(""Add_Partner/Create_New_Partner_Label""), 10)",Chrome 141.0.7390.67,,,15-10-2025 17:25:33,15-10-2025 17:25:35,1.521s,PASSED
+companyName = generateCompanyName(),Chrome 141.0.7390.67,,,15-10-2025 17:25:35,15-10-2025 17:25:35,0.001s,PASSED
+"chars = ""ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz""",Chrome 141.0.7390.67,,,15-10-2025 17:25:35,15-10-2025 17:25:35,0.001s,PASSED
+name = new java.lang.StringBuilder(),Chrome 141.0.7390.67,,,15-10-2025 17:25:35,15-10-2025 17:25:35,0.001s,PASSED
+rand = new java.util.Random(),Chrome 141.0.7390.67,,,15-10-2025 17:25:35,15-10-2025 17:25:35,0.002s,PASSED
+"for ([i = 0, i < 5, (i++)])",Chrome 141.0.7390.67,,,15-10-2025 17:25:35,15-10-2025 17:25:35,0.007s,PASSED
+return name.toString(),Chrome 141.0.7390.67,,,15-10-2025 17:25:35,15-10-2025 17:25:35,0.001s,PASSED
+"setText(findTestObject(""Add_Partner/input_FirstName""), ""Park"")",Chrome 141.0.7390.67,,,15-10-2025 17:25:35,15-10-2025 17:25:36,1.618s,PASSED
+"setText(findTestObject(""Add_Partner/input_LastName""), ""Auto"")",Chrome 141.0.7390.67,,,15-10-2025 17:25:36,15-10-2025 17:25:38,1.609s,PASSED
+randomEmail = generateRandomEmail(),Chrome 141.0.7390.67,,,15-10-2025 17:25:38,15-10-2025 17:25:38,0.001s,PASSED
+randomNum = random() * 100.toInteger(),Chrome 141.0.7390.67,,,15-10-2025 17:25:38,15-10-2025 17:25:38,0.001s,PASSED
+return ((autopark1 + randomNum) + @yopmail.com),Chrome 141.0.7390.67,,,15-10-2025 17:25:38,15-10-2025 17:25:38,0.002s,PASSED
+"setText(findTestObject(""Add_Partner/inputEmail""), randomEmail)",Chrome 141.0.7390.67,,,15-10-2025 17:25:38,15-10-2025 17:25:40,1.845s,PASSED
+"setText(findTestObject(""Add_Partner/inputPhoneNumber""), ""1122111110"")",Chrome 141.0.7390.67,,,15-10-2025 17:25:40,15-10-2025 17:25:41,1.612s,PASSED
+"setText(findTestObject(""Add_Partner/inputSlug""), ""parkauto"")",Chrome 141.0.7390.67,,,15-10-2025 17:25:41,15-10-2025 17:25:43,1.652s,PASSED
+"setText(findTestObject(""Add_Partner/input_Company""), companyName)",Chrome 141.0.7390.67,,,15-10-2025 17:25:43,15-10-2025 17:25:44,1.597s,PASSED
+"setText(findTestObject(""Add_Partner/input_City""), ""Vegas"")",Chrome 141.0.7390.67,,,15-10-2025 17:25:44,15-10-2025 17:25:46,1.592s,PASSED
+"click(findTestObject(""Add_Partner/select_Country_Drop_Down""))",Chrome 141.0.7390.67,,,15-10-2025 17:25:46,15-10-2025 17:25:47,1.343s,PASSED
+delay(2),Chrome 141.0.7390.67,,,15-10-2025 17:25:47,15-10-2025 17:25:49,2.008s,PASSED
+"scrollToElement(findTestObject(""Add_Partner/Select_Country_USA""), 20)",Chrome 141.0.7390.67,,,15-10-2025 17:25:49,15-10-2025 17:25:50,0.291s,PASSED
+"click(findTestObject(""Add_Partner/Select_Country_USA""))",Chrome 141.0.7390.67,,,15-10-2025 17:25:50,15-10-2025 17:25:51,1.298s,PASSED
+"click(findTestObject(""Add_Partner/Select_Services_Drop_Dwn""))",Chrome 141.0.7390.67,,,15-10-2025 17:25:51,15-10-2025 17:25:52,1.323s,PASSED
+"click(findTestObject(""Add_Partner/Select_Touchless_Parking""))",Chrome 141.0.7390.67,,,15-10-2025 17:25:52,15-10-2025 17:25:54,1.263s,PASSED
+delay(2),Chrome 141.0.7390.67,,,15-10-2025 17:25:54,15-10-2025 17:25:56,2.012s,PASSED
+"click(findTestObject(""Add_Partner/Select_Plan""))",Chrome 141.0.7390.67,,,15-10-2025 17:25:56,15-10-2025 17:25:57,1.338s,PASSED
+delay(2),Chrome 141.0.7390.67,,,15-10-2025 17:25:57,15-10-2025 17:25:59,2.006s,PASSED
+"click(findTestObject(""Add_Partner/Select_Advance_Plan""))",Chrome 141.0.7390.67,,,15-10-2025 17:25:59,15-10-2025 17:26:00,1.291s,PASSED
+delay(2),Chrome 141.0.7390.67,,,15-10-2025 17:26:00,15-10-2025 17:26:02,2.015s,PASSED
+"click(findTestObject(""Add_Partner/Select_Pay_At_Check_Out""))",Chrome 141.0.7390.67,,,15-10-2025 17:26:02,15-10-2025 17:26:04,1.303s,PASSED
+delay(3),Chrome 141.0.7390.67,,,15-10-2025 17:26:04,15-10-2025 17:26:07,3.014s,PASSED
+"click(findTestObject(""Add_Partner/Garage_Type_Drop_Down""))",Chrome 141.0.7390.67,,,15-10-2025 17:26:07,15-10-2025 17:26:08,1.334s,PASSED
+"waitForElementPresent(findTestObject(""Add_Partner/Select_Facility_Type""), 10)",Chrome 141.0.7390.67,,,15-10-2025 17:26:08,15-10-2025 17:26:08,0.243s,PASSED
+"click(findTestObject(""Add_Partner/Select_Facility_Type""))",Chrome 141.0.7390.67,,,15-10-2025 17:26:08,15-10-2025 17:26:09,1.272s,PASSED
+delay(2),Chrome 141.0.7390.67,,,15-10-2025 17:26:09,15-10-2025 17:26:11,2.015s,PASSED
+"click(findTestObject(""Add_Partner/Select_Notification_Type_Both""))",Chrome 141.0.7390.67,,,15-10-2025 17:26:11,15-10-2025 17:26:13,1.357s,PASSED
+"click(findTestObject(""Add_Partner/Add_Partner_Submit_BTN""))",Chrome 141.0.7390.67,,,15-10-2025 17:26:13,15-10-2025 17:26:14,1.311s,PASSED
+"waitForElementPresent(findTestObject(""Add_Partner/Partner_Create_Alert_Text""), 20)",Chrome 141.0.7390.67,,,15-10-2025 17:26:14,15-10-2025 17:26:20,5.469s,PASSED
+"partnercreate_Alert_Text = getText(findTestObject(""Add_Partner/Partner_Create_Alert_Text""))",Chrome 141.0.7390.67,,,15-10-2025 17:26:20,15-10-2025 17:26:20,0.267s,PASSED
+print(partnercreate_Alert_Text),Chrome 141.0.7390.67,,,15-10-2025 17:26:20,15-10-2025 17:26:20,0.001s,PASSED
+delay(5),Chrome 141.0.7390.67,,,15-10-2025 17:26:20,15-10-2025 17:26:25,5.013s,PASSED
+,,,,,,,
+Test Cases/New_Staging_Env/Garage_Management_Add_New_Garage,Chrome 141.0.7390.67,,,15-10-2025 17:26:25,15-10-2025 17:27:37,1m - 12.284s,PASSED
+"openBrowser("""")",Chrome 141.0.7390.67,,,15-10-2025 17:26:25,15-10-2025 17:26:26,0.919s,PASSED
+maximizeWindow(),Chrome 141.0.7390.67,,,15-10-2025 17:26:26,15-10-2025 17:26:26,0.046s,PASSED
+"navigateToUrl(""https://staging-new.parkengage.com/"")",Chrome 141.0.7390.67,,,15-10-2025 17:26:26,15-10-2025 17:26:31,5.249s,PASSED
+"waitForElementPresent(findTestObject(""Login_Page_Objects/Email_Password_Field""), 20)",Chrome 141.0.7390.67,,,15-10-2025 17:26:31,15-10-2025 17:26:31,0.277s,PASSED
+"setText(findTestObject(""Login_Page_Objects/Email_Input_Field""), G_Email)",Chrome 141.0.7390.67,,,15-10-2025 17:26:31,15-10-2025 17:26:33,1.620s,PASSED
+"setEncryptedText(findTestObject(""Login_Page_Objects/Email_Password_Field""), ""Cqo1foBX0qbZ3A82kE6k0A=="")",Chrome 141.0.7390.67,,,15-10-2025 17:26:33,15-10-2025 17:26:35,1.523s,PASSED
+"click(findTestObject(""Login_Page_Objects/Login_Submit_Button""))",Chrome 141.0.7390.67,,,15-10-2025 17:26:35,15-10-2025 17:26:36,1.323s,PASSED
+delay(15),Chrome 141.0.7390.67,,,15-10-2025 17:26:36,15-10-2025 17:26:51,15.018s,PASSED
+"click(findTestObject(""Create_Garrage/Product_Menu_Expand""))",Chrome 141.0.7390.67,,,15-10-2025 17:26:51,15-10-2025 17:26:52,1.300s,PASSED
+"waitForElementClickable(findTestObject(""Create_Garrage/Garage_Management_Menu""), 5)",Chrome 141.0.7390.67,,,15-10-2025 17:26:52,15-10-2025 17:26:53,0.499s,PASSED
+"click(findTestObject(""Create_Garrage/Garage_Management_Menu""))",Chrome 141.0.7390.67,,,15-10-2025 17:26:53,15-10-2025 17:26:54,1.308s,PASSED
+"waitForElementPresent(findTestObject(""Create_Garrage/Add_New_Button_Garage""), 10)",Chrome 141.0.7390.67,,,15-10-2025 17:26:54,15-10-2025 17:26:56,1.525s,PASSED
+"click(findTestObject(""Create_Garrage/Add_New_Button_Garage""))",Chrome 141.0.7390.67,,,15-10-2025 17:26:56,15-10-2025 17:26:57,1.300s,PASSED
+garageName = generateGarageName(),Chrome 141.0.7390.67,,,15-10-2025 17:26:57,15-10-2025 17:26:57,0.002s,PASSED
+"chars = ""ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz""",Chrome 141.0.7390.67,,,15-10-2025 17:26:57,15-10-2025 17:26:57,0.001s,PASSED
+name = new java.lang.StringBuilder(),Chrome 141.0.7390.67,,,15-10-2025 17:26:57,15-10-2025 17:26:57,0.002s,PASSED
+rand = new java.util.Random(),Chrome 141.0.7390.67,,,15-10-2025 17:26:57,15-10-2025 17:26:57,0.001s,PASSED
+"for ([i = 0, i < 5, (i++)])",Chrome 141.0.7390.67,,,15-10-2025 17:26:57,15-10-2025 17:26:57,0.008s,PASSED
+return name.toString(),Chrome 141.0.7390.67,,,15-10-2025 17:26:57,15-10-2025 17:26:57,0.001s,PASSED
+"setText(findTestObject(""Create_Garrage/Garage_Name_Input_Field""), garageName)",Chrome 141.0.7390.67,,,15-10-2025 17:26:57,15-10-2025 17:26:59,2.548s,PASSED
+garageShortName = generateGarageCode(),Chrome 141.0.7390.67,,,15-10-2025 17:26:59,15-10-2025 17:26:59,0.002s,PASSED
+"chars = ""ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz""",Chrome 141.0.7390.67,,,15-10-2025 17:26:59,15-10-2025 17:26:59,0.002s,PASSED
+name = new java.lang.StringBuilder(),Chrome 141.0.7390.67,,,15-10-2025 17:26:59,15-10-2025 17:26:59,0.004s,PASSED
+rand = new java.util.Random(),Chrome 141.0.7390.67,,,15-10-2025 17:26:59,15-10-2025 17:26:59,0.004s,PASSED
+"for ([i = 0, i < 5, (i++)])",Chrome 141.0.7390.67,,,15-10-2025 17:26:59,15-10-2025 17:26:59,0.006s,PASSED
+return name.toString(),Chrome 141.0.7390.67,,,15-10-2025 17:26:59,15-10-2025 17:26:59,0.001s,PASSED
+"setText(findTestObject(""Create_Garrage/Garage_Short_Name""), garageShortName)",Chrome 141.0.7390.67,,,15-10-2025 17:26:59,15-10-2025 17:27:01,1.803s,PASSED
+garageCode = generateGarageCode(),Chrome 141.0.7390.67,,,15-10-2025 17:27:01,15-10-2025 17:27:01,0.002s,PASSED
+"chars = ""ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz""",Chrome 141.0.7390.67,,,15-10-2025 17:27:01,15-10-2025 17:27:01,0.001s,PASSED
+name = new java.lang.StringBuilder(),Chrome 141.0.7390.67,,,15-10-2025 17:27:01,15-10-2025 17:27:01,0.002s,PASSED
+rand = new java.util.Random(),Chrome 141.0.7390.67,,,15-10-2025 17:27:01,15-10-2025 17:27:01,0.001s,PASSED
+"for ([i = 0, i < 5, (i++)])",Chrome 141.0.7390.67,,,15-10-2025 17:27:01,15-10-2025 17:27:01,0.007s,PASSED
+return name.toString(),Chrome 141.0.7390.67,,,15-10-2025 17:27:01,15-10-2025 17:27:01,0.001s,PASSED
+"setText(findTestObject(""Create_Garrage/Garage_Code_Input_Field""), garageCode)",Chrome 141.0.7390.67,,,15-10-2025 17:27:01,15-10-2025 17:27:03,1.818s,PASSED
+randomDigits = RandomStringUtils.randomNumeric(6),Chrome 141.0.7390.67,,,15-10-2025 17:27:03,15-10-2025 17:27:03,0.002s,PASSED
+"phoneNumber = ""1122"" + randomDigits",Chrome 141.0.7390.67,,,15-10-2025 17:27:03,15-10-2025 17:27:03,0.002s,PASSED
+"setText(findTestObject(""Create_Garrage/Garage_Phone_Number_Input""), phoneNumber)",Chrome 141.0.7390.67,,,15-10-2025 17:27:03,15-10-2025 17:27:05,1.970s,PASSED
+delay(2),Chrome 141.0.7390.67,,,15-10-2025 17:27:05,15-10-2025 17:27:07,2.008s,PASSED
+"click(findTestObject(""Create_Garrage/Select_Partner_Garage_Mngmnt_Drp_Dwn""))",Chrome 141.0.7390.67,,,15-10-2025 17:27:07,15-10-2025 17:27:08,1.345s,PASSED
+delay(2),Chrome 141.0.7390.67,,,15-10-2025 17:27:08,15-10-2025 17:27:10,2.015s,PASSED
+"click(findTestObject(""Create_Garrage/Partner_Rev_Pass""))",Chrome 141.0.7390.67,,,15-10-2025 17:27:10,15-10-2025 17:27:12,1.316s,PASSED
+"click(findTestObject(""Create_Garrage/Garage_Type_Drp_Dwn""))",Chrome 141.0.7390.67,,,15-10-2025 17:27:12,15-10-2025 17:27:13,1.542s,PASSED
+delay(1),Chrome 141.0.7390.67,,,15-10-2025 17:27:13,15-10-2025 17:27:14,1.010s,PASSED
+"click(findTestObject(""Create_Garrage/Ungated_Garage_Option""))",Chrome 141.0.7390.67,,,15-10-2025 17:27:14,15-10-2025 17:27:16,1.304s,PASSED
+"click(findTestObject(""Create_Garrage/Create_BTN_GRG""))",Chrome 141.0.7390.67,,,15-10-2025 17:27:16,15-10-2025 17:27:17,1.547s,PASSED
+delay(20),Chrome 141.0.7390.67,,,15-10-2025 17:27:17,15-10-2025 17:27:37,20.016s,PASSED
+,,,,,,,
+Test Cases/New_Staging_Env/Promotion_Creation_FLow,Chrome 141.0.7390.67,,,15-10-2025 17:27:37,15-10-2025 17:28:24,46.327s,PASSED
+"openBrowser("""")",Chrome 141.0.7390.67,,,15-10-2025 17:27:37,15-10-2025 17:27:38,0.925s,PASSED
+maximizeWindow(),Chrome 141.0.7390.67,,,15-10-2025 17:27:38,15-10-2025 17:27:38,0.033s,PASSED
+"navigateToUrl(""https://staging-new.parkengage.com/"")",Chrome 141.0.7390.67,,,15-10-2025 17:27:38,15-10-2025 17:27:44,5.586s,PASSED
+"setText(findTestObject(""Login_Page_Objects/Email_Input_Field""), G_Email)",Chrome 141.0.7390.67,,,15-10-2025 17:27:44,15-10-2025 17:27:45,1.664s,PASSED
+"waitForElementPresent(findTestObject(""Login_Page_Objects/Email_Password_Field""), 20)",Chrome 141.0.7390.67,,,15-10-2025 17:27:45,15-10-2025 17:27:46,0.841s,PASSED
+"setEncryptedText(findTestObject(""Login_Page_Objects/Email_Password_Field""), ""Cqo1foBX0qbZ3A82kE6k0A=="")",Chrome 141.0.7390.67,,,15-10-2025 17:27:46,15-10-2025 17:27:48,1.318s,PASSED
+"click(findTestObject(""Login_Page_Objects/Login_Submit_Button""))",Chrome 141.0.7390.67,,,15-10-2025 17:27:48,15-10-2025 17:27:49,1.326s,PASSED
+delay(15),Chrome 141.0.7390.67,,,15-10-2025 17:27:49,15-10-2025 17:28:04,15.007s,PASSED
+dashboard_url = getUrl(),Chrome 141.0.7390.67,,,15-10-2025 17:28:04,15-10-2025 17:28:04,0.010s,PASSED
+print(dashboard_url),Chrome 141.0.7390.67,,,15-10-2025 17:28:04,15-10-2025 17:28:04,0.002s,PASSED
+"verifyEqual(dashboard_url, ""https://staging-new.parkengage.com/admin/partners"")",Chrome 141.0.7390.67,,,15-10-2025 17:28:04,15-10-2025 17:28:04,0.003s,PASSED
+"waitForElementClickable(findTestObject(""Create_Garrage/Product_Menu_Expand""), 10)",Chrome 141.0.7390.67,,,15-10-2025 17:28:04,15-10-2025 17:28:04,0.256s,PASSED
+"click(findTestObject(""Create_Garrage/Product_Menu_Expand""))",Chrome 141.0.7390.67,,,15-10-2025 17:28:04,15-10-2025 17:28:06,1.293s,PASSED
+"click(findTestObject(""Left_Menu_Option_All/Promotions_SubMenu_Option""))",Chrome 141.0.7390.67,,,15-10-2025 17:28:06,15-10-2025 17:28:07,1.521s,PASSED
+"waitForElementPresent(findTestObject(""Promotions_Promocode/Promotion_Add_New_Button""), 10)",Chrome 141.0.7390.67,,,15-10-2025 17:28:07,15-10-2025 17:28:09,2.133s,PASSED
+"click(findTestObject(""Promotions_Promocode/Promotion_Add_New_Button""))",Chrome 141.0.7390.67,,,15-10-2025 17:28:09,15-10-2025 17:28:10,1.283s,PASSED
+"waitForElementPresent(findTestObject(""Promotions_Promocode/Promotion_Name""), 10)",Chrome 141.0.7390.67,,,15-10-2025 17:28:10,15-10-2025 17:28:12,1.335s,PASSED
+promoCode = myCustomKeywords.CustKeywords.generatePromoCode(),Chrome 141.0.7390.67,,,15-10-2025 17:28:12,15-10-2025 17:28:12,0.012s,PASSED
+"setText(findTestObject(""Promotions_Promocode/Promotion_Name""), promoCode)",Chrome 141.0.7390.67,,,15-10-2025 17:28:12,15-10-2025 17:28:13,1.641s,PASSED
+delay(10),Chrome 141.0.7390.67,,,15-10-2025 17:28:13,15-10-2025 17:28:23,10.015s,PASSED
+,,,,,,,
+Test Cases/New_Staging_Env/Transient Flow_Partner_Parking_Payments,Chrome 141.0.7390.67,,,15-10-2025 17:28:24,15-10-2025 17:29:17,53.453s,PASSED
+"DATA BINDING - {""(Default) mobil..."":"""",""(Default) lpNum..."":""""}",,,,,,,
+"openBrowser("""")",Chrome 141.0.7390.67,,,15-10-2025 17:28:24,15-10-2025 17:28:25,0.889s,PASSED
+maximizeWindow(),Chrome 141.0.7390.67,,,15-10-2025 17:28:25,15-10-2025 17:28:25,0.044s,PASSED
+"navigateToUrl(""https://staging-transient.parkengage.com/parkingpayments/touchless-parking-parking/eyJmYWNpbGl0eV9pZCI6Mjg4LCJnYXRlIjoxMSwiZ2F0ZV90eXBlIjoiMCJ9"")",Chrome 141.0.7390.67,,,15-10-2025 17:28:25,15-10-2025 17:28:31,6.568s,PASSED
+"waitForElementPresent(findTestObject(""Transient_Folder/Mobile_Number_Field""), 20)",Chrome 141.0.7390.67,,,15-10-2025 17:28:31,15-10-2025 17:28:37,6.076s,PASSED
+mobileNumber = generateMobileNumberWith2233Series(),Chrome 141.0.7390.67,,,15-10-2025 17:28:37,15-10-2025 17:28:37,0.001s,PASSED
+rand = new java.util.Random(),Chrome 141.0.7390.67,,,15-10-2025 17:28:37,15-10-2025 17:28:37,0.003s,PASSED
+lastSixDigits = new java.lang.StringBuilder(),Chrome 141.0.7390.67,,,15-10-2025 17:28:37,15-10-2025 17:28:37,0.004s,PASSED
+"for ([i = 0, i < 6, (i++)])",Chrome 141.0.7390.67,,,15-10-2025 17:28:37,15-10-2025 17:28:37,0.016s,PASSED
+return (2233 + lastSixDigits.toString()),Chrome 141.0.7390.67,,,15-10-2025 17:28:37,15-10-2025 17:28:37,0.001s,PASSED
+"println(""Generated Mobile Number: "" + mobileNumber)",Chrome 141.0.7390.67,,,15-10-2025 17:28:37,15-10-2025 17:28:37,0.003s,PASSED
+"setText(findTestObject(""Transient_Folder/Mobile_Number_Field""), mobileNumber)",Chrome 141.0.7390.67,,,15-10-2025 17:28:37,15-10-2025 17:28:39,1.816s,PASSED
+lpNumber = generateLicenseplate(),Chrome 141.0.7390.67,,,15-10-2025 17:28:39,15-10-2025 17:28:39,0.002s,PASSED
+"chars = ""ABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789""",Chrome 141.0.7390.67,,,15-10-2025 17:28:39,15-10-2025 17:28:39,0.001s,PASSED
+rand = new java.util.Random(),Chrome 141.0.7390.67,,,15-10-2025 17:28:39,15-10-2025 17:28:39,0.004s,PASSED
+lp = new java.lang.StringBuilder(),Chrome 141.0.7390.67,,,15-10-2025 17:28:39,15-10-2025 17:28:39,0.001s,PASSED
+"for ([i = 0, i < 4, (i++)])",Chrome 141.0.7390.67,,,15-10-2025 17:28:39,15-10-2025 17:28:39,0.006s,PASSED
+return lp.toString(),Chrome 141.0.7390.67,,,15-10-2025 17:28:39,15-10-2025 17:28:39,0.001s,PASSED
+"println(""Generated License Plate: "" + lpNumber)",Chrome 141.0.7390.67,,,15-10-2025 17:28:39,15-10-2025 17:28:39,0.001s,PASSED
+"setText(findTestObject(""Transient_Folder/License_Plate""), lpNumber)",Chrome 141.0.7390.67,,,15-10-2025 17:28:39,15-10-2025 17:28:41,1.584s,PASSED
+"element = findWebElement(findTestObject(""Object Repository/Transient_Folder/Transient Duration_Increase""), 10)",Chrome 141.0.7390.67,,,15-10-2025 17:28:41,15-10-2025 17:28:41,0.241s,PASSED
+executor = getWebDriver(),Chrome 141.0.7390.67,,,15-10-2025 17:28:41,15-10-2025 17:28:41,0.011s,PASSED
+"executor.executeScript(""arguments[0].click();"", element)",Chrome 141.0.7390.67,,,15-10-2025 17:28:41,15-10-2025 17:28:41,0.019s,PASSED
+"scrollToElement(findTestObject(""Transient_Folder/Start_Parking_BTN""), 20)",Chrome 141.0.7390.67,,,15-10-2025 17:28:41,15-10-2025 17:28:44,3.205s,PASSED
+"setText(findTestObject(""Transient_Folder/Card_Details_Name""), ""Satya Kumar"")",Chrome 141.0.7390.67,,,15-10-2025 17:28:44,15-10-2025 17:28:46,1.560s,PASSED
+"setText(findTestObject(""Transient_Folder/Card_Deatils_Number""), ""4761 7310 0000 0043"")",Chrome 141.0.7390.67,,,15-10-2025 17:28:46,15-10-2025 17:28:47,1.570s,PASSED
+"setText(findTestObject(""Transient_Folder/Card_Expiry""), ""12/30"")",Chrome 141.0.7390.67,,,15-10-2025 17:28:47,15-10-2025 17:28:49,1.541s,PASSED
+"setText(findTestObject(""Transient_Folder/Card_CVV""), ""111"")",Chrome 141.0.7390.67,,,15-10-2025 17:28:49,15-10-2025 17:28:50,1.546s,PASSED
+delay(2),Chrome 141.0.7390.67,,,15-10-2025 17:28:50,15-10-2025 17:28:52,2.013s,PASSED
+"click(findTestObject(""Transient_Folder/Start_Parking_BTN""))",Chrome 141.0.7390.67,,,15-10-2025 17:28:52,15-10-2025 17:28:54,1.552s,PASSED
+delay(10),Chrome 141.0.7390.67,,,15-10-2025 17:28:54,15-10-2025 17:29:04,10.017s,PASSED
+"waitForElementPresent(findTestObject(""Transient_Folder/Get Ticket ID""), 10)",Chrome 141.0.7390.67,,,15-10-2025 17:29:04,15-10-2025 17:29:16,12.351s,PASSED
+"ticketId = getText(findTestObject(""Transient_Folder/Get Ticket ID""))",Chrome 141.0.7390.67,,,15-10-2025 17:29:16,15-10-2025 17:29:17,0.654s,PASSED
+print(ticketId),Chrome 141.0.7390.67,,,15-10-2025 17:29:17,15-10-2025 17:29:17,0.000s,PASSED
+,,,,,,,
+Test Cases/New_Staging_Env/Transient Flow_Multi_Partner,Chrome 141.0.7390.67,,,15-10-2025 17:29:17,15-10-2025 17:30:27,1m - 10.049s,FAILED
+"DATA BINDING - {""(Default) mobil..."":"""",""(Default) lpNum..."":""""}",,,,,,,
+"openBrowser("""")",Chrome 141.0.7390.67,,,15-10-2025 17:29:17,15-10-2025 17:29:18,0.894s,PASSED
+maximizeWindow(),Chrome 141.0.7390.67,,,15-10-2025 17:29:18,15-10-2025 17:29:18,0.041s,PASSED
+"navigateToUrl(""https://staging-transient.parkengage.com/parkingpayments/touchless-parking-parking/eyJmYWNpbGl0eV9pZCI6Mjg4LCJnYXRlIjoxMSwiZ2F0ZV90eXBlIjoiMCJ9"")",Chrome 141.0.7390.67,,,15-10-2025 17:29:18,15-10-2025 17:29:33,15.096s,PASSED
+"waitForElementPresent(findTestObject(""Transient_Folder/Mobile_Number_Field""), 20)",Chrome 141.0.7390.67,,,15-10-2025 17:29:33,15-10-2025 17:29:40,7.023s,PASSED
+mobileNumber = generateMobileNumberWith2233Series(),Chrome 141.0.7390.67,,,15-10-2025 17:29:40,15-10-2025 17:29:40,0.002s,PASSED
+rand = new java.util.Random(),Chrome 141.0.7390.67,,,15-10-2025 17:29:40,15-10-2025 17:29:40,0.002s,PASSED
+lastSixDigits = new java.lang.StringBuilder(),Chrome 141.0.7390.67,,,15-10-2025 17:29:40,15-10-2025 17:29:40,0.002s,PASSED
+"for ([i = 0, i < 6, (i++)])",Chrome 141.0.7390.67,,,15-10-2025 17:29:40,15-10-2025 17:29:40,0.009s,PASSED
+return (2233 + lastSixDigits.toString()),Chrome 141.0.7390.67,,,15-10-2025 17:29:40,15-10-2025 17:29:40,0.001s,PASSED
+"println(""Generated Mobile Number: "" + mobileNumber)",Chrome 141.0.7390.67,,,15-10-2025 17:29:40,15-10-2025 17:29:40,0.001s,PASSED
+"setText(findTestObject(""Transient_Folder/Mobile_Number_Field""), mobileNumber)",Chrome 141.0.7390.67,,,15-10-2025 17:29:40,15-10-2025 17:29:42,1.571s,PASSED
+lpNumber = generateLicenseplate(),Chrome 141.0.7390.67,,,15-10-2025 17:29:42,15-10-2025 17:29:42,0.002s,PASSED
+"chars = ""ABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789""",Chrome 141.0.7390.67,,,15-10-2025 17:29:42,15-10-2025 17:29:42,0.001s,PASSED
+rand = new java.util.Random(),Chrome 141.0.7390.67,,,15-10-2025 17:29:42,15-10-2025 17:29:42,0.002s,PASSED
+lp = new java.lang.StringBuilder(),Chrome 141.0.7390.67,,,15-10-2025 17:29:42,15-10-2025 17:29:42,0.002s,PASSED
+"for ([i = 0, i < 4, (i++)])",Chrome 141.0.7390.67,,,15-10-2025 17:29:42,15-10-2025 17:29:42,0.006s,PASSED
+return lp.toString(),Chrome 141.0.7390.67,,,15-10-2025 17:29:42,15-10-2025 17:29:42,0.001s,PASSED
+"println(""Generated License Plate: "" + lpNumber)",Chrome 141.0.7390.67,,,15-10-2025 17:29:42,15-10-2025 17:29:42,0.001s,PASSED
+"setText(findTestObject(""Transient_Folder/License_Plate""), lpNumber)",Chrome 141.0.7390.67,,,15-10-2025 17:29:42,15-10-2025 17:29:44,2.007s,PASSED
+"element = findWebElement(findTestObject(""Object Repository/Transient_Folder/Transient Duration_Increase""), 10)",Chrome 141.0.7390.67,,,15-10-2025 17:29:44,15-10-2025 17:29:45,0.780s,PASSED
+executor = getWebDriver(),Chrome 141.0.7390.67,,,15-10-2025 17:29:45,15-10-2025 17:29:45,0.006s,PASSED
+"executor.executeScript(""arguments[0].click();"", element)",Chrome 141.0.7390.67,,,15-10-2025 17:29:45,15-10-2025 17:29:45,0.022s,PASSED
+"waitForElementPresent(findTestObject(""Transient_Folder/Term_Condition_CB""), 10)",Chrome 141.0.7390.67,,,15-10-2025 17:29:45,15-10-2025 17:29:56,11.230s,WARNING
+"click(findTestObject(""Transient_Folder/Term_Condition_CB""))",Chrome 141.0.7390.67,,,15-10-2025 17:29:56,15-10-2025 17:30:27,31.255s,FAILED

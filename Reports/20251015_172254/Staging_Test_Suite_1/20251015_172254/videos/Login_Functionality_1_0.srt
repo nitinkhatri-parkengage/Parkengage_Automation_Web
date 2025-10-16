@@ -1,0 +1,44 @@
+1
+00:00:00,000 --> 00:00:00,000
+1. openBrowser("")
+
+2
+00:00:00,000 --> 00:00:00,000
+5. maximizeWindow()
+
+3
+00:00:00,000 --> 00:00:00,000
+9. navigateToUrl("https://staging-new.parkengage.com/")
+
+4
+00:00:00,000 --> 00:00:00,000
+13. setText(findTestObject("Login_Page_Objects/Email_Input_Field"), G_Email)
+
+5
+00:00:00,000 --> 00:00:00,000
+17. waitForElementPresent(findTestObject("Login_Page_Objects/Email_Password_Field"), 20)
+
+6
+00:00:00,000 --> 00:00:00,000
+21. setEncryptedText(findTestObject("Login_Page_Objects/Email_Password_Field"), "Cqo1foBX0qbZ3A82kE6k0A==")
+
+7
+00:00:00,000 --> 00:00:00,000
+25. click(findTestObject("Login_Page_Objects/Login_Submit_Button"))
+
+8
+00:00:00,000 --> 00:00:00,000
+29. delay(15)
+
+9
+00:00:00,000 --> 00:00:00,000
+33. dashboard_url = getUrl()
+
+10
+00:00:00,000 --> 00:00:00,000
+37. print(dashboard_url)
+
+11
+00:00:00,000 --> 00:00:00,000
+41. verifyEqual(dashboard_url, "https://staging-new.parkengage.com/admin/partners")
+

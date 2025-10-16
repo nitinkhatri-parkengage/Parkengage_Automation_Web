@@ -57,3 +57,5 @@ String promoCode = CustomKeywords.'myCustomKeywords.CustKeywords.generatePromoCo
 
 WebUI.setText(findTestObject('Promotions_Promocode/Promotion_Name'), promoCode)
 
+WebUI.delay(10)
+

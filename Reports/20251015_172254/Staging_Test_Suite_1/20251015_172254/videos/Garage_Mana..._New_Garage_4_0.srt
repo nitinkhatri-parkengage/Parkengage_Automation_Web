@@ -1,0 +1,244 @@
+1
+00:00:00,000 --> 00:00:00,000
+1. openBrowser("")
+
+2
+00:00:00,000 --> 00:00:00,000
+5. maximizeWindow()
+
+3
+00:00:00,000 --> 00:00:00,000
+9. navigateToUrl("https://staging-new.parkengage.com/")
+
+4
+00:00:00,000 --> 00:00:00,000
+13. waitForElementPresent(findTestObject("Login_Page_Objects/Email_Password_Field"), 20)
+
+5
+00:00:00,000 --> 00:00:00,000
+17. setText(findTestObject("Login_Page_Objects/Email_Input_Field"), G_Email)
+
+6
+00:00:00,000 --> 00:00:00,000
+21. setEncryptedText(findTestObject("Login_Page_Objects/Email_Password_Field"), "Cqo1foBX0qbZ3A82kE6k0A==")
+
+7
+00:00:00,000 --> 00:00:00,000
+25. click(findTestObject("Login_Page_Objects/Login_Submit_Button"))
+
+8
+00:00:00,000 --> 00:00:00,000
+29. delay(15)
+
+9
+00:00:00,000 --> 00:00:00,000
+33. click(findTestObject("Create_Garrage/Product_Menu_Expand"))
+
+10
+00:00:00,000 --> 00:00:00,000
+37. waitForElementClickable(findTestObject("Create_Garrage/Garage_Management_Menu"), 5)
+
+11
+00:00:00,000 --> 00:00:00,000
+41. click(findTestObject("Create_Garrage/Garage_Management_Menu"))
+
+12
+00:00:00,000 --> 00:00:00,000
+45. waitForElementPresent(findTestObject("Create_Garrage/Add_New_Button_Garage"), 10)
+
+13
+00:00:00,000 --> 00:00:00,000
+49. click(findTestObject("Create_Garrage/Add_New_Button_Garage"))
+
+14
+00:00:00,000 --> 00:00:00,000
+53. garageName = generateGarageName()
+
+15
+00:00:00,000 --> 00:00:00,000
+1. chars = "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz"
+
+16
+00:00:00,000 --> 00:00:00,000
+5. name = new java.lang.StringBuilder()
+
+17
+00:00:00,000 --> 00:00:00,000
+9. rand = new java.util.Random()
+
+18
+00:00:00,000 --> 00:00:00,000
+13. for ([i = 0, i < 5, (i++)])
+
+19
+00:00:00,000 --> 00:00:00,000
+1. name.append(chars.charAt(rand.nextInt(chars.length())))
+
+20
+00:00:00,000 --> 00:00:00,000
+1. name.append(chars.charAt(rand.nextInt(chars.length())))
+
+21
+00:00:00,000 --> 00:00:00,000
+1. name.append(chars.charAt(rand.nextInt(chars.length())))
+
+22
+00:00:00,000 --> 00:00:00,000
+1. name.append(chars.charAt(rand.nextInt(chars.length())))
+
+23
+00:00:00,000 --> 00:00:00,000
+1. name.append(chars.charAt(rand.nextInt(chars.length())))
+
+24
+00:00:00,000 --> 00:00:00,000
+17. return name.toString()
+
+25
+00:00:00,000 --> 00:00:00,000
+57. setText(findTestObject("Create_Garrage/Garage_Name_Input_Field"), garageName)
+
+26
+00:00:00,000 --> 00:00:00,000
+61. garageShortName = generateGarageCode()
+
+27
+00:00:00,000 --> 00:00:00,000
+1. chars = "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz"
+
+28
+00:00:00,000 --> 00:00:00,000
+5. name = new java.lang.StringBuilder()
+
+29
+00:00:00,000 --> 00:00:00,000
+9. rand = new java.util.Random()
+
+30
+00:00:00,000 --> 00:00:00,000
+13. for ([i = 0, i < 5, (i++)])
+
+31
+00:00:00,000 --> 00:00:00,000
+1. name.append(chars.charAt(rand.nextInt(chars.length())))
+
+32
+00:00:00,000 --> 00:00:00,000
+1. name.append(chars.charAt(rand.nextInt(chars.length())))
+
+33
+00:00:00,000 --> 00:00:00,000
+1. name.append(chars.charAt(rand.nextInt(chars.length())))
+
+34
+00:00:00,000 --> 00:00:00,000
+1. name.append(chars.charAt(rand.nextInt(chars.length())))
+
+35
+00:00:00,000 --> 00:00:00,000
+1. name.append(chars.charAt(rand.nextInt(chars.length())))
+
+36
+00:00:00,000 --> 00:00:00,000
+17. return name.toString()
+
+37
+00:00:00,000 --> 00:00:00,000
+65. setText(findTestObject("Create_Garrage/Garage_Short_Name"), garageShortName)
+
+38
+00:00:00,000 --> 00:00:00,000
+69. garageCode = generateGarageCode()
+
+39
+00:00:00,000 --> 00:00:00,000
+1. chars = "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz"
+
+40
+00:00:00,000 --> 00:00:00,000
+5. name = new java.lang.StringBuilder()
+
+41
+00:00:00,000 --> 00:00:00,000
+9. rand = new java.util.Random()
+
+42
+00:00:00,000 --> 00:00:00,000
+13. for ([i = 0, i < 5, (i++)])
+
+43
+00:00:00,000 --> 00:00:00,000
+1. name.append(chars.charAt(rand.nextInt(chars.length())))
+
+44
+00:00:00,000 --> 00:00:00,000
+1. name.append(chars.charAt(rand.nextInt(chars.length())))
+
+45
+00:00:00,000 --> 00:00:00,000
+1. name.append(chars.charAt(rand.nextInt(chars.length())))
+
+46
+00:00:00,000 --> 00:00:00,000
+1. name.append(chars.charAt(rand.nextInt(chars.length())))
+
+47
+00:00:00,000 --> 00:00:00,000
+1. name.append(chars.charAt(rand.nextInt(chars.length())))
+
+48
+00:00:00,000 --> 00:00:00,000
+17. return name.toString()
+
+49
+00:00:00,000 --> 00:00:00,000
+73. setText(findTestObject("Create_Garrage/Garage_Code_Input_Field"), garageCode)
+
+50
+00:00:00,000 --> 00:00:00,000
+77. randomDigits = RandomStringUtils.randomNumeric(6)
+
+51
+00:00:00,000 --> 00:00:00,000
+81. phoneNumber = "1122" + randomDigits
+
+52
+00:00:00,000 --> 00:00:00,000
+85. setText(findTestObject("Create_Garrage/Garage_Phone_Number_Input"), phoneNumber)
+
+53
+00:00:00,000 --> 00:00:00,000
+89. delay(2)
+
+54
+00:00:00,000 --> 00:00:00,000
+93. click(findTestObject("Create_Garrage/Select_Partner_Garage_Mngmnt_Drp_Dwn"))
+
+55
+00:00:00,000 --> 00:00:00,000
+97. delay(2)
+
+56
+00:00:00,000 --> 00:00:00,000
+101. click(findTestObject("Create_Garrage/Partner_Rev_Pass"))
+
+57
+00:00:00,000 --> 00:00:00,000
+105. click(findTestObject("Create_Garrage/Garage_Type_Drp_Dwn"))
+
+58
+00:00:00,000 --> 00:00:00,000
+109. delay(1)
+
+59
+00:00:00,000 --> 00:00:00,000
+113. click(findTestObject("Create_Garrage/Ungated_Garage_Option"))
+
+60
+00:00:00,000 --> 00:00:00,000
+117. click(findTestObject("Create_Garrage/Create_BTN_GRG"))
+
+61
+00:00:00,000 --> 00:00:00,000
+121. delay(20)
+

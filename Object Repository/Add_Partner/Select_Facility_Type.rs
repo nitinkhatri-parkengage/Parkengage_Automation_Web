@@ -6,11 +6,11 @@
    <elementGuidId>3f47c144-695b-4528-be04-9f92c1a55677</elementGuidId>
    <selectorCollection>
       <entry>
-         <key>XPATH</key>
-         <value>//select[@id='garage_type']/option[@title='Ungated Facility']</value>
+         <key>BASIC</key>
       </entry>
       <entry>
-         <key>BASIC</key>
+         <key>XPATH</key>
+         <value>//select[@id='garage_type']/option[@title='Ungated Facility'] | //*[@id=&quot;garage_type&quot;]/option[2]</value>
       </entry>
    </selectorCollection>
    <selectorMethod>XPATH</selectorMethod>

@@ -1,0 +1,80 @@
+1
+00:00:00,000 --> 00:00:00,000
+1. openBrowser("")
+
+2
+00:00:00,000 --> 00:00:00,000
+5. maximizeWindow()
+
+3
+00:00:00,000 --> 00:00:00,000
+9. navigateToUrl("https://staging-new.parkengage.com/")
+
+4
+00:00:00,000 --> 00:00:00,000
+13. setText(findTestObject("Login_Page_Objects/Email_Input_Field"), G_Email)
+
+5
+00:00:00,000 --> 00:00:00,000
+17. waitForElementPresent(findTestObject("Login_Page_Objects/Email_Password_Field"), 20)
+
+6
+00:00:00,000 --> 00:00:00,000
+21. setEncryptedText(findTestObject("Login_Page_Objects/Email_Password_Field"), "Cqo1foBX0qbZ3A82kE6k0A==")
+
+7
+00:00:00,000 --> 00:00:00,000
+25. click(findTestObject("Login_Page_Objects/Login_Submit_Button"))
+
+8
+00:00:00,000 --> 00:00:00,000
+29. delay(15)
+
+9
+00:00:00,000 --> 00:00:00,000
+33. dashboard_url = getUrl()
+
+10
+00:00:00,000 --> 00:00:00,000
+37. print(dashboard_url)
+
+11
+00:00:00,000 --> 00:00:00,000
+41. verifyEqual(dashboard_url, "https://staging-new.parkengage.com/admin/partners")
+
+12
+00:00:00,000 --> 00:00:00,000
+45. waitForElementClickable(findTestObject("Create_Garrage/Product_Menu_Expand"), 10)
+
+13
+00:00:00,000 --> 00:00:00,000
+49. click(findTestObject("Create_Garrage/Product_Menu_Expand"))
+
+14
+00:00:00,000 --> 00:00:00,000
+53. click(findTestObject("Left_Menu_Option_All/Promotions_SubMenu_Option"))
+
+15
+00:00:00,000 --> 00:00:00,000
+57. waitForElementPresent(findTestObject("Promotions_Promocode/Promotion_Add_New_Button"), 10)
+
+16
+00:00:00,000 --> 00:00:00,000
+61. click(findTestObject("Promotions_Promocode/Promotion_Add_New_Button"))
+
+17
+00:00:00,000 --> 00:00:00,000
+65. waitForElementPresent(findTestObject("Promotions_Promocode/Promotion_Name"), 10)
+
+18
+00:00:00,000 --> 00:00:00,000
+69. promoCode = myCustomKeywords.CustKeywords.generatePromoCode()
+
+19
+00:00:00,000 --> 00:00:00,000
+73. setText(findTestObject("Promotions_Promocode/Promotion_Name"), promoCode)
+
+20
+00:00:00,000 --> 00:00:00,000
+77. delay(10)
+

@@ -18,9 +18,9 @@ DriverCleanerCollector.getInstance().addDriverCleaner(new com.kms.katalon.core.w
 DriverCleanerCollector.getInstance().addDriverCleaner(new com.kms.katalon.core.testng.keyword.internal.TestNGDriverCleaner())
 
 
-RunConfiguration.setExecutionSettingFile('C:\\Users\\SURAJK~1\\AppData\\Local\\Temp\\Katalon\\Test Cases\\New_Staging_Env\\Promotion_Creation_FLow\\20251007_151642\\execution.properties')
+RunConfiguration.setExecutionSettingFile('C:\\Users\\SURAJK~1\\AppData\\Local\\Temp\\Katalon\\Test Cases\\New_Staging_Env\\Admin_Login_Partner_Creation_and_Delete\\20251015_124325\\execution.properties')
 
 TestCaseMain.beforeStart()
 
-        TestCaseMain.runTestCase('Test Cases/New_Staging_Env/Promotion_Creation_FLow', new TestCaseBinding('Test Cases/New_Staging_Env/Promotion_Creation_FLow',[:]), FailureHandling.STOP_ON_FAILURE , true, true)
+        TestCaseMain.runTestCase('Test Cases/New_Staging_Env/Admin_Login_Partner_Creation_and_Delete', new TestCaseBinding('Test Cases/New_Staging_Env/Admin_Login_Partner_Creation_and_Delete',[:]), FailureHandling.STOP_ON_FAILURE , true, true)
     

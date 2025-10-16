@@ -1,0 +1,1285 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuites name="Staging_Test_Suite_1" time="448.333" tests="7" failures="1" errors="0">
+   <testsuite name="Staging_Test_Suite_1" tests="7" failures="1" errors="0" time="448.333" skipped="0" timestamp="15-10-2025T17:22:59" hostname="Suraj Kumar - DESKTOP-9A65H58" id="Test Suites/Staging_Test_Suite_1">
+      <properties>
+         <property name="deviceName" value=""/>
+         <property name="devicePlatform"/>
+         <property name="logFolder" value="C:\\Users\\Suraj Kumar\\Desktop\\katalon-testsuite\\Reports\\20251015_172254\\Staging_Test_Suite_1\\20251015_172254"/>
+         <property name="logFiles" value="C:\\Users\\Suraj Kumar\\Desktop\\katalon-testsuite\\Reports\\20251015_172254\\Staging_Test_Suite_1\\20251015_172254\\console0.log, C:\\Users\\Suraj Kumar\\Desktop\\katalon-testsuite\\Reports\\20251015_172254\\Staging_Test_Suite_1\\20251015_172254\\execution0.log"/>
+         <property name="attachments" value="C:\\Users\\Suraj Kumar\\Desktop\\katalon-testsuite\\Reports\\20251015_172254\\Staging_Test_Suite_1\\20251015_172254\\1760529627404.png"/>
+         <property name="hostName" value="Suraj Kumar - DESKTOP-9A65H58"/>
+         <property name="os" value="Windows 11 64bit"/>
+         <property name="katalonVersion" value="10.2.0.0"/>
+         <property name="browser" value="Chrome 141.0.7390.67"/>
+         <property name="userFullName" value="Suraj Kumar"/>
+         <property name="hostAddress" value="192.168.1.161"/>
+         <property name="sessionId" value="d1bc07e3c06227ca899fbc0ee3f82755"/>
+         <property name="projectName" value="My First Web UI Project"/>
+         <property name="seleniumVersion" value="4.28.1"/>
+         <property name="proxyInformation" value="ProxyInformation { proxyOption=NO_PROXY, proxyServerType=HTTP, username=, password=********, proxyServerAddress=, proxyServerPort=0, executionList=&quot;&quot;, isApplyToDesiredCapabilities=true }"/>
+         <property name="platform" value="Windows 11"/>
+      </properties>
+      <testcase name="Test Cases/New_Staging_Env/Login_Functionality" time="28.604" classname="Test Cases/New_Staging_Env/Login_Functionality" status="PASSED">
+         <properties>
+            <property name="data_binding"><![CDATA[{"(Default) dashb...":""}]]></property>
+         </properties>
+         <system-out><![CDATA[15-10-2025T17:22:59 - [TEST_CASE][PASSED] - Test Cases/New_Staging_Env/Login_Functionality: Test Cases/New_Staging_Env/Login_Functionality
+
+15-10-2025T17:23:00 - [TEST_STEP][PASSED] - openBrowser(""): Browser is opened with url: ''
+
+15-10-2025T17:23:00 - [MESSAGE][INFO] - Starting 'Chrome' driver
+
+15-10-2025T17:23:00 - [MESSAGE][INFO] - Action delay is set to 1,000 milliseconds
+
+15-10-2025T17:23:02 - [MESSAGE][WARNING] - FFmpeg was not installed! Browser Recording will be disabled. Please follow this document to install FFmpeg first: https://docs.katalon.com/katalon-studio/test-reports/generate-test-reports/generate-browser-based-videos-in-katalon-studio-reports#browser-based-recorder
+
+15-10-2025T17:23:02 - [MESSAGE][PASSED] - Browser is opened with url: ''
+
+15-10-2025T17:23:02 - [TEST_STEP][PASSED] - maximizeWindow(): Current window maximized
+
+15-10-2025T17:23:02 - [MESSAGE][PASSED] - Current window maximized
+
+15-10-2025T17:23:02 - [TEST_STEP][PASSED] - navigateToUrl("https://staging-new.parkengage.com/"): Navigate to 'https://staging-new.parkengage.com/' successfully
+
+15-10-2025T17:23:07 - [MESSAGE][PASSED] - Navigate to 'https://staging-new.parkengage.com/' successfully
+
+15-10-2025T17:23:07 - [TEST_STEP][PASSED] - setText(findTestObject("Login_Page_Objects/Email_Input_Field"), G_Email): Text 'superadmin@parkengage.com
+' is set on object 'Object Repository/Login_Page_Objects/Email_Input_Field'
+
+15-10-2025T17:23:09 - [MESSAGE][PASSED] - Text 'superadmin@parkengage.com
+' is set on object 'Object Repository/Login_Page_Objects/Email_Input_Field'
+
+15-10-2025T17:23:09 - [TEST_STEP][PASSED] - waitForElementPresent(findTestObject("Login_Page_Objects/Email_Password_Field"), 20): Object 'Object Repository/Login_Page_Objects/Email_Password_Field' is present
+
+15-10-2025T17:23:10 - [MESSAGE][PASSED] - Object 'Object Repository/Login_Page_Objects/Email_Password_Field' is present
+
+15-10-2025T17:23:10 - [TEST_STEP][PASSED] - setEncryptedText(findTestObject("Login_Page_Objects/Email_Password_Field"), "Cqo1foBX0qbZ3A82kE6k0A=="): Text ****** has been set on object 'Object Repository/Login_Page_Objects/Email_Password_Field'
+
+15-10-2025T17:23:11 - [MESSAGE][PASSED] - Text ****** has been set on object 'Object Repository/Login_Page_Objects/Email_Password_Field'
+
+15-10-2025T17:23:11 - [TEST_STEP][PASSED] - click(findTestObject("Login_Page_Objects/Login_Submit_Button")): Object: 'Object Repository/Login_Page_Objects/Login_Submit_Button' is clicked on
+
+15-10-2025T17:23:13 - [MESSAGE][PASSED] - Object: 'Object Repository/Login_Page_Objects/Login_Submit_Button' is clicked on
+
+15-10-2025T17:23:13 - [TEST_STEP][PASSED] - delay(15): Delayed 15 second(s)
+
+15-10-2025T17:23:28 - [MESSAGE][PASSED] - Delayed 15 second(s)
+
+15-10-2025T17:23:28 - [TEST_STEP][PASSED] - dashboard_url = getUrl(): Current window's url is: 'https://staging-new.parkengage.com/admin/partners'
+
+15-10-2025T17:23:28 - [MESSAGE][PASSED] - Current window's url is: 'https://staging-new.parkengage.com/admin/partners'
+
+15-10-2025T17:23:28 - [TEST_STEP][PASSED] - print(dashboard_url): null
+
+15-10-2025T17:23:28 - [TEST_STEP][PASSED] - verifyEqual(dashboard_url, "https://staging-new.parkengage.com/admin/partners"): Actual object 'https://staging-new.parkengage.com/admin/partners' and expected object 'https://staging-new.parkengage.com/admin/partners' are equal
+
+15-10-2025T17:23:28 - [MESSAGE][PASSED] - Actual object 'https://staging-new.parkengage.com/admin/partners' and expected object 'https://staging-new.parkengage.com/admin/partners' are equal]]></system-out>
+         <system-err><![CDATA[]]></system-err>
+      </testcase>
+      <testcase name="Test Cases/New_Staging_Env/Admin_Login_Partner_Creation_and_Delete" time="97.108" classname="Test Cases/New_Staging_Env/Admin_Login_Partner_Creation_and_Delete" status="PASSED">
+         <properties>
+            <property name="data_binding"><![CDATA[{"(Default) email":"superadmin@parkengage.com\r\n","(Default) dashb...":""}]]></property>
+         </properties>
+         <system-out><![CDATA[15-10-2025T17:23:28 - [TEST_CASE][PASSED] - Test Cases/New_Staging_Env/Admin_Login_Partner_Creation_and_Delete: Test Cases/New_Staging_Env/Admin_Login_Partner_Creation_and_Delete
+
+15-10-2025T17:23:28 - [TEST_STEP][PASSED] - openBrowser(""): Browser is opened with url: ''
+
+15-10-2025T17:23:28 - [MESSAGE][WARNING] - A browser is already opened. Closing browser and opening a new one
+
+15-10-2025T17:23:28 - [MESSAGE][INFO] - Starting 'Chrome' driver
+
+15-10-2025T17:23:28 - [MESSAGE][INFO] - Action delay is set to 1,000 milliseconds
+
+15-10-2025T17:23:29 - [MESSAGE][WARNING] - FFmpeg was not installed! Browser Recording will be disabled. Please follow this document to install FFmpeg first: https://docs.katalon.com/katalon-studio/test-reports/generate-test-reports/generate-browser-based-videos-in-katalon-studio-reports#browser-based-recorder
+
+15-10-2025T17:23:29 - [MESSAGE][PASSED] - Browser is opened with url: ''
+
+15-10-2025T17:23:29 - [TEST_STEP][PASSED] - maximizeWindow(): Current window maximized
+
+15-10-2025T17:23:29 - [MESSAGE][PASSED] - Current window maximized
+
+15-10-2025T17:23:29 - [TEST_STEP][PASSED] - navigateToUrl("https://staging-new.parkengage.com/"): Navigate to 'https://staging-new.parkengage.com/' successfully
+
+15-10-2025T17:23:35 - [MESSAGE][PASSED] - Navigate to 'https://staging-new.parkengage.com/' successfully
+
+15-10-2025T17:23:35 - [TEST_STEP][PASSED] - waitForElementPresent(findTestObject("Login_Page_Objects/Email_Password_Field"), 20): Object 'Object Repository/Login_Page_Objects/Email_Password_Field' is present
+
+15-10-2025T17:23:35 - [MESSAGE][PASSED] - Object 'Object Repository/Login_Page_Objects/Email_Password_Field' is present
+
+15-10-2025T17:23:35 - [TEST_STEP][PASSED] - setText(findTestObject("Login_Page_Objects/Email_Input_Field"), G_Email): Text 'superadmin@parkengage.com
+' is set on object 'Object Repository/Login_Page_Objects/Email_Input_Field'
+
+15-10-2025T17:23:37 - [MESSAGE][PASSED] - Text 'superadmin@parkengage.com
+' is set on object 'Object Repository/Login_Page_Objects/Email_Input_Field'
+
+15-10-2025T17:23:37 - [TEST_STEP][PASSED] - setEncryptedText(findTestObject("Login_Page_Objects/Email_Password_Field"), "Cqo1foBX0qbZ3A82kE6k0A=="): Text ****** has been set on object 'Object Repository/Login_Page_Objects/Email_Password_Field'
+
+15-10-2025T17:23:38 - [MESSAGE][PASSED] - Text ****** has been set on object 'Object Repository/Login_Page_Objects/Email_Password_Field'
+
+15-10-2025T17:23:38 - [TEST_STEP][PASSED] - click(findTestObject("Login_Page_Objects/Login_Submit_Button")): Object: 'Object Repository/Login_Page_Objects/Login_Submit_Button' is clicked on
+
+15-10-2025T17:23:40 - [MESSAGE][PASSED] - Object: 'Object Repository/Login_Page_Objects/Login_Submit_Button' is clicked on
+
+15-10-2025T17:23:40 - [TEST_STEP][PASSED] - delay(15): Delayed 15 second(s)
+
+15-10-2025T17:23:55 - [MESSAGE][PASSED] - Delayed 15 second(s)
+
+15-10-2025T17:23:55 - [TEST_STEP][PASSED] - dashboard_url = getUrl(): Current window's url is: 'https://staging-new.parkengage.com/admin/partners'
+
+15-10-2025T17:23:55 - [MESSAGE][PASSED] - Current window's url is: 'https://staging-new.parkengage.com/admin/partners'
+
+15-10-2025T17:23:55 - [TEST_STEP][PASSED] - print(dashboard_url): null
+
+15-10-2025T17:23:55 - [TEST_STEP][PASSED] - verifyEqual(dashboard_url, "https://staging-new.parkengage.com/admin/partners"): Actual object 'https://staging-new.parkengage.com/admin/partners' and expected object 'https://staging-new.parkengage.com/admin/partners' are equal
+
+15-10-2025T17:23:55 - [MESSAGE][PASSED] - Actual object 'https://staging-new.parkengage.com/admin/partners' and expected object 'https://staging-new.parkengage.com/admin/partners' are equal
+
+15-10-2025T17:23:55 - [TEST_STEP][PASSED] - waitForElementPresent(findTestObject("Login_Page_Objects/ParkEngage_Logo"), 20): Object 'Object Repository/Login_Page_Objects/ParkEngage_Logo' is present
+
+15-10-2025T17:23:55 - [MESSAGE][PASSED] - Object 'Object Repository/Login_Page_Objects/ParkEngage_Logo' is present
+
+15-10-2025T17:23:55 - [TEST_STEP][PASSED] - waitForElementVisible(findTestObject("Add_Partner/Add_New_Partner_BTN"), 10): Object 'Object Repository/Add_Partner/Add_New_Partner_BTN' is visible
+
+15-10-2025T17:23:55 - [MESSAGE][PASSED] - Object 'Object Repository/Add_Partner/Add_New_Partner_BTN' is visible
+
+15-10-2025T17:23:55 - [TEST_STEP][PASSED] - click(findTestObject("Add_Partner/Add_New_Partner_BTN")): Object: 'Object Repository/Add_Partner/Add_New_Partner_BTN' is clicked on
+
+15-10-2025T17:23:57 - [MESSAGE][PASSED] - Object: 'Object Repository/Add_Partner/Add_New_Partner_BTN' is clicked on
+
+15-10-2025T17:23:57 - [TEST_STEP][PASSED] - verifyElementPresent(findTestObject("Add_Partner/Create_New_Partner_Label"), 10): Object 'Object Repository/Add_Partner/Create_New_Partner_Label' is present
+
+15-10-2025T17:23:58 - [MESSAGE][PASSED] - Object 'Object Repository/Add_Partner/Create_New_Partner_Label' is present
+
+15-10-2025T17:23:58 - [TEST_STEP][PASSED] - companyName = generateCompanyName(): null
+
+15-10-2025T17:23:58 - [TEST_STEP][PASSED] - chars = "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz": null
+
+15-10-2025T17:23:58 - [TEST_STEP][PASSED] - name = new java.lang.StringBuilder(): null
+
+15-10-2025T17:23:58 - [TEST_STEP][PASSED] - rand = new java.util.Random(): null
+
+15-10-2025T17:23:58 - [TEST_STEP][PASSED] - for ([i = 0, i < 5, (i++)]): null
+
+15-10-2025T17:23:58 - [TEST_STEP][PASSED] - name.append(chars.charAt(rand.nextInt(chars.length()))): null
+
+15-10-2025T17:23:58 - [TEST_STEP][PASSED] - name.append(chars.charAt(rand.nextInt(chars.length()))): null
+
+15-10-2025T17:23:58 - [TEST_STEP][PASSED] - name.append(chars.charAt(rand.nextInt(chars.length()))): null
+
+15-10-2025T17:23:58 - [TEST_STEP][PASSED] - name.append(chars.charAt(rand.nextInt(chars.length()))): null
+
+15-10-2025T17:23:58 - [TEST_STEP][PASSED] - name.append(chars.charAt(rand.nextInt(chars.length()))): null
+
+15-10-2025T17:23:58 - [TEST_STEP][PASSED] - return name.toString(): null
+
+15-10-2025T17:23:58 - [TEST_STEP][PASSED] - setText(findTestObject("Add_Partner/input_FirstName"), "Park"): Text 'Park' is set on object 'Object Repository/Add_Partner/input_FirstName'
+
+15-10-2025T17:24:00 - [MESSAGE][PASSED] - Text 'Park' is set on object 'Object Repository/Add_Partner/input_FirstName'
+
+15-10-2025T17:24:00 - [TEST_STEP][PASSED] - setText(findTestObject("Add_Partner/input_LastName"), "Auto"): Text 'Auto' is set on object 'Object Repository/Add_Partner/input_LastName'
+
+15-10-2025T17:24:01 - [MESSAGE][PASSED] - Text 'Auto' is set on object 'Object Repository/Add_Partner/input_LastName'
+
+15-10-2025T17:24:01 - [TEST_STEP][PASSED] - randomEmail = generateRandomEmail(): null
+
+15-10-2025T17:24:01 - [TEST_STEP][PASSED] - randomNum = random() * 100.toInteger(): null
+
+15-10-2025T17:24:01 - [TEST_STEP][PASSED] - return ((autopark1 + randomNum) + @yopmail.com): null
+
+15-10-2025T17:24:01 - [TEST_STEP][PASSED] - setText(findTestObject("Add_Partner/inputEmail"), randomEmail): Text 'autopark13@yopmail.com' is set on object 'Object Repository/Add_Partner/inputEmail'
+
+15-10-2025T17:24:03 - [MESSAGE][PASSED] - Text 'autopark13@yopmail.com' is set on object 'Object Repository/Add_Partner/inputEmail'
+
+15-10-2025T17:24:03 - [TEST_STEP][PASSED] - randomDigits = RandomStringUtils.randomNumeric(6): null
+
+15-10-2025T17:24:03 - [TEST_STEP][PASSED] - phoneNumber = "1122" + randomDigits: null
+
+15-10-2025T17:24:03 - [TEST_STEP][PASSED] - setText(findTestObject("Add_Partner/inputPhoneNumber"), phoneNumber): Text '1122952167' is set on object 'Object Repository/Add_Partner/inputPhoneNumber'
+
+15-10-2025T17:24:05 - [MESSAGE][PASSED] - Text '1122952167' is set on object 'Object Repository/Add_Partner/inputPhoneNumber'
+
+15-10-2025T17:24:05 - [TEST_STEP][PASSED] - setText(findTestObject("Add_Partner/inputSlug"), "parkauto"): Text 'parkauto' is set on object 'Object Repository/Add_Partner/inputSlug'
+
+15-10-2025T17:24:07 - [MESSAGE][PASSED] - Text 'parkauto' is set on object 'Object Repository/Add_Partner/inputSlug'
+
+15-10-2025T17:24:07 - [TEST_STEP][PASSED] - setText(findTestObject("Add_Partner/input_Company"), companyName): Text 'paADI' is set on object 'Object Repository/Add_Partner/input_Company'
+
+15-10-2025T17:24:09 - [MESSAGE][PASSED] - Text 'paADI' is set on object 'Object Repository/Add_Partner/input_Company'
+
+15-10-2025T17:24:09 - [TEST_STEP][PASSED] - setText(findTestObject("Add_Partner/input_City"), "Vegas"): Text 'Vegas' is set on object 'Object Repository/Add_Partner/input_City'
+
+15-10-2025T17:24:10 - [MESSAGE][PASSED] - Text 'Vegas' is set on object 'Object Repository/Add_Partner/input_City'
+
+15-10-2025T17:24:10 - [TEST_STEP][PASSED] - click(findTestObject("Add_Partner/select_Country_Drop_Down")): Object: 'Object Repository/Add_Partner/select_Country_Drop_Down' is clicked on
+
+15-10-2025T17:24:12 - [MESSAGE][PASSED] - Object: 'Object Repository/Add_Partner/select_Country_Drop_Down' is clicked on
+
+15-10-2025T17:24:12 - [TEST_STEP][PASSED] - delay(2): Delayed 2 second(s)
+
+15-10-2025T17:24:14 - [MESSAGE][PASSED] - Delayed 2 second(s)
+
+15-10-2025T17:24:14 - [TEST_STEP][PASSED] - scrollToElement(findTestObject("Add_Partner/Select_Country_USA"), 20): Scroll to object 'Object Repository/Add_Partner/Select_Country_USA' successfully
+
+15-10-2025T17:24:14 - [MESSAGE][PASSED] - Scroll to object 'Object Repository/Add_Partner/Select_Country_USA' successfully
+
+15-10-2025T17:24:14 - [TEST_STEP][PASSED] - click(findTestObject("Add_Partner/Select_Country_USA")): Object: 'Object Repository/Add_Partner/Select_Country_USA' is clicked on
+
+15-10-2025T17:24:16 - [MESSAGE][PASSED] - Object: 'Object Repository/Add_Partner/Select_Country_USA' is clicked on
+
+15-10-2025T17:24:16 - [TEST_STEP][PASSED] - click(findTestObject("Add_Partner/Select_Services_Drop_Dwn")): Object: 'Object Repository/Add_Partner/Select_Services_Drop_Dwn' is clicked on
+
+15-10-2025T17:24:17 - [MESSAGE][PASSED] - Object: 'Object Repository/Add_Partner/Select_Services_Drop_Dwn' is clicked on
+
+15-10-2025T17:24:17 - [TEST_STEP][PASSED] - click(findTestObject("Add_Partner/Select_Touchless_Parking")): Object: 'Object Repository/Add_Partner/Select_Touchless_Parking' is clicked on
+
+15-10-2025T17:24:18 - [MESSAGE][PASSED] - Object: 'Object Repository/Add_Partner/Select_Touchless_Parking' is clicked on
+
+15-10-2025T17:24:18 - [TEST_STEP][PASSED] - delay(2): Delayed 2 second(s)
+
+15-10-2025T17:24:20 - [MESSAGE][PASSED] - Delayed 2 second(s)
+
+15-10-2025T17:24:20 - [TEST_STEP][PASSED] - click(findTestObject("Add_Partner/Select_Plan")): Object: 'Object Repository/Add_Partner/Select_Plan' is clicked on
+
+15-10-2025T17:24:22 - [MESSAGE][PASSED] - Object: 'Object Repository/Add_Partner/Select_Plan' is clicked on
+
+15-10-2025T17:24:22 - [TEST_STEP][PASSED] - delay(2): Delayed 2 second(s)
+
+15-10-2025T17:24:24 - [MESSAGE][PASSED] - Delayed 2 second(s)
+
+15-10-2025T17:24:24 - [TEST_STEP][PASSED] - click(findTestObject("Add_Partner/Select_Advance_Plan")): Object: 'Object Repository/Add_Partner/Select_Advance_Plan' is clicked on
+
+15-10-2025T17:24:25 - [MESSAGE][PASSED] - Object: 'Object Repository/Add_Partner/Select_Advance_Plan' is clicked on
+
+15-10-2025T17:24:25 - [TEST_STEP][PASSED] - delay(2): Delayed 2 second(s)
+
+15-10-2025T17:24:27 - [MESSAGE][PASSED] - Delayed 2 second(s)
+
+15-10-2025T17:24:27 - [TEST_STEP][PASSED] - click(findTestObject("Add_Partner/Select_Pay_At_Check_Out")): Object: 'Object Repository/Add_Partner/Select_Pay_At_Check_Out' is clicked on
+
+15-10-2025T17:24:28 - [MESSAGE][PASSED] - Object: 'Object Repository/Add_Partner/Select_Pay_At_Check_Out' is clicked on
+
+15-10-2025T17:24:28 - [TEST_STEP][PASSED] - delay(3): Delayed 3 second(s)
+
+15-10-2025T17:24:31 - [MESSAGE][PASSED] - Delayed 3 second(s)
+
+15-10-2025T17:24:31 - [TEST_STEP][PASSED] - click(findTestObject("Add_Partner/Garage_Type_Drop_Down")): Object: 'Object Repository/Add_Partner/Garage_Type_Drop_Down' is clicked on
+
+15-10-2025T17:24:33 - [MESSAGE][PASSED] - Object: 'Object Repository/Add_Partner/Garage_Type_Drop_Down' is clicked on
+
+15-10-2025T17:24:33 - [TEST_STEP][PASSED] - waitForElementPresent(findTestObject("Add_Partner/Select_Facility_Type"), 10): Object 'Object Repository/Add_Partner/Select_Facility_Type' is present
+
+15-10-2025T17:24:33 - [MESSAGE][PASSED] - Object 'Object Repository/Add_Partner/Select_Facility_Type' is present
+
+15-10-2025T17:24:33 - [TEST_STEP][PASSED] - click(findTestObject("Add_Partner/Select_Facility_Type")): Object: 'Object Repository/Add_Partner/Select_Facility_Type' is clicked on
+
+15-10-2025T17:24:34 - [MESSAGE][PASSED] - Object: 'Object Repository/Add_Partner/Select_Facility_Type' is clicked on
+
+15-10-2025T17:24:34 - [TEST_STEP][PASSED] - delay(2): Delayed 2 second(s)
+
+15-10-2025T17:24:36 - [MESSAGE][PASSED] - Delayed 2 second(s)
+
+15-10-2025T17:24:36 - [TEST_STEP][PASSED] - click(findTestObject("Add_Partner/Select_Notification_Type_Both")): Object: 'Object Repository/Add_Partner/Select_Notification_Type_Both' is clicked on
+
+15-10-2025T17:24:38 - [MESSAGE][PASSED] - Object: 'Object Repository/Add_Partner/Select_Notification_Type_Both' is clicked on
+
+15-10-2025T17:24:38 - [TEST_STEP][PASSED] - click(findTestObject("Add_Partner/Add_Partner_Submit_BTN")): Object: 'Object Repository/Add_Partner/Add_Partner_Submit_BTN' is clicked on
+
+15-10-2025T17:24:39 - [MESSAGE][PASSED] - Object: 'Object Repository/Add_Partner/Add_Partner_Submit_BTN' is clicked on
+
+15-10-2025T17:24:39 - [TEST_STEP][PASSED] - waitForElementPresent(findTestObject("Add_Partner/Partner_Create_Alert_Text"), 20): Object 'Object Repository/Add_Partner/Partner_Create_Alert_Text' is present
+
+15-10-2025T17:24:44 - [MESSAGE][PASSED] - Object 'Object Repository/Add_Partner/Partner_Create_Alert_Text' is present
+
+15-10-2025T17:24:44 - [TEST_STEP][PASSED] - partnercreate_Alert_Text = getText(findTestObject("Add_Partner/Partner_Create_Alert_Text")): Text of object 'Object Repository/Add_Partner/Partner_Create_Alert_Text' is: 'User is created successfully.'
+
+15-10-2025T17:24:45 - [MESSAGE][PASSED] - Text of object 'Object Repository/Add_Partner/Partner_Create_Alert_Text' is: 'User is created successfully.'
+
+15-10-2025T17:24:45 - [TEST_STEP][PASSED] - print(partnercreate_Alert_Text): null
+
+15-10-2025T17:24:45 - [TEST_STEP][PASSED] - delay(10): Delayed 10 second(s)
+
+15-10-2025T17:24:55 - [MESSAGE][PASSED] - Delayed 10 second(s)
+
+15-10-2025T17:24:55 - [TEST_STEP][PASSED] - click(findTestObject("Add_Partner/Partner_Menu_Option")): Object: 'Object Repository/Add_Partner/Partner_Menu_Option' is clicked on
+
+15-10-2025T17:24:56 - [MESSAGE][PASSED] - Object: 'Object Repository/Add_Partner/Partner_Menu_Option' is clicked on
+
+15-10-2025T17:24:56 - [TEST_STEP][PASSED] - delay(1): Delayed 1 second(s)
+
+15-10-2025T17:24:57 - [MESSAGE][PASSED] - Delayed 1 second(s)
+
+15-10-2025T17:24:57 - [TEST_STEP][PASSED] - click(findTestObject("Add_Partner/Delete_Partner_Menu_Option")): Object: 'Object Repository/Add_Partner/Delete_Partner_Menu_Option' is clicked on
+
+15-10-2025T17:24:59 - [MESSAGE][PASSED] - Object: 'Object Repository/Add_Partner/Delete_Partner_Menu_Option' is clicked on
+
+15-10-2025T17:24:59 - [TEST_STEP][PASSED] - delay(1): Delayed 1 second(s)
+
+15-10-2025T17:25:00 - [MESSAGE][PASSED] - Delayed 1 second(s)
+
+15-10-2025T17:25:00 - [TEST_STEP][PASSED] - click(findTestObject("Add_Partner/Delete_Confirm_Button")): Object: 'Object Repository/Add_Partner/Delete_Confirm_Button' is clicked on
+
+15-10-2025T17:25:01 - [MESSAGE][PASSED] - Object: 'Object Repository/Add_Partner/Delete_Confirm_Button' is clicked on
+
+15-10-2025T17:25:01 - [TEST_STEP][PASSED] - partner_Delete_Alert = getText(findTestObject("Add_Partner/Partner_Delete_Alert_Text"), CONTINUE_ON_FAILURE): Text of object 'Object Repository/Add_Partner/Partner_Delete_Alert_Text' is: 'User has been deleted successfully.'
+
+15-10-2025T17:25:05 - [MESSAGE][PASSED] - Text of object 'Object Repository/Add_Partner/Partner_Delete_Alert_Text' is: 'User has been deleted successfully.'
+
+15-10-2025T17:25:05 - [TEST_STEP][PASSED] - println(partner_Delete_Alert): null]]></system-out>
+         <system-err><![CDATA[]]></system-err>
+      </testcase>
+      <testcase name="Test Cases/New_Staging_Env/Admin_Login_Partner_Creation" time="79.837" classname="Test Cases/New_Staging_Env/Admin_Login_Partner_Creation" status="PASSED">
+         <properties>
+            <property name="data_binding"><![CDATA[{"(Default) email":"superadmin@parkengage.com\r\n","(Default) dashb...":""}]]></property>
+         </properties>
+         <system-out><![CDATA[15-10-2025T17:25:05 - [TEST_CASE][PASSED] - Test Cases/New_Staging_Env/Admin_Login_Partner_Creation: Test Cases/New_Staging_Env/Admin_Login_Partner_Creation
+
+15-10-2025T17:25:05 - [TEST_STEP][PASSED] - openBrowser(""): Browser is opened with url: ''
+
+15-10-2025T17:25:05 - [MESSAGE][WARNING] - A browser is already opened. Closing browser and opening a new one
+
+15-10-2025T17:25:05 - [MESSAGE][INFO] - Starting 'Chrome' driver
+
+15-10-2025T17:25:05 - [MESSAGE][INFO] - Action delay is set to 1,000 milliseconds
+
+15-10-2025T17:25:06 - [MESSAGE][WARNING] - FFmpeg was not installed! Browser Recording will be disabled. Please follow this document to install FFmpeg first: https://docs.katalon.com/katalon-studio/test-reports/generate-test-reports/generate-browser-based-videos-in-katalon-studio-reports#browser-based-recorder
+
+15-10-2025T17:25:06 - [MESSAGE][PASSED] - Browser is opened with url: ''
+
+15-10-2025T17:25:06 - [TEST_STEP][PASSED] - maximizeWindow(): Current window maximized
+
+15-10-2025T17:25:06 - [MESSAGE][PASSED] - Current window maximized
+
+15-10-2025T17:25:06 - [TEST_STEP][PASSED] - navigateToUrl("https://staging-new.parkengage.com/"): Navigate to 'https://staging-new.parkengage.com/' successfully
+
+15-10-2025T17:25:11 - [MESSAGE][PASSED] - Navigate to 'https://staging-new.parkengage.com/' successfully
+
+15-10-2025T17:25:11 - [TEST_STEP][PASSED] - waitForElementPresent(findTestObject("Login_Page_Objects/Email_Password_Field"), 20): Object 'Object Repository/Login_Page_Objects/Email_Password_Field' is present
+
+15-10-2025T17:25:12 - [MESSAGE][PASSED] - Object 'Object Repository/Login_Page_Objects/Email_Password_Field' is present
+
+15-10-2025T17:25:12 - [TEST_STEP][PASSED] - setText(findTestObject("Login_Page_Objects/Email_Input_Field"), G_Email): Text 'superadmin@parkengage.com
+' is set on object 'Object Repository/Login_Page_Objects/Email_Input_Field'
+
+15-10-2025T17:25:13 - [MESSAGE][PASSED] - Text 'superadmin@parkengage.com
+' is set on object 'Object Repository/Login_Page_Objects/Email_Input_Field'
+
+15-10-2025T17:25:13 - [TEST_STEP][PASSED] - setEncryptedText(findTestObject("Login_Page_Objects/Email_Password_Field"), "Cqo1foBX0qbZ3A82kE6k0A=="): Text ****** has been set on object 'Object Repository/Login_Page_Objects/Email_Password_Field'
+
+15-10-2025T17:25:15 - [MESSAGE][PASSED] - Text ****** has been set on object 'Object Repository/Login_Page_Objects/Email_Password_Field'
+
+15-10-2025T17:25:15 - [TEST_STEP][PASSED] - click(findTestObject("Login_Page_Objects/Login_Submit_Button")): Object: 'Object Repository/Login_Page_Objects/Login_Submit_Button' is clicked on
+
+15-10-2025T17:25:16 - [MESSAGE][PASSED] - Object: 'Object Repository/Login_Page_Objects/Login_Submit_Button' is clicked on
+
+15-10-2025T17:25:16 - [TEST_STEP][PASSED] - delay(15): Delayed 15 second(s)
+
+15-10-2025T17:25:31 - [MESSAGE][PASSED] - Delayed 15 second(s)
+
+15-10-2025T17:25:31 - [TEST_STEP][PASSED] - dashboard_url = getUrl(): Current window's url is: 'https://staging-new.parkengage.com/admin/partners'
+
+15-10-2025T17:25:31 - [MESSAGE][PASSED] - Current window's url is: 'https://staging-new.parkengage.com/admin/partners'
+
+15-10-2025T17:25:31 - [TEST_STEP][PASSED] - print(dashboard_url): null
+
+15-10-2025T17:25:31 - [TEST_STEP][PASSED] - verifyEqual(dashboard_url, "https://staging-new.parkengage.com/admin/partners"): Actual object 'https://staging-new.parkengage.com/admin/partners' and expected object 'https://staging-new.parkengage.com/admin/partners' are equal
+
+15-10-2025T17:25:31 - [MESSAGE][PASSED] - Actual object 'https://staging-new.parkengage.com/admin/partners' and expected object 'https://staging-new.parkengage.com/admin/partners' are equal
+
+15-10-2025T17:25:31 - [TEST_STEP][PASSED] - waitForElementPresent(findTestObject("Login_Page_Objects/ParkEngage_Logo"), 20): Object 'Object Repository/Login_Page_Objects/ParkEngage_Logo' is present
+
+15-10-2025T17:25:31 - [MESSAGE][PASSED] - Object 'Object Repository/Login_Page_Objects/ParkEngage_Logo' is present
+
+15-10-2025T17:25:31 - [TEST_STEP][PASSED] - waitForElementVisible(findTestObject("Add_Partner/Add_New_Partner_BTN"), 10): Object 'Object Repository/Add_Partner/Add_New_Partner_BTN' is visible
+
+15-10-2025T17:25:32 - [MESSAGE][PASSED] - Object 'Object Repository/Add_Partner/Add_New_Partner_BTN' is visible
+
+15-10-2025T17:25:32 - [TEST_STEP][PASSED] - click(findTestObject("Add_Partner/Add_New_Partner_BTN")): Object: 'Object Repository/Add_Partner/Add_New_Partner_BTN' is clicked on
+
+15-10-2025T17:25:33 - [MESSAGE][PASSED] - Object: 'Object Repository/Add_Partner/Add_New_Partner_BTN' is clicked on
+
+15-10-2025T17:25:33 - [TEST_STEP][PASSED] - verifyElementPresent(findTestObject("Add_Partner/Create_New_Partner_Label"), 10): Object 'Object Repository/Add_Partner/Create_New_Partner_Label' is present
+
+15-10-2025T17:25:35 - [MESSAGE][PASSED] - Object 'Object Repository/Add_Partner/Create_New_Partner_Label' is present
+
+15-10-2025T17:25:35 - [TEST_STEP][PASSED] - companyName = generateCompanyName(): null
+
+15-10-2025T17:25:35 - [TEST_STEP][PASSED] - chars = "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz": null
+
+15-10-2025T17:25:35 - [TEST_STEP][PASSED] - name = new java.lang.StringBuilder(): null
+
+15-10-2025T17:25:35 - [TEST_STEP][PASSED] - rand = new java.util.Random(): null
+
+15-10-2025T17:25:35 - [TEST_STEP][PASSED] - for ([i = 0, i < 5, (i++)]): null
+
+15-10-2025T17:25:35 - [TEST_STEP][PASSED] - name.append(chars.charAt(rand.nextInt(chars.length()))): null
+
+15-10-2025T17:25:35 - [TEST_STEP][PASSED] - name.append(chars.charAt(rand.nextInt(chars.length()))): null
+
+15-10-2025T17:25:35 - [TEST_STEP][PASSED] - name.append(chars.charAt(rand.nextInt(chars.length()))): null
+
+15-10-2025T17:25:35 - [TEST_STEP][PASSED] - name.append(chars.charAt(rand.nextInt(chars.length()))): null
+
+15-10-2025T17:25:35 - [TEST_STEP][PASSED] - name.append(chars.charAt(rand.nextInt(chars.length()))): null
+
+15-10-2025T17:25:35 - [TEST_STEP][PASSED] - return name.toString(): null
+
+15-10-2025T17:25:35 - [TEST_STEP][PASSED] - setText(findTestObject("Add_Partner/input_FirstName"), "Park"): Text 'Park' is set on object 'Object Repository/Add_Partner/input_FirstName'
+
+15-10-2025T17:25:36 - [MESSAGE][PASSED] - Text 'Park' is set on object 'Object Repository/Add_Partner/input_FirstName'
+
+15-10-2025T17:25:36 - [TEST_STEP][PASSED] - setText(findTestObject("Add_Partner/input_LastName"), "Auto"): Text 'Auto' is set on object 'Object Repository/Add_Partner/input_LastName'
+
+15-10-2025T17:25:38 - [MESSAGE][PASSED] - Text 'Auto' is set on object 'Object Repository/Add_Partner/input_LastName'
+
+15-10-2025T17:25:38 - [TEST_STEP][PASSED] - randomEmail = generateRandomEmail(): null
+
+15-10-2025T17:25:38 - [TEST_STEP][PASSED] - randomNum = random() * 100.toInteger(): null
+
+15-10-2025T17:25:38 - [TEST_STEP][PASSED] - return ((autopark1 + randomNum) + @yopmail.com): null
+
+15-10-2025T17:25:38 - [TEST_STEP][PASSED] - setText(findTestObject("Add_Partner/inputEmail"), randomEmail): Text 'autopark128@yopmail.com' is set on object 'Object Repository/Add_Partner/inputEmail'
+
+15-10-2025T17:25:40 - [MESSAGE][PASSED] - Text 'autopark128@yopmail.com' is set on object 'Object Repository/Add_Partner/inputEmail'
+
+15-10-2025T17:25:40 - [TEST_STEP][PASSED] - setText(findTestObject("Add_Partner/inputPhoneNumber"), "1122111110"): Text '1122111110' is set on object 'Object Repository/Add_Partner/inputPhoneNumber'
+
+15-10-2025T17:25:41 - [MESSAGE][PASSED] - Text '1122111110' is set on object 'Object Repository/Add_Partner/inputPhoneNumber'
+
+15-10-2025T17:25:41 - [TEST_STEP][PASSED] - setText(findTestObject("Add_Partner/inputSlug"), "parkauto"): Text 'parkauto' is set on object 'Object Repository/Add_Partner/inputSlug'
+
+15-10-2025T17:25:43 - [MESSAGE][PASSED] - Text 'parkauto' is set on object 'Object Repository/Add_Partner/inputSlug'
+
+15-10-2025T17:25:43 - [TEST_STEP][PASSED] - setText(findTestObject("Add_Partner/input_Company"), companyName): Text 'zQkOP' is set on object 'Object Repository/Add_Partner/input_Company'
+
+15-10-2025T17:25:44 - [MESSAGE][PASSED] - Text 'zQkOP' is set on object 'Object Repository/Add_Partner/input_Company'
+
+15-10-2025T17:25:44 - [TEST_STEP][PASSED] - setText(findTestObject("Add_Partner/input_City"), "Vegas"): Text 'Vegas' is set on object 'Object Repository/Add_Partner/input_City'
+
+15-10-2025T17:25:46 - [MESSAGE][PASSED] - Text 'Vegas' is set on object 'Object Repository/Add_Partner/input_City'
+
+15-10-2025T17:25:46 - [TEST_STEP][PASSED] - click(findTestObject("Add_Partner/select_Country_Drop_Down")): Object: 'Object Repository/Add_Partner/select_Country_Drop_Down' is clicked on
+
+15-10-2025T17:25:47 - [MESSAGE][PASSED] - Object: 'Object Repository/Add_Partner/select_Country_Drop_Down' is clicked on
+
+15-10-2025T17:25:47 - [TEST_STEP][PASSED] - delay(2): Delayed 2 second(s)
+
+15-10-2025T17:25:49 - [MESSAGE][PASSED] - Delayed 2 second(s)
+
+15-10-2025T17:25:49 - [TEST_STEP][PASSED] - scrollToElement(findTestObject("Add_Partner/Select_Country_USA"), 20): Scroll to object 'Object Repository/Add_Partner/Select_Country_USA' successfully
+
+15-10-2025T17:25:50 - [MESSAGE][PASSED] - Scroll to object 'Object Repository/Add_Partner/Select_Country_USA' successfully
+
+15-10-2025T17:25:50 - [TEST_STEP][PASSED] - click(findTestObject("Add_Partner/Select_Country_USA")): Object: 'Object Repository/Add_Partner/Select_Country_USA' is clicked on
+
+15-10-2025T17:25:51 - [MESSAGE][PASSED] - Object: 'Object Repository/Add_Partner/Select_Country_USA' is clicked on
+
+15-10-2025T17:25:51 - [TEST_STEP][PASSED] - click(findTestObject("Add_Partner/Select_Services_Drop_Dwn")): Object: 'Object Repository/Add_Partner/Select_Services_Drop_Dwn' is clicked on
+
+15-10-2025T17:25:52 - [MESSAGE][PASSED] - Object: 'Object Repository/Add_Partner/Select_Services_Drop_Dwn' is clicked on
+
+15-10-2025T17:25:52 - [TEST_STEP][PASSED] - click(findTestObject("Add_Partner/Select_Touchless_Parking")): Object: 'Object Repository/Add_Partner/Select_Touchless_Parking' is clicked on
+
+15-10-2025T17:25:54 - [MESSAGE][PASSED] - Object: 'Object Repository/Add_Partner/Select_Touchless_Parking' is clicked on
+
+15-10-2025T17:25:54 - [TEST_STEP][PASSED] - delay(2): Delayed 2 second(s)
+
+15-10-2025T17:25:56 - [MESSAGE][PASSED] - Delayed 2 second(s)
+
+15-10-2025T17:25:56 - [TEST_STEP][PASSED] - click(findTestObject("Add_Partner/Select_Plan")): Object: 'Object Repository/Add_Partner/Select_Plan' is clicked on
+
+15-10-2025T17:25:57 - [MESSAGE][PASSED] - Object: 'Object Repository/Add_Partner/Select_Plan' is clicked on
+
+15-10-2025T17:25:57 - [TEST_STEP][PASSED] - delay(2): Delayed 2 second(s)
+
+15-10-2025T17:25:59 - [MESSAGE][PASSED] - Delayed 2 second(s)
+
+15-10-2025T17:25:59 - [TEST_STEP][PASSED] - click(findTestObject("Add_Partner/Select_Advance_Plan")): Object: 'Object Repository/Add_Partner/Select_Advance_Plan' is clicked on
+
+15-10-2025T17:26:00 - [MESSAGE][PASSED] - Object: 'Object Repository/Add_Partner/Select_Advance_Plan' is clicked on
+
+15-10-2025T17:26:00 - [TEST_STEP][PASSED] - delay(2): Delayed 2 second(s)
+
+15-10-2025T17:26:02 - [MESSAGE][PASSED] - Delayed 2 second(s)
+
+15-10-2025T17:26:02 - [TEST_STEP][PASSED] - click(findTestObject("Add_Partner/Select_Pay_At_Check_Out")): Object: 'Object Repository/Add_Partner/Select_Pay_At_Check_Out' is clicked on
+
+15-10-2025T17:26:04 - [MESSAGE][PASSED] - Object: 'Object Repository/Add_Partner/Select_Pay_At_Check_Out' is clicked on
+
+15-10-2025T17:26:04 - [TEST_STEP][PASSED] - delay(3): Delayed 3 second(s)
+
+15-10-2025T17:26:07 - [MESSAGE][PASSED] - Delayed 3 second(s)
+
+15-10-2025T17:26:07 - [TEST_STEP][PASSED] - click(findTestObject("Add_Partner/Garage_Type_Drop_Down")): Object: 'Object Repository/Add_Partner/Garage_Type_Drop_Down' is clicked on
+
+15-10-2025T17:26:08 - [MESSAGE][PASSED] - Object: 'Object Repository/Add_Partner/Garage_Type_Drop_Down' is clicked on
+
+15-10-2025T17:26:08 - [TEST_STEP][PASSED] - waitForElementPresent(findTestObject("Add_Partner/Select_Facility_Type"), 10): Object 'Object Repository/Add_Partner/Select_Facility_Type' is present
+
+15-10-2025T17:26:08 - [MESSAGE][PASSED] - Object 'Object Repository/Add_Partner/Select_Facility_Type' is present
+
+15-10-2025T17:26:08 - [TEST_STEP][PASSED] - click(findTestObject("Add_Partner/Select_Facility_Type")): Object: 'Object Repository/Add_Partner/Select_Facility_Type' is clicked on
+
+15-10-2025T17:26:09 - [MESSAGE][PASSED] - Object: 'Object Repository/Add_Partner/Select_Facility_Type' is clicked on
+
+15-10-2025T17:26:09 - [TEST_STEP][PASSED] - delay(2): Delayed 2 second(s)
+
+15-10-2025T17:26:11 - [MESSAGE][PASSED] - Delayed 2 second(s)
+
+15-10-2025T17:26:11 - [TEST_STEP][PASSED] - click(findTestObject("Add_Partner/Select_Notification_Type_Both")): Object: 'Object Repository/Add_Partner/Select_Notification_Type_Both' is clicked on
+
+15-10-2025T17:26:13 - [MESSAGE][PASSED] - Object: 'Object Repository/Add_Partner/Select_Notification_Type_Both' is clicked on
+
+15-10-2025T17:26:13 - [TEST_STEP][PASSED] - click(findTestObject("Add_Partner/Add_Partner_Submit_BTN")): Object: 'Object Repository/Add_Partner/Add_Partner_Submit_BTN' is clicked on
+
+15-10-2025T17:26:14 - [MESSAGE][PASSED] - Object: 'Object Repository/Add_Partner/Add_Partner_Submit_BTN' is clicked on
+
+15-10-2025T17:26:14 - [TEST_STEP][PASSED] - waitForElementPresent(findTestObject("Add_Partner/Partner_Create_Alert_Text"), 20): Object 'Object Repository/Add_Partner/Partner_Create_Alert_Text' is present
+
+15-10-2025T17:26:20 - [MESSAGE][PASSED] - Object 'Object Repository/Add_Partner/Partner_Create_Alert_Text' is present
+
+15-10-2025T17:26:20 - [TEST_STEP][PASSED] - partnercreate_Alert_Text = getText(findTestObject("Add_Partner/Partner_Create_Alert_Text")): Text of object 'Object Repository/Add_Partner/Partner_Create_Alert_Text' is: 'User is created successfully.'
+
+15-10-2025T17:26:20 - [MESSAGE][PASSED] - Text of object 'Object Repository/Add_Partner/Partner_Create_Alert_Text' is: 'User is created successfully.'
+
+15-10-2025T17:26:20 - [TEST_STEP][PASSED] - print(partnercreate_Alert_Text): null
+
+15-10-2025T17:26:20 - [TEST_STEP][PASSED] - delay(5): Delayed 5 second(s)
+
+15-10-2025T17:26:25 - [MESSAGE][PASSED] - Delayed 5 second(s)]]></system-out>
+         <system-err><![CDATA[]]></system-err>
+      </testcase>
+      <testcase name="Test Cases/New_Staging_Env/Garage_Management_Add_New_Garage" time="72.284" classname="Test Cases/New_Staging_Env/Garage_Management_Add_New_Garage" status="PASSED">
+         <system-out><![CDATA[15-10-2025T17:26:25 - [TEST_CASE][PASSED] - Test Cases/New_Staging_Env/Garage_Management_Add_New_Garage: Test Cases/New_Staging_Env/Garage_Management_Add_New_Garage
+
+15-10-2025T17:26:25 - [TEST_STEP][PASSED] - openBrowser(""): Browser is opened with url: ''
+
+15-10-2025T17:26:25 - [MESSAGE][WARNING] - A browser is already opened. Closing browser and opening a new one
+
+15-10-2025T17:26:25 - [MESSAGE][INFO] - Starting 'Chrome' driver
+
+15-10-2025T17:26:25 - [MESSAGE][INFO] - Action delay is set to 1,000 milliseconds
+
+15-10-2025T17:26:26 - [MESSAGE][WARNING] - FFmpeg was not installed! Browser Recording will be disabled. Please follow this document to install FFmpeg first: https://docs.katalon.com/katalon-studio/test-reports/generate-test-reports/generate-browser-based-videos-in-katalon-studio-reports#browser-based-recorder
+
+15-10-2025T17:26:26 - [MESSAGE][PASSED] - Browser is opened with url: ''
+
+15-10-2025T17:26:26 - [TEST_STEP][PASSED] - maximizeWindow(): Current window maximized
+
+15-10-2025T17:26:26 - [MESSAGE][PASSED] - Current window maximized
+
+15-10-2025T17:26:26 - [TEST_STEP][PASSED] - navigateToUrl("https://staging-new.parkengage.com/"): Navigate to 'https://staging-new.parkengage.com/' successfully
+
+15-10-2025T17:26:31 - [MESSAGE][PASSED] - Navigate to 'https://staging-new.parkengage.com/' successfully
+
+15-10-2025T17:26:31 - [TEST_STEP][PASSED] - waitForElementPresent(findTestObject("Login_Page_Objects/Email_Password_Field"), 20): Object 'Object Repository/Login_Page_Objects/Email_Password_Field' is present
+
+15-10-2025T17:26:31 - [MESSAGE][PASSED] - Object 'Object Repository/Login_Page_Objects/Email_Password_Field' is present
+
+15-10-2025T17:26:31 - [TEST_STEP][PASSED] - setText(findTestObject("Login_Page_Objects/Email_Input_Field"), G_Email): Text 'superadmin@parkengage.com
+' is set on object 'Object Repository/Login_Page_Objects/Email_Input_Field'
+
+15-10-2025T17:26:33 - [MESSAGE][PASSED] - Text 'superadmin@parkengage.com
+' is set on object 'Object Repository/Login_Page_Objects/Email_Input_Field'
+
+15-10-2025T17:26:33 - [TEST_STEP][PASSED] - setEncryptedText(findTestObject("Login_Page_Objects/Email_Password_Field"), "Cqo1foBX0qbZ3A82kE6k0A=="): Text ****** has been set on object 'Object Repository/Login_Page_Objects/Email_Password_Field'
+
+15-10-2025T17:26:35 - [MESSAGE][PASSED] - Text ****** has been set on object 'Object Repository/Login_Page_Objects/Email_Password_Field'
+
+15-10-2025T17:26:35 - [TEST_STEP][PASSED] - click(findTestObject("Login_Page_Objects/Login_Submit_Button")): Object: 'Object Repository/Login_Page_Objects/Login_Submit_Button' is clicked on
+
+15-10-2025T17:26:36 - [MESSAGE][PASSED] - Object: 'Object Repository/Login_Page_Objects/Login_Submit_Button' is clicked on
+
+15-10-2025T17:26:36 - [TEST_STEP][PASSED] - delay(15): Delayed 15 second(s)
+
+15-10-2025T17:26:51 - [MESSAGE][PASSED] - Delayed 15 second(s)
+
+15-10-2025T17:26:51 - [TEST_STEP][PASSED] - click(findTestObject("Create_Garrage/Product_Menu_Expand")): Object: 'Object Repository/Create_Garrage/Product_Menu_Expand' is clicked on
+
+15-10-2025T17:26:52 - [MESSAGE][PASSED] - Object: 'Object Repository/Create_Garrage/Product_Menu_Expand' is clicked on
+
+15-10-2025T17:26:52 - [TEST_STEP][PASSED] - waitForElementClickable(findTestObject("Create_Garrage/Garage_Management_Menu"), 5): Object 'Object Repository/Create_Garrage/Garage_Management_Menu' is clickable
+
+15-10-2025T17:26:53 - [MESSAGE][PASSED] - Object 'Object Repository/Create_Garrage/Garage_Management_Menu' is clickable
+
+15-10-2025T17:26:53 - [TEST_STEP][PASSED] - click(findTestObject("Create_Garrage/Garage_Management_Menu")): Object: 'Object Repository/Create_Garrage/Garage_Management_Menu' is clicked on
+
+15-10-2025T17:26:54 - [MESSAGE][PASSED] - Object: 'Object Repository/Create_Garrage/Garage_Management_Menu' is clicked on
+
+15-10-2025T17:26:54 - [TEST_STEP][PASSED] - waitForElementPresent(findTestObject("Create_Garrage/Add_New_Button_Garage"), 10): Object 'Object Repository/Create_Garrage/Add_New_Button_Garage' is present
+
+15-10-2025T17:26:56 - [MESSAGE][PASSED] - Object 'Object Repository/Create_Garrage/Add_New_Button_Garage' is present
+
+15-10-2025T17:26:56 - [TEST_STEP][PASSED] - click(findTestObject("Create_Garrage/Add_New_Button_Garage")): Object: 'Object Repository/Create_Garrage/Add_New_Button_Garage' is clicked on
+
+15-10-2025T17:26:57 - [MESSAGE][PASSED] - Object: 'Object Repository/Create_Garrage/Add_New_Button_Garage' is clicked on
+
+15-10-2025T17:26:57 - [TEST_STEP][PASSED] - garageName = generateGarageName(): null
+
+15-10-2025T17:26:57 - [TEST_STEP][PASSED] - chars = "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz": null
+
+15-10-2025T17:26:57 - [TEST_STEP][PASSED] - name = new java.lang.StringBuilder(): null
+
+15-10-2025T17:26:57 - [TEST_STEP][PASSED] - rand = new java.util.Random(): null
+
+15-10-2025T17:26:57 - [TEST_STEP][PASSED] - for ([i = 0, i < 5, (i++)]): null
+
+15-10-2025T17:26:57 - [TEST_STEP][PASSED] - name.append(chars.charAt(rand.nextInt(chars.length()))): null
+
+15-10-2025T17:26:57 - [TEST_STEP][PASSED] - name.append(chars.charAt(rand.nextInt(chars.length()))): null
+
+15-10-2025T17:26:57 - [TEST_STEP][PASSED] - name.append(chars.charAt(rand.nextInt(chars.length()))): null
+
+15-10-2025T17:26:57 - [TEST_STEP][PASSED] - name.append(chars.charAt(rand.nextInt(chars.length()))): null
+
+15-10-2025T17:26:57 - [TEST_STEP][PASSED] - name.append(chars.charAt(rand.nextInt(chars.length()))): null
+
+15-10-2025T17:26:57 - [TEST_STEP][PASSED] - return name.toString(): null
+
+15-10-2025T17:26:57 - [TEST_STEP][PASSED] - setText(findTestObject("Create_Garrage/Garage_Name_Input_Field"), garageName): Text 'IXWDw' is set on object 'Object Repository/Create_Garrage/Garage_Name_Input_Field'
+
+15-10-2025T17:26:59 - [MESSAGE][PASSED] - Text 'IXWDw' is set on object 'Object Repository/Create_Garrage/Garage_Name_Input_Field'
+
+15-10-2025T17:26:59 - [TEST_STEP][PASSED] - garageShortName = generateGarageCode(): null
+
+15-10-2025T17:26:59 - [TEST_STEP][PASSED] - chars = "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz": null
+
+15-10-2025T17:26:59 - [TEST_STEP][PASSED] - name = new java.lang.StringBuilder(): null
+
+15-10-2025T17:26:59 - [TEST_STEP][PASSED] - rand = new java.util.Random(): null
+
+15-10-2025T17:26:59 - [TEST_STEP][PASSED] - for ([i = 0, i < 5, (i++)]): null
+
+15-10-2025T17:26:59 - [TEST_STEP][PASSED] - name.append(chars.charAt(rand.nextInt(chars.length()))): null
+
+15-10-2025T17:26:59 - [TEST_STEP][PASSED] - name.append(chars.charAt(rand.nextInt(chars.length()))): null
+
+15-10-2025T17:26:59 - [TEST_STEP][PASSED] - name.append(chars.charAt(rand.nextInt(chars.length()))): null
+
+15-10-2025T17:26:59 - [TEST_STEP][PASSED] - name.append(chars.charAt(rand.nextInt(chars.length()))): null
+
+15-10-2025T17:26:59 - [TEST_STEP][PASSED] - name.append(chars.charAt(rand.nextInt(chars.length()))): null
+
+15-10-2025T17:26:59 - [TEST_STEP][PASSED] - return name.toString(): null
+
+15-10-2025T17:26:59 - [TEST_STEP][PASSED] - setText(findTestObject("Create_Garrage/Garage_Short_Name"), garageShortName): Text 'oyaSZ' is set on object 'Object Repository/Create_Garrage/Garage_Short_Name'
+
+15-10-2025T17:27:01 - [MESSAGE][PASSED] - Text 'oyaSZ' is set on object 'Object Repository/Create_Garrage/Garage_Short_Name'
+
+15-10-2025T17:27:01 - [TEST_STEP][PASSED] - garageCode = generateGarageCode(): null
+
+15-10-2025T17:27:01 - [TEST_STEP][PASSED] - chars = "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz": null
+
+15-10-2025T17:27:01 - [TEST_STEP][PASSED] - name = new java.lang.StringBuilder(): null
+
+15-10-2025T17:27:01 - [TEST_STEP][PASSED] - rand = new java.util.Random(): null
+
+15-10-2025T17:27:01 - [TEST_STEP][PASSED] - for ([i = 0, i < 5, (i++)]): null
+
+15-10-2025T17:27:01 - [TEST_STEP][PASSED] - name.append(chars.charAt(rand.nextInt(chars.length()))): null
+
+15-10-2025T17:27:01 - [TEST_STEP][PASSED] - name.append(chars.charAt(rand.nextInt(chars.length()))): null
+
+15-10-2025T17:27:01 - [TEST_STEP][PASSED] - name.append(chars.charAt(rand.nextInt(chars.length()))): null
+
+15-10-2025T17:27:01 - [TEST_STEP][PASSED] - name.append(chars.charAt(rand.nextInt(chars.length()))): null
+
+15-10-2025T17:27:01 - [TEST_STEP][PASSED] - name.append(chars.charAt(rand.nextInt(chars.length()))): null
+
+15-10-2025T17:27:01 - [TEST_STEP][PASSED] - return name.toString(): null
+
+15-10-2025T17:27:01 - [TEST_STEP][PASSED] - setText(findTestObject("Create_Garrage/Garage_Code_Input_Field"), garageCode): Text 'Zpgbp' is set on object 'Object Repository/Create_Garrage/Garage_Code_Input_Field'
+
+15-10-2025T17:27:03 - [MESSAGE][PASSED] - Text 'Zpgbp' is set on object 'Object Repository/Create_Garrage/Garage_Code_Input_Field'
+
+15-10-2025T17:27:03 - [TEST_STEP][PASSED] - randomDigits = RandomStringUtils.randomNumeric(6): null
+
+15-10-2025T17:27:03 - [TEST_STEP][PASSED] - phoneNumber = "1122" + randomDigits: null
+
+15-10-2025T17:27:03 - [TEST_STEP][PASSED] - setText(findTestObject("Create_Garrage/Garage_Phone_Number_Input"), phoneNumber): Text '1122216737' is set on object 'Object Repository/Create_Garrage/Garage_Phone_Number_Input'
+
+15-10-2025T17:27:05 - [MESSAGE][PASSED] - Text '1122216737' is set on object 'Object Repository/Create_Garrage/Garage_Phone_Number_Input'
+
+15-10-2025T17:27:05 - [TEST_STEP][PASSED] - delay(2): Delayed 2 second(s)
+
+15-10-2025T17:27:07 - [MESSAGE][PASSED] - Delayed 2 second(s)
+
+15-10-2025T17:27:07 - [TEST_STEP][PASSED] - click(findTestObject("Create_Garrage/Select_Partner_Garage_Mngmnt_Drp_Dwn")): Object: 'Object Repository/Create_Garrage/Select_Partner_Garage_Mngmnt_Drp_Dwn' is clicked on
+
+15-10-2025T17:27:08 - [MESSAGE][PASSED] - Object: 'Object Repository/Create_Garrage/Select_Partner_Garage_Mngmnt_Drp_Dwn' is clicked on
+
+15-10-2025T17:27:08 - [TEST_STEP][PASSED] - delay(2): Delayed 2 second(s)
+
+15-10-2025T17:27:10 - [MESSAGE][PASSED] - Delayed 2 second(s)
+
+15-10-2025T17:27:10 - [TEST_STEP][PASSED] - click(findTestObject("Create_Garrage/Partner_Rev_Pass")): Object: 'Object Repository/Create_Garrage/Partner_Rev_Pass' is clicked on
+
+15-10-2025T17:27:12 - [MESSAGE][PASSED] - Object: 'Object Repository/Create_Garrage/Partner_Rev_Pass' is clicked on
+
+15-10-2025T17:27:12 - [TEST_STEP][PASSED] - click(findTestObject("Create_Garrage/Garage_Type_Drp_Dwn")): Object: 'Object Repository/Create_Garrage/Garage_Type_Drp_Dwn' is clicked on
+
+15-10-2025T17:27:13 - [MESSAGE][PASSED] - Object: 'Object Repository/Create_Garrage/Garage_Type_Drp_Dwn' is clicked on
+
+15-10-2025T17:27:13 - [TEST_STEP][PASSED] - delay(1): Delayed 1 second(s)
+
+15-10-2025T17:27:14 - [MESSAGE][PASSED] - Delayed 1 second(s)
+
+15-10-2025T17:27:14 - [TEST_STEP][PASSED] - click(findTestObject("Create_Garrage/Ungated_Garage_Option")): Object: 'Object Repository/Create_Garrage/Ungated_Garage_Option' is clicked on
+
+15-10-2025T17:27:16 - [MESSAGE][PASSED] - Object: 'Object Repository/Create_Garrage/Ungated_Garage_Option' is clicked on
+
+15-10-2025T17:27:16 - [TEST_STEP][PASSED] - click(findTestObject("Create_Garrage/Create_BTN_GRG")): Object: 'Object Repository/Create_Garrage/Create_BTN_GRG' is clicked on
+
+15-10-2025T17:27:17 - [MESSAGE][PASSED] - Object: 'Object Repository/Create_Garrage/Create_BTN_GRG' is clicked on
+
+15-10-2025T17:27:17 - [TEST_STEP][PASSED] - delay(20): Delayed 20 second(s)
+
+15-10-2025T17:27:37 - [MESSAGE][PASSED] - Delayed 20 second(s)]]></system-out>
+         <system-err><![CDATA[]]></system-err>
+      </testcase>
+      <testcase name="Test Cases/New_Staging_Env/Promotion_Creation_FLow" time="46.327" classname="Test Cases/New_Staging_Env/Promotion_Creation_FLow" status="PASSED">
+         <system-out><![CDATA[15-10-2025T17:27:37 - [TEST_CASE][PASSED] - Test Cases/New_Staging_Env/Promotion_Creation_FLow: Test Cases/New_Staging_Env/Promotion_Creation_FLow
+
+15-10-2025T17:27:37 - [TEST_STEP][PASSED] - openBrowser(""): Browser is opened with url: ''
+
+15-10-2025T17:27:37 - [MESSAGE][WARNING] - A browser is already opened. Closing browser and opening a new one
+
+15-10-2025T17:27:37 - [MESSAGE][INFO] - Starting 'Chrome' driver
+
+15-10-2025T17:27:38 - [MESSAGE][INFO] - Action delay is set to 1,000 milliseconds
+
+15-10-2025T17:27:38 - [MESSAGE][WARNING] - FFmpeg was not installed! Browser Recording will be disabled. Please follow this document to install FFmpeg first: https://docs.katalon.com/katalon-studio/test-reports/generate-test-reports/generate-browser-based-videos-in-katalon-studio-reports#browser-based-recorder
+
+15-10-2025T17:27:38 - [MESSAGE][PASSED] - Browser is opened with url: ''
+
+15-10-2025T17:27:38 - [TEST_STEP][PASSED] - maximizeWindow(): Current window maximized
+
+15-10-2025T17:27:38 - [MESSAGE][PASSED] - Current window maximized
+
+15-10-2025T17:27:38 - [TEST_STEP][PASSED] - navigateToUrl("https://staging-new.parkengage.com/"): Navigate to 'https://staging-new.parkengage.com/' successfully
+
+15-10-2025T17:27:44 - [MESSAGE][PASSED] - Navigate to 'https://staging-new.parkengage.com/' successfully
+
+15-10-2025T17:27:44 - [TEST_STEP][PASSED] - setText(findTestObject("Login_Page_Objects/Email_Input_Field"), G_Email): Text 'superadmin@parkengage.com
+' is set on object 'Object Repository/Login_Page_Objects/Email_Input_Field'
+
+15-10-2025T17:27:45 - [MESSAGE][PASSED] - Text 'superadmin@parkengage.com
+' is set on object 'Object Repository/Login_Page_Objects/Email_Input_Field'
+
+15-10-2025T17:27:45 - [TEST_STEP][PASSED] - waitForElementPresent(findTestObject("Login_Page_Objects/Email_Password_Field"), 20): Object 'Object Repository/Login_Page_Objects/Email_Password_Field' is present
+
+15-10-2025T17:27:46 - [MESSAGE][PASSED] - Object 'Object Repository/Login_Page_Objects/Email_Password_Field' is present
+
+15-10-2025T17:27:46 - [TEST_STEP][PASSED] - setEncryptedText(findTestObject("Login_Page_Objects/Email_Password_Field"), "Cqo1foBX0qbZ3A82kE6k0A=="): Text ****** has been set on object 'Object Repository/Login_Page_Objects/Email_Password_Field'
+
+15-10-2025T17:27:48 - [MESSAGE][PASSED] - Text ****** has been set on object 'Object Repository/Login_Page_Objects/Email_Password_Field'
+
+15-10-2025T17:27:48 - [TEST_STEP][PASSED] - click(findTestObject("Login_Page_Objects/Login_Submit_Button")): Object: 'Object Repository/Login_Page_Objects/Login_Submit_Button' is clicked on
+
+15-10-2025T17:27:49 - [MESSAGE][PASSED] - Object: 'Object Repository/Login_Page_Objects/Login_Submit_Button' is clicked on
+
+15-10-2025T17:27:49 - [TEST_STEP][PASSED] - delay(15): Delayed 15 second(s)
+
+15-10-2025T17:28:04 - [MESSAGE][PASSED] - Delayed 15 second(s)
+
+15-10-2025T17:28:04 - [TEST_STEP][PASSED] - dashboard_url = getUrl(): Current window's url is: 'https://staging-new.parkengage.com/admin/partners'
+
+15-10-2025T17:28:04 - [MESSAGE][PASSED] - Current window's url is: 'https://staging-new.parkengage.com/admin/partners'
+
+15-10-2025T17:28:04 - [TEST_STEP][PASSED] - print(dashboard_url): null
+
+15-10-2025T17:28:04 - [TEST_STEP][PASSED] - verifyEqual(dashboard_url, "https://staging-new.parkengage.com/admin/partners"): Actual object 'https://staging-new.parkengage.com/admin/partners' and expected object 'https://staging-new.parkengage.com/admin/partners' are equal
+
+15-10-2025T17:28:04 - [MESSAGE][PASSED] - Actual object 'https://staging-new.parkengage.com/admin/partners' and expected object 'https://staging-new.parkengage.com/admin/partners' are equal
+
+15-10-2025T17:28:04 - [TEST_STEP][PASSED] - waitForElementClickable(findTestObject("Create_Garrage/Product_Menu_Expand"), 10): Object 'Object Repository/Create_Garrage/Product_Menu_Expand' is clickable
+
+15-10-2025T17:28:04 - [MESSAGE][PASSED] - Object 'Object Repository/Create_Garrage/Product_Menu_Expand' is clickable
+
+15-10-2025T17:28:04 - [TEST_STEP][PASSED] - click(findTestObject("Create_Garrage/Product_Menu_Expand")): Object: 'Object Repository/Create_Garrage/Product_Menu_Expand' is clicked on
+
+15-10-2025T17:28:06 - [MESSAGE][PASSED] - Object: 'Object Repository/Create_Garrage/Product_Menu_Expand' is clicked on
+
+15-10-2025T17:28:06 - [TEST_STEP][PASSED] - click(findTestObject("Left_Menu_Option_All/Promotions_SubMenu_Option")): Object: 'Object Repository/Left_Menu_Option_All/Promotions_SubMenu_Option' is clicked on
+
+15-10-2025T17:28:07 - [MESSAGE][PASSED] - Object: 'Object Repository/Left_Menu_Option_All/Promotions_SubMenu_Option' is clicked on
+
+15-10-2025T17:28:07 - [TEST_STEP][PASSED] - waitForElementPresent(findTestObject("Promotions_Promocode/Promotion_Add_New_Button"), 10): Object 'Object Repository/Promotions_Promocode/Promotion_Add_New_Button' is present
+
+15-10-2025T17:28:09 - [MESSAGE][PASSED] - Object 'Object Repository/Promotions_Promocode/Promotion_Add_New_Button' is present
+
+15-10-2025T17:28:09 - [TEST_STEP][PASSED] - click(findTestObject("Promotions_Promocode/Promotion_Add_New_Button")): Object: 'Object Repository/Promotions_Promocode/Promotion_Add_New_Button' is clicked on
+
+15-10-2025T17:28:10 - [MESSAGE][PASSED] - Object: 'Object Repository/Promotions_Promocode/Promotion_Add_New_Button' is clicked on
+
+15-10-2025T17:28:10 - [TEST_STEP][PASSED] - waitForElementPresent(findTestObject("Promotions_Promocode/Promotion_Name"), 10): Object 'Object Repository/Promotions_Promocode/Promotion_Name' is present
+
+15-10-2025T17:28:12 - [MESSAGE][PASSED] - Object 'Object Repository/Promotions_Promocode/Promotion_Name' is present
+
+15-10-2025T17:28:12 - [TEST_STEP][PASSED] - promoCode = myCustomKeywords.CustKeywords.generatePromoCode(): myCustomKeywords.CustKeywords.generatePromoCode is PASSED
+
+15-10-2025T17:28:12 - [MESSAGE][INFO] - Generated Promo Code: PROMO798
+
+15-10-2025T17:28:12 - [MESSAGE][PASSED] - myCustomKeywords.CustKeywords.generatePromoCode is PASSED
+
+15-10-2025T17:28:12 - [TEST_STEP][PASSED] - setText(findTestObject("Promotions_Promocode/Promotion_Name"), promoCode): Text 'PROMO798' is set on object 'Object Repository/Promotions_Promocode/Promotion_Name'
+
+15-10-2025T17:28:13 - [MESSAGE][PASSED] - Text 'PROMO798' is set on object 'Object Repository/Promotions_Promocode/Promotion_Name'
+
+15-10-2025T17:28:13 - [TEST_STEP][PASSED] - delay(10): Delayed 10 second(s)
+
+15-10-2025T17:28:23 - [MESSAGE][PASSED] - Delayed 10 second(s)]]></system-out>
+         <system-err><![CDATA[]]></system-err>
+      </testcase>
+      <testcase name="Test Cases/New_Staging_Env/Transient Flow_Partner_Parking_Payments" time="53.453" classname="Test Cases/New_Staging_Env/Transient Flow_Partner_Parking_Payments" status="PASSED">
+         <properties>
+            <property name="data_binding"><![CDATA[{"(Default) mobil...":"","(Default) lpNum...":""}]]></property>
+         </properties>
+         <system-out><![CDATA[15-10-2025T17:28:24 - [TEST_CASE][PASSED] - Test Cases/New_Staging_Env/Transient Flow_Partner_Parking_Payments: Test Cases/New_Staging_Env/Transient Flow_Partner_Parking_Payments
+
+15-10-2025T17:28:24 - [TEST_STEP][PASSED] - openBrowser(""): Browser is opened with url: ''
+
+15-10-2025T17:28:24 - [MESSAGE][WARNING] - A browser is already opened. Closing browser and opening a new one
+
+15-10-2025T17:28:24 - [MESSAGE][INFO] - Starting 'Chrome' driver
+
+15-10-2025T17:28:24 - [MESSAGE][INFO] - Action delay is set to 1,000 milliseconds
+
+15-10-2025T17:28:25 - [MESSAGE][WARNING] - FFmpeg was not installed! Browser Recording will be disabled. Please follow this document to install FFmpeg first: https://docs.katalon.com/katalon-studio/test-reports/generate-test-reports/generate-browser-based-videos-in-katalon-studio-reports#browser-based-recorder
+
+15-10-2025T17:28:25 - [MESSAGE][PASSED] - Browser is opened with url: ''
+
+15-10-2025T17:28:25 - [TEST_STEP][PASSED] - maximizeWindow(): Current window maximized
+
+15-10-2025T17:28:25 - [MESSAGE][PASSED] - Current window maximized
+
+15-10-2025T17:28:25 - [TEST_STEP][PASSED] - navigateToUrl("https://staging-transient.parkengage.com/parkingpayments/touchless-parking-parking/eyJmYWNpbGl0eV9pZCI6Mjg4LCJnYXRlIjoxMSwiZ2F0ZV90eXBlIjoiMCJ9"): Navigate to 'https://staging-transient.parkengage.com/parkingpayments/touchless-parking-parking/eyJmYWNpbGl0eV9pZCI6Mjg4LCJnYXRlIjoxMSwiZ2F0ZV90eXBlIjoiMCJ9' successfully
+
+15-10-2025T17:28:31 - [MESSAGE][PASSED] - Navigate to 'https://staging-transient.parkengage.com/parkingpayments/touchless-parking-parking/eyJmYWNpbGl0eV9pZCI6Mjg4LCJnYXRlIjoxMSwiZ2F0ZV90eXBlIjoiMCJ9' successfully
+
+15-10-2025T17:28:31 - [TEST_STEP][PASSED] - waitForElementPresent(findTestObject("Transient_Folder/Mobile_Number_Field"), 20): Object 'Object Repository/Transient_Folder/Mobile_Number_Field' is present
+
+15-10-2025T17:28:37 - [MESSAGE][PASSED] - Object 'Object Repository/Transient_Folder/Mobile_Number_Field' is present
+
+15-10-2025T17:28:37 - [TEST_STEP][PASSED] - mobileNumber = generateMobileNumberWith2233Series(): null
+
+15-10-2025T17:28:37 - [TEST_STEP][PASSED] - rand = new java.util.Random(): null
+
+15-10-2025T17:28:37 - [TEST_STEP][PASSED] - lastSixDigits = new java.lang.StringBuilder(): null
+
+15-10-2025T17:28:37 - [TEST_STEP][PASSED] - for ([i = 0, i < 6, (i++)]): null
+
+15-10-2025T17:28:37 - [TEST_STEP][PASSED] - lastSixDigits.append(rand.nextInt(10)): null
+
+15-10-2025T17:28:37 - [TEST_STEP][PASSED] - lastSixDigits.append(rand.nextInt(10)): null
+
+15-10-2025T17:28:37 - [TEST_STEP][PASSED] - lastSixDigits.append(rand.nextInt(10)): null
+
+15-10-2025T17:28:37 - [TEST_STEP][PASSED] - lastSixDigits.append(rand.nextInt(10)): null
+
+15-10-2025T17:28:37 - [TEST_STEP][PASSED] - lastSixDigits.append(rand.nextInt(10)): null
+
+15-10-2025T17:28:37 - [TEST_STEP][PASSED] - lastSixDigits.append(rand.nextInt(10)): null
+
+15-10-2025T17:28:37 - [TEST_STEP][PASSED] - return (2233 + lastSixDigits.toString()): null
+
+15-10-2025T17:28:37 - [TEST_STEP][PASSED] - println("Generated Mobile Number: " + mobileNumber): null
+
+15-10-2025T17:28:37 - [TEST_STEP][PASSED] - setText(findTestObject("Transient_Folder/Mobile_Number_Field"), mobileNumber): Text '2233862747' is set on object 'Object Repository/Transient_Folder/Mobile_Number_Field'
+
+15-10-2025T17:28:39 - [MESSAGE][PASSED] - Text '2233862747' is set on object 'Object Repository/Transient_Folder/Mobile_Number_Field'
+
+15-10-2025T17:28:39 - [TEST_STEP][PASSED] - lpNumber = generateLicenseplate(): null
+
+15-10-2025T17:28:39 - [TEST_STEP][PASSED] - chars = "ABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789": null
+
+15-10-2025T17:28:39 - [TEST_STEP][PASSED] - rand = new java.util.Random(): null
+
+15-10-2025T17:28:39 - [TEST_STEP][PASSED] - lp = new java.lang.StringBuilder(): null
+
+15-10-2025T17:28:39 - [TEST_STEP][PASSED] - for ([i = 0, i < 4, (i++)]): null
+
+15-10-2025T17:28:39 - [TEST_STEP][PASSED] - index = rand.nextInt(chars.length()): null
+
+15-10-2025T17:28:39 - [TEST_STEP][PASSED] - lp.append(chars.charAt(index)): null
+
+15-10-2025T17:28:39 - [TEST_STEP][PASSED] - index = rand.nextInt(chars.length()): null
+
+15-10-2025T17:28:39 - [TEST_STEP][PASSED] - lp.append(chars.charAt(index)): null
+
+15-10-2025T17:28:39 - [TEST_STEP][PASSED] - index = rand.nextInt(chars.length()): null
+
+15-10-2025T17:28:39 - [TEST_STEP][PASSED] - lp.append(chars.charAt(index)): null
+
+15-10-2025T17:28:39 - [TEST_STEP][PASSED] - index = rand.nextInt(chars.length()): null
+
+15-10-2025T17:28:39 - [TEST_STEP][PASSED] - lp.append(chars.charAt(index)): null
+
+15-10-2025T17:28:39 - [TEST_STEP][PASSED] - return lp.toString(): null
+
+15-10-2025T17:28:39 - [TEST_STEP][PASSED] - println("Generated License Plate: " + lpNumber): null
+
+15-10-2025T17:28:39 - [TEST_STEP][PASSED] - setText(findTestObject("Transient_Folder/License_Plate"), lpNumber): Text 'RF7X' is set on object 'Object Repository/Transient_Folder/License_Plate'
+
+15-10-2025T17:28:41 - [MESSAGE][PASSED] - Text 'RF7X' is set on object 'Object Repository/Transient_Folder/License_Plate'
+
+15-10-2025T17:28:41 - [TEST_STEP][PASSED] - element = findWebElement(findTestObject("Object Repository/Transient_Folder/Transient Duration_Increase"), 10): null
+
+15-10-2025T17:28:41 - [TEST_STEP][PASSED] - executor = getWebDriver(): null
+
+15-10-2025T17:28:41 - [TEST_STEP][PASSED] - executor.executeScript("arguments[0].click();", element): null
+
+15-10-2025T17:28:41 - [TEST_STEP][PASSED] - scrollToElement(findTestObject("Transient_Folder/Start_Parking_BTN"), 20): Scroll to object 'Object Repository/Transient_Folder/Start_Parking_BTN' successfully
+
+15-10-2025T17:28:44 - [MESSAGE][PASSED] - Scroll to object 'Object Repository/Transient_Folder/Start_Parking_BTN' successfully
+
+15-10-2025T17:28:44 - [TEST_STEP][PASSED] - setText(findTestObject("Transient_Folder/Card_Details_Name"), "Satya Kumar"): Text 'Satya Kumar' is set on object 'Object Repository/Transient_Folder/Card_Details_Name'
+
+15-10-2025T17:28:46 - [MESSAGE][PASSED] - Text 'Satya Kumar' is set on object 'Object Repository/Transient_Folder/Card_Details_Name'
+
+15-10-2025T17:28:46 - [TEST_STEP][PASSED] - setText(findTestObject("Transient_Folder/Card_Deatils_Number"), "4761 7310 0000 0043"): Text '4761 7310 0000 0043' is set on object 'Object Repository/Transient_Folder/Card_Deatils_Number'
+
+15-10-2025T17:28:47 - [MESSAGE][PASSED] - Text '4761 7310 0000 0043' is set on object 'Object Repository/Transient_Folder/Card_Deatils_Number'
+
+15-10-2025T17:28:47 - [TEST_STEP][PASSED] - setText(findTestObject("Transient_Folder/Card_Expiry"), "12/30"): Text '12/30' is set on object 'Object Repository/Transient_Folder/Card_Expiry'
+
+15-10-2025T17:28:49 - [MESSAGE][PASSED] - Text '12/30' is set on object 'Object Repository/Transient_Folder/Card_Expiry'
+
+15-10-2025T17:28:49 - [TEST_STEP][PASSED] - setText(findTestObject("Transient_Folder/Card_CVV"), "111"): Text '111' is set on object 'Object Repository/Transient_Folder/Card_CVV'
+
+15-10-2025T17:28:50 - [MESSAGE][PASSED] - Text '111' is set on object 'Object Repository/Transient_Folder/Card_CVV'
+
+15-10-2025T17:28:50 - [TEST_STEP][PASSED] - delay(2): Delayed 2 second(s)
+
+15-10-2025T17:28:52 - [MESSAGE][PASSED] - Delayed 2 second(s)
+
+15-10-2025T17:28:52 - [TEST_STEP][PASSED] - click(findTestObject("Transient_Folder/Start_Parking_BTN")): Object: 'Object Repository/Transient_Folder/Start_Parking_BTN' is clicked on
+
+15-10-2025T17:28:54 - [MESSAGE][PASSED] - Object: 'Object Repository/Transient_Folder/Start_Parking_BTN' is clicked on
+
+15-10-2025T17:28:54 - [TEST_STEP][PASSED] - delay(10): Delayed 10 second(s)
+
+15-10-2025T17:29:04 - [MESSAGE][PASSED] - Delayed 10 second(s)
+
+15-10-2025T17:29:04 - [TEST_STEP][PASSED] - waitForElementPresent(findTestObject("Transient_Folder/Get Ticket ID"), 10): Object 'Object Repository/Transient_Folder/Get Ticket ID' is present
+
+15-10-2025T17:29:16 - [MESSAGE][PASSED] - Object 'Object Repository/Transient_Folder/Get Ticket ID' is present
+
+15-10-2025T17:29:16 - [TEST_STEP][PASSED] - ticketId = getText(findTestObject("Transient_Folder/Get Ticket ID")): Text of object 'Object Repository/Transient_Folder/Get Ticket ID' is: 'Ticket ID - PE11224879'
+
+15-10-2025T17:29:17 - [MESSAGE][PASSED] - Text of object 'Object Repository/Transient_Folder/Get Ticket ID' is: 'Ticket ID - PE11224879'
+
+15-10-2025T17:29:17 - [TEST_STEP][PASSED] - print(ticketId): null]]></system-out>
+         <system-err><![CDATA[]]></system-err>
+      </testcase>
+      <testcase name="Test Cases/New_Staging_Env/Transient Flow_Multi_Partner" time="70.049" classname="Test Cases/New_Staging_Env/Transient Flow_Multi_Partner" status="FAILED">
+         <properties>
+            <property name="data_binding"><![CDATA[{"(Default) mobil...":"","(Default) lpNum...":""}]]></property>
+         </properties>
+         <failure type="FAILED" message="Test Cases/New_Staging_Env/Transient Flow_Multi_Partner FAILED.&#xa;Reason:&#xa;com.kms.katalon.core.exception.StepFailedException: Unable to click on object 'Object Repository/Transient_Folder/Term_Condition_CB'&#xa;	at com.kms.katalon.core.webui.keyword.internal.WebUIKeywordMain.stepFailed(WebUIKeywordMain.groovy:117)&#xa;	at com.kms.katalon.core.webui.keyword.internal.WebUIKeywordMain.runKeyword(WebUIKeywordMain.groovy:43)&#xa;	at com.kms.katalon.core.webui.keyword.builtin.ClickKeyword.click(ClickKeyword.groovy:75)&#xa;	at com.kms.katalon.core.webui.keyword.builtin.ClickKeyword.execute(ClickKeyword.groovy:40)&#xa;	at com.kms.katalon.core.keyword.internal.KeywordExecutor.executeKeywordForPlatform(KeywordExecutor.groovy:74)&#xa;	at com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords.click(WebUiBuiltInKeywords.groovy:696)&#xa;	at Transient Flow_Multi_Partner.run(Transient Flow_Multi_Partner:68)&#xa;	at com.kms.katalon.core.main.ScriptEngine.run(ScriptEngine.java:194)&#xa;	at com.kms.katalon.core.main.ScriptEngine.runScriptAsRawText(ScriptEngine.java:119)&#xa;	at com.kms.katalon.core.main.TestCaseExecutor.runScript(TestCaseExecutor.java:486)&#xa;	at com.kms.katalon.core.main.TestCaseExecutor.doExecute(TestCaseExecutor.java:477)&#xa;	at com.kms.katalon.core.main.TestCaseExecutor.processExecutionPhase(TestCaseExecutor.java:456)&#xa;	at com.kms.katalon.core.main.TestCaseExecutor.accessMainPhase(TestCaseExecutor.java:448)&#xa;	at com.kms.katalon.core.main.TestCaseExecutor.execute(TestCaseExecutor.java:322)&#xa;	at com.kms.katalon.core.common.CommonExecutor.accessTestCaseMainPhase(CommonExecutor.java:71)&#xa;	at com.kms.katalon.core.main.TestSuiteExecutor.accessTestSuiteMainPhase(TestSuiteExecutor.java:160)&#xa;	at com.kms.katalon.core.main.TestSuiteExecutor.execute(TestSuiteExecutor.java:107)&#xa;	at com.kms.katalon.core.main.TestCaseMain.startTestSuite(TestCaseMain.java:186)&#xa;	at TempTestSuite1760529174948.run(TempTestSuite1760529174948.groovy:35)&#xa;	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)&#xa;	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)&#xa;	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)&#xa;Caused by: com.kms.katalon.core.webui.exception.WebElementNotFoundException: Web element with id: 'Object Repository/Transient_Folder/Term_Condition_CB' located by '//input[@id='termsnconds']' not found&#xa;	at com.kms.katalon.core.webui.common.WebUiCommonHelper.findWebElement(WebUiCommonHelper.java:1457)&#xa;	at com.kms.katalon.core.webui.keyword.internal.WebUIAbstractKeyword.findWebElement(WebUIAbstractKeyword.groovy:27)&#xa;	at com.kms.katalon.core.webui.keyword.builtin.ClickKeyword$_click_closure1.doCall(ClickKeyword.groovy:66)&#xa;	at com.kms.katalon.core.webui.keyword.builtin.ClickKeyword$_click_closure1.call(ClickKeyword.groovy)&#xa;	at com.kms.katalon.core.webui.keyword.internal.WebUIKeywordMain.runKeyword(WebUIKeywordMain.groovy:35)&#xa;	... 20 more&#xa;"/>
+         <system-out><![CDATA[15-10-2025T17:29:17 - [TEST_CASE][FAILED] - Test Cases/New_Staging_Env/Transient Flow_Multi_Partner: Test Cases/New_Staging_Env/Transient Flow_Multi_Partner FAILED.
+Reason:
+com.kms.katalon.core.exception.StepFailedException: Unable to click on object 'Object Repository/Transient_Folder/Term_Condition_CB'
+	at com.kms.katalon.core.webui.keyword.internal.WebUIKeywordMain.stepFailed(WebUIKeywordMain.groovy:117)
+	at com.kms.katalon.core.webui.keyword.internal.WebUIKeywordMain.runKeyword(WebUIKeywordMain.groovy:43)
+	at com.kms.katalon.core.webui.keyword.builtin.ClickKeyword.click(ClickKeyword.groovy:75)
+	at com.kms.katalon.core.webui.keyword.builtin.ClickKeyword.execute(ClickKeyword.groovy:40)
+	at com.kms.katalon.core.keyword.internal.KeywordExecutor.executeKeywordForPlatform(KeywordExecutor.groovy:74)
+	at com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords.click(WebUiBuiltInKeywords.groovy:696)
+	at Transient Flow_Multi_Partner.run(Transient Flow_Multi_Partner:68)
+	at com.kms.katalon.core.main.ScriptEngine.run(ScriptEngine.java:194)
+	at com.kms.katalon.core.main.ScriptEngine.runScriptAsRawText(ScriptEngine.java:119)
+	at com.kms.katalon.core.main.TestCaseExecutor.runScript(TestCaseExecutor.java:486)
+	at com.kms.katalon.core.main.TestCaseExecutor.doExecute(TestCaseExecutor.java:477)
+	at com.kms.katalon.core.main.TestCaseExecutor.processExecutionPhase(TestCaseExecutor.java:456)
+	at com.kms.katalon.core.main.TestCaseExecutor.accessMainPhase(TestCaseExecutor.java:448)
+	at com.kms.katalon.core.main.TestCaseExecutor.execute(TestCaseExecutor.java:322)
+	at com.kms.katalon.core.common.CommonExecutor.accessTestCaseMainPhase(CommonExecutor.java:71)
+	at com.kms.katalon.core.main.TestSuiteExecutor.accessTestSuiteMainPhase(TestSuiteExecutor.java:160)
+	at com.kms.katalon.core.main.TestSuiteExecutor.execute(TestSuiteExecutor.java:107)
+	at com.kms.katalon.core.main.TestCaseMain.startTestSuite(TestCaseMain.java:186)
+	at TempTestSuite1760529174948.run(TempTestSuite1760529174948.groovy:35)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+Caused by: com.kms.katalon.core.webui.exception.WebElementNotFoundException: Web element with id: 'Object Repository/Transient_Folder/Term_Condition_CB' located by '//input[@id='termsnconds']' not found
+	at com.kms.katalon.core.webui.common.WebUiCommonHelper.findWebElement(WebUiCommonHelper.java:1457)
+	at com.kms.katalon.core.webui.keyword.internal.WebUIAbstractKeyword.findWebElement(WebUIAbstractKeyword.groovy:27)
+	at com.kms.katalon.core.webui.keyword.builtin.ClickKeyword$_click_closure1.doCall(ClickKeyword.groovy:66)
+	at com.kms.katalon.core.webui.keyword.builtin.ClickKeyword$_click_closure1.call(ClickKeyword.groovy)
+	at com.kms.katalon.core.webui.keyword.internal.WebUIKeywordMain.runKeyword(WebUIKeywordMain.groovy:35)
+	... 20 more
+
+
+15-10-2025T17:29:17 - [TEST_STEP][PASSED] - openBrowser(""): Browser is opened with url: ''
+
+15-10-2025T17:29:17 - [MESSAGE][WARNING] - A browser is already opened. Closing browser and opening a new one
+
+15-10-2025T17:29:17 - [MESSAGE][INFO] - Starting 'Chrome' driver
+
+15-10-2025T17:29:17 - [MESSAGE][INFO] - Action delay is set to 1,000 milliseconds
+
+15-10-2025T17:29:18 - [MESSAGE][WARNING] - FFmpeg was not installed! Browser Recording will be disabled. Please follow this document to install FFmpeg first: https://docs.katalon.com/katalon-studio/test-reports/generate-test-reports/generate-browser-based-videos-in-katalon-studio-reports#browser-based-recorder
+
+15-10-2025T17:29:18 - [MESSAGE][PASSED] - Browser is opened with url: ''
+
+15-10-2025T17:29:18 - [TEST_STEP][PASSED] - maximizeWindow(): Current window maximized
+
+15-10-2025T17:29:18 - [MESSAGE][PASSED] - Current window maximized
+
+15-10-2025T17:29:18 - [TEST_STEP][PASSED] - navigateToUrl("https://staging-transient.parkengage.com/parkingpayments/touchless-parking-parking/eyJmYWNpbGl0eV9pZCI6Mjg4LCJnYXRlIjoxMSwiZ2F0ZV90eXBlIjoiMCJ9"): Navigate to 'https://staging-transient.parkengage.com/parkingpayments/touchless-parking-parking/eyJmYWNpbGl0eV9pZCI6Mjg4LCJnYXRlIjoxMSwiZ2F0ZV90eXBlIjoiMCJ9' successfully
+
+15-10-2025T17:29:33 - [MESSAGE][PASSED] - Navigate to 'https://staging-transient.parkengage.com/parkingpayments/touchless-parking-parking/eyJmYWNpbGl0eV9pZCI6Mjg4LCJnYXRlIjoxMSwiZ2F0ZV90eXBlIjoiMCJ9' successfully
+
+15-10-2025T17:29:33 - [TEST_STEP][PASSED] - waitForElementPresent(findTestObject("Transient_Folder/Mobile_Number_Field"), 20): Object 'Object Repository/Transient_Folder/Mobile_Number_Field' is present
+
+15-10-2025T17:29:40 - [MESSAGE][PASSED] - Object 'Object Repository/Transient_Folder/Mobile_Number_Field' is present
+
+15-10-2025T17:29:40 - [TEST_STEP][PASSED] - mobileNumber = generateMobileNumberWith2233Series(): null
+
+15-10-2025T17:29:40 - [TEST_STEP][PASSED] - rand = new java.util.Random(): null
+
+15-10-2025T17:29:40 - [TEST_STEP][PASSED] - lastSixDigits = new java.lang.StringBuilder(): null
+
+15-10-2025T17:29:40 - [TEST_STEP][PASSED] - for ([i = 0, i < 6, (i++)]): null
+
+15-10-2025T17:29:40 - [TEST_STEP][PASSED] - lastSixDigits.append(rand.nextInt(10)): null
+
+15-10-2025T17:29:40 - [TEST_STEP][PASSED] - lastSixDigits.append(rand.nextInt(10)): null
+
+15-10-2025T17:29:40 - [TEST_STEP][PASSED] - lastSixDigits.append(rand.nextInt(10)): null
+
+15-10-2025T17:29:40 - [TEST_STEP][PASSED] - lastSixDigits.append(rand.nextInt(10)): null
+
+15-10-2025T17:29:40 - [TEST_STEP][PASSED] - lastSixDigits.append(rand.nextInt(10)): null
+
+15-10-2025T17:29:40 - [TEST_STEP][PASSED] - lastSixDigits.append(rand.nextInt(10)): null
+
+15-10-2025T17:29:40 - [TEST_STEP][PASSED] - return (2233 + lastSixDigits.toString()): null
+
+15-10-2025T17:29:40 - [TEST_STEP][PASSED] - println("Generated Mobile Number: " + mobileNumber): null
+
+15-10-2025T17:29:40 - [TEST_STEP][PASSED] - setText(findTestObject("Transient_Folder/Mobile_Number_Field"), mobileNumber): Text '2233923685' is set on object 'Object Repository/Transient_Folder/Mobile_Number_Field'
+
+15-10-2025T17:29:42 - [MESSAGE][PASSED] - Text '2233923685' is set on object 'Object Repository/Transient_Folder/Mobile_Number_Field'
+
+15-10-2025T17:29:42 - [TEST_STEP][PASSED] - lpNumber = generateLicenseplate(): null
+
+15-10-2025T17:29:42 - [TEST_STEP][PASSED] - chars = "ABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789": null
+
+15-10-2025T17:29:42 - [TEST_STEP][PASSED] - rand = new java.util.Random(): null
+
+15-10-2025T17:29:42 - [TEST_STEP][PASSED] - lp = new java.lang.StringBuilder(): null
+
+15-10-2025T17:29:42 - [TEST_STEP][PASSED] - for ([i = 0, i < 4, (i++)]): null
+
+15-10-2025T17:29:42 - [TEST_STEP][PASSED] - index = rand.nextInt(chars.length()): null
+
+15-10-2025T17:29:42 - [TEST_STEP][PASSED] - lp.append(chars.charAt(index)): null
+
+15-10-2025T17:29:42 - [TEST_STEP][PASSED] - index = rand.nextInt(chars.length()): null
+
+15-10-2025T17:29:42 - [TEST_STEP][PASSED] - lp.append(chars.charAt(index)): null
+
+15-10-2025T17:29:42 - [TEST_STEP][PASSED] - index = rand.nextInt(chars.length()): null
+
+15-10-2025T17:29:42 - [TEST_STEP][PASSED] - lp.append(chars.charAt(index)): null
+
+15-10-2025T17:29:42 - [TEST_STEP][PASSED] - index = rand.nextInt(chars.length()): null
+
+15-10-2025T17:29:42 - [TEST_STEP][PASSED] - lp.append(chars.charAt(index)): null
+
+15-10-2025T17:29:42 - [TEST_STEP][PASSED] - return lp.toString(): null
+
+15-10-2025T17:29:42 - [TEST_STEP][PASSED] - println("Generated License Plate: " + lpNumber): null
+
+15-10-2025T17:29:42 - [TEST_STEP][PASSED] - setText(findTestObject("Transient_Folder/License_Plate"), lpNumber): Text 'XX4P' is set on object 'Object Repository/Transient_Folder/License_Plate'
+
+15-10-2025T17:29:44 - [MESSAGE][PASSED] - Text 'XX4P' is set on object 'Object Repository/Transient_Folder/License_Plate'
+
+15-10-2025T17:29:44 - [TEST_STEP][PASSED] - element = findWebElement(findTestObject("Object Repository/Transient_Folder/Transient Duration_Increase"), 10): null
+
+15-10-2025T17:29:45 - [TEST_STEP][PASSED] - executor = getWebDriver(): null
+
+15-10-2025T17:29:45 - [TEST_STEP][PASSED] - executor.executeScript("arguments[0].click();", element): null
+
+15-10-2025T17:29:45 - [TEST_STEP][WARNING] - waitForElementPresent(findTestObject("Transient_Folder/Term_Condition_CB"), 10): Object 'Object Repository/Transient_Folder/Term_Condition_CB' is not present after 10 second(s)
+
+15-10-2025T17:29:56 - [MESSAGE][INFO] - Unable to find the element located by 'By.xpath: //input[@id='termsnconds']'. Please recheck the objects properties to make sure the desired element is located. 
+
+15-10-2025T17:29:56 - [MESSAGE][WARNING] - Object 'Object Repository/Transient_Folder/Term_Condition_CB' is not present after 10 second(s)
+
+15-10-2025T17:29:56 - [TEST_STEP][FAILED] - click(findTestObject("Transient_Folder/Term_Condition_CB")): Unable to click on object 'Object Repository/Transient_Folder/Term_Condition_CB' (Root cause: com.kms.katalon.core.exception.StepFailedException: Unable to click on object 'Object Repository/Transient_Folder/Term_Condition_CB'
+	at com.kms.katalon.core.webui.keyword.internal.WebUIKeywordMain.stepFailed(WebUIKeywordMain.groovy:117)
+	at com.kms.katalon.core.webui.keyword.internal.WebUIKeywordMain.runKeyword(WebUIKeywordMain.groovy:43)
+	at com.kms.katalon.core.webui.keyword.builtin.ClickKeyword.click(ClickKeyword.groovy:75)
+	at com.kms.katalon.core.webui.keyword.builtin.ClickKeyword.execute(ClickKeyword.groovy:40)
+	at com.kms.katalon.core.keyword.internal.KeywordExecutor.executeKeywordForPlatform(KeywordExecutor.groovy:74)
+	at com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords.click(WebUiBuiltInKeywords.groovy:696)
+	at Transient Flow_Multi_Partner.run(Transient Flow_Multi_Partner:68)
+	at com.kms.katalon.core.main.ScriptEngine.run(ScriptEngine.java:194)
+	at com.kms.katalon.core.main.ScriptEngine.runScriptAsRawText(ScriptEngine.java:119)
+	at com.kms.katalon.core.main.TestCaseExecutor.runScript(TestCaseExecutor.java:486)
+	at com.kms.katalon.core.main.TestCaseExecutor.doExecute(TestCaseExecutor.java:477)
+	at com.kms.katalon.core.main.TestCaseExecutor.processExecutionPhase(TestCaseExecutor.java:456)
+	at com.kms.katalon.core.main.TestCaseExecutor.accessMainPhase(TestCaseExecutor.java:448)
+	at com.kms.katalon.core.main.TestCaseExecutor.execute(TestCaseExecutor.java:322)
+	at com.kms.katalon.core.common.CommonExecutor.accessTestCaseMainPhase(CommonExecutor.java:71)
+	at com.kms.katalon.core.main.TestSuiteExecutor.accessTestSuiteMainPhase(TestSuiteExecutor.java:160)
+	at com.kms.katalon.core.main.TestSuiteExecutor.execute(TestSuiteExecutor.java:107)
+	at com.kms.katalon.core.main.TestCaseMain.startTestSuite(TestCaseMain.java:186)
+	at TempTestSuite1760529174948.run(TempTestSuite1760529174948.groovy:35)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+Caused by: com.kms.katalon.core.webui.exception.WebElementNotFoundException: Web element with id: 'Object Repository/Transient_Folder/Term_Condition_CB' located by '//input[@id='termsnconds']' not found
+	at com.kms.katalon.core.webui.common.WebUiCommonHelper.findWebElement(WebUiCommonHelper.java:1457)
+	at com.kms.katalon.core.webui.keyword.internal.WebUIAbstractKeyword.findWebElement(WebUIAbstractKeyword.groovy:27)
+	at com.kms.katalon.core.webui.keyword.builtin.ClickKeyword$_click_closure1.doCall(ClickKeyword.groovy:66)
+	at com.kms.katalon.core.webui.keyword.builtin.ClickKeyword$_click_closure1.call(ClickKeyword.groovy)
+	at com.kms.katalon.core.webui.keyword.internal.WebUIKeywordMain.runKeyword(WebUIKeywordMain.groovy:35)
+	at com.kms.katalon.core.webui.keyword.builtin.ClickKeyword.click(ClickKeyword.groovy:75)
+	at com.kms.katalon.core.webui.keyword.builtin.ClickKeyword.execute(ClickKeyword.groovy:40)
+	at com.kms.katalon.core.keyword.internal.KeywordExecutor.executeKeywordForPlatform(KeywordExecutor.groovy:74)
+	at com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords.click(WebUiBuiltInKeywords.groovy:696)
+	at Script1752729719800.run(Script1752729719800.groovy:68)
+	... 15 more
+)
+
+15-10-2025T17:30:27 - [MESSAGE][INFO] - Unable to find the element located by 'By.xpath: //input[@id='termsnconds']'. Please recheck the objects properties to make sure the desired element is located. 
+
+15-10-2025T17:30:27 - [MESSAGE][FAILED] - Unable to click on object 'Object Repository/Transient_Folder/Term_Condition_CB' (Root cause: com.kms.katalon.core.exception.StepFailedException: Unable to click on object 'Object Repository/Transient_Folder/Term_Condition_CB'
+	at com.kms.katalon.core.webui.keyword.internal.WebUIKeywordMain.stepFailed(WebUIKeywordMain.groovy:117)
+	at com.kms.katalon.core.webui.keyword.internal.WebUIKeywordMain.runKeyword(WebUIKeywordMain.groovy:43)
+	at com.kms.katalon.core.webui.keyword.builtin.ClickKeyword.click(ClickKeyword.groovy:75)
+	at com.kms.katalon.core.webui.keyword.builtin.ClickKeyword.execute(ClickKeyword.groovy:40)
+	at com.kms.katalon.core.keyword.internal.KeywordExecutor.executeKeywordForPlatform(KeywordExecutor.groovy:74)
+	at com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords.click(WebUiBuiltInKeywords.groovy:696)
+	at Transient Flow_Multi_Partner.run(Transient Flow_Multi_Partner:68)
+	at com.kms.katalon.core.main.ScriptEngine.run(ScriptEngine.java:194)
+	at com.kms.katalon.core.main.ScriptEngine.runScriptAsRawText(ScriptEngine.java:119)
+	at com.kms.katalon.core.main.TestCaseExecutor.runScript(TestCaseExecutor.java:486)
+	at com.kms.katalon.core.main.TestCaseExecutor.doExecute(TestCaseExecutor.java:477)
+	at com.kms.katalon.core.main.TestCaseExecutor.processExecutionPhase(TestCaseExecutor.java:456)
+	at com.kms.katalon.core.main.TestCaseExecutor.accessMainPhase(TestCaseExecutor.java:448)
+	at com.kms.katalon.core.main.TestCaseExecutor.execute(TestCaseExecutor.java:322)
+	at com.kms.katalon.core.common.CommonExecutor.accessTestCaseMainPhase(CommonExecutor.java:71)
+	at com.kms.katalon.core.main.TestSuiteExecutor.accessTestSuiteMainPhase(TestSuiteExecutor.java:160)
+	at com.kms.katalon.core.main.TestSuiteExecutor.execute(TestSuiteExecutor.java:107)
+	at com.kms.katalon.core.main.TestCaseMain.startTestSuite(TestCaseMain.java:186)
+	at TempTestSuite1760529174948.run(TempTestSuite1760529174948.groovy:35)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+Caused by: com.kms.katalon.core.webui.exception.WebElementNotFoundException: Web element with id: 'Object Repository/Transient_Folder/Term_Condition_CB' located by '//input[@id='termsnconds']' not found
+	at com.kms.katalon.core.webui.common.WebUiCommonHelper.findWebElement(WebUiCommonHelper.java:1457)
+	at com.kms.katalon.core.webui.keyword.internal.WebUIAbstractKeyword.findWebElement(WebUIAbstractKeyword.groovy:27)
+	at com.kms.katalon.core.webui.keyword.builtin.ClickKeyword$_click_closure1.doCall(ClickKeyword.groovy:66)
+	at com.kms.katalon.core.webui.keyword.builtin.ClickKeyword$_click_closure1.call(ClickKeyword.groovy)
+	at com.kms.katalon.core.webui.keyword.internal.WebUIKeywordMain.runKeyword(WebUIKeywordMain.groovy:35)
+	at com.kms.katalon.core.webui.keyword.builtin.ClickKeyword.click(ClickKeyword.groovy:75)
+	at com.kms.katalon.core.webui.keyword.builtin.ClickKeyword.execute(ClickKeyword.groovy:40)
+	at com.kms.katalon.core.keyword.internal.KeywordExecutor.executeKeywordForPlatform(KeywordExecutor.groovy:74)
+	at com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords.click(WebUiBuiltInKeywords.groovy:696)
+	at Script1752729719800.run(Script1752729719800.groovy:68)
+	... 15 more
+)
+[[ATTACHMENT|C:\\Users\\Suraj Kumar\\Desktop\\katalon-testsuite\\Reports\\20251015_172254\\Staging_Test_Suite_1\\20251015_172254\\1760529627404.png]]]]></system-out>
+         <system-err><![CDATA[15-10-2025T17:29:17 - [TEST_CASE][FAILED] - Test Cases/New_Staging_Env/Transient Flow_Multi_Partner: Test Cases/New_Staging_Env/Transient Flow_Multi_Partner FAILED.
+Reason:
+com.kms.katalon.core.exception.StepFailedException: Unable to click on object 'Object Repository/Transient_Folder/Term_Condition_CB'
+	at com.kms.katalon.core.webui.keyword.internal.WebUIKeywordMain.stepFailed(WebUIKeywordMain.groovy:117)
+	at com.kms.katalon.core.webui.keyword.internal.WebUIKeywordMain.runKeyword(WebUIKeywordMain.groovy:43)
+	at com.kms.katalon.core.webui.keyword.builtin.ClickKeyword.click(ClickKeyword.groovy:75)
+	at com.kms.katalon.core.webui.keyword.builtin.ClickKeyword.execute(ClickKeyword.groovy:40)
+	at com.kms.katalon.core.keyword.internal.KeywordExecutor.executeKeywordForPlatform(KeywordExecutor.groovy:74)
+	at com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords.click(WebUiBuiltInKeywords.groovy:696)
+	at Transient Flow_Multi_Partner.run(Transient Flow_Multi_Partner:68)
+	at com.kms.katalon.core.main.ScriptEngine.run(ScriptEngine.java:194)
+	at com.kms.katalon.core.main.ScriptEngine.runScriptAsRawText(ScriptEngine.java:119)
+	at com.kms.katalon.core.main.TestCaseExecutor.runScript(TestCaseExecutor.java:486)
+	at com.kms.katalon.core.main.TestCaseExecutor.doExecute(TestCaseExecutor.java:477)
+	at com.kms.katalon.core.main.TestCaseExecutor.processExecutionPhase(TestCaseExecutor.java:456)
+	at com.kms.katalon.core.main.TestCaseExecutor.accessMainPhase(TestCaseExecutor.java:448)
+	at com.kms.katalon.core.main.TestCaseExecutor.execute(TestCaseExecutor.java:322)
+	at com.kms.katalon.core.common.CommonExecutor.accessTestCaseMainPhase(CommonExecutor.java:71)
+	at com.kms.katalon.core.main.TestSuiteExecutor.accessTestSuiteMainPhase(TestSuiteExecutor.java:160)
+	at com.kms.katalon.core.main.TestSuiteExecutor.execute(TestSuiteExecutor.java:107)
+	at com.kms.katalon.core.main.TestCaseMain.startTestSuite(TestCaseMain.java:186)
+	at TempTestSuite1760529174948.run(TempTestSuite1760529174948.groovy:35)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+Caused by: com.kms.katalon.core.webui.exception.WebElementNotFoundException: Web element with id: 'Object Repository/Transient_Folder/Term_Condition_CB' located by '//input[@id='termsnconds']' not found
+	at com.kms.katalon.core.webui.common.WebUiCommonHelper.findWebElement(WebUiCommonHelper.java:1457)
+	at com.kms.katalon.core.webui.keyword.internal.WebUIAbstractKeyword.findWebElement(WebUIAbstractKeyword.groovy:27)
+	at com.kms.katalon.core.webui.keyword.builtin.ClickKeyword$_click_closure1.doCall(ClickKeyword.groovy:66)
+	at com.kms.katalon.core.webui.keyword.builtin.ClickKeyword$_click_closure1.call(ClickKeyword.groovy)
+	at com.kms.katalon.core.webui.keyword.internal.WebUIKeywordMain.runKeyword(WebUIKeywordMain.groovy:35)
+	... 20 more]]></system-err>
+      </testcase>
+      <system-out><![CDATA[15-10-2025T17:22:59 - [TEST_SUITE][FAILED] - Staging_Test_Suite_1: Test Cases/New_Staging_Env/Transient Flow_Multi_Partner FAILED.
+Reason:
+com.kms.katalon.core.exception.StepFailedException: Unable to click on object 'Object Repository/Transient_Folder/Term_Condition_CB'
+	at com.kms.katalon.core.webui.keyword.internal.WebUIKeywordMain.stepFailed(WebUIKeywordMain.groovy:117)
+	at com.kms.katalon.core.webui.keyword.internal.WebUIKeywordMain.runKeyword(WebUIKeywordMain.groovy:43)
+	at com.kms.katalon.core.webui.keyword.builtin.ClickKeyword.click(ClickKeyword.groovy:75)
+	at com.kms.katalon.core.webui.keyword.builtin.ClickKeyword.execute(ClickKeyword.groovy:40)
+	at com.kms.katalon.core.keyword.internal.KeywordExecutor.executeKeywordForPlatform(KeywordExecutor.groovy:74)
+	at com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords.click(WebUiBuiltInKeywords.groovy:696)
+	at Transient Flow_Multi_Partner.run(Transient Flow_Multi_Partner:68)
+	at com.kms.katalon.core.main.ScriptEngine.run(ScriptEngine.java:194)
+	at com.kms.katalon.core.main.ScriptEngine.runScriptAsRawText(ScriptEngine.java:119)
+	at com.kms.katalon.core.main.TestCaseExecutor.runScript(TestCaseExecutor.java:486)
+	at com.kms.katalon.core.main.TestCaseExecutor.doExecute(TestCaseExecutor.java:477)
+	at com.kms.katalon.core.main.TestCaseExecutor.processExecutionPhase(TestCaseExecutor.java:456)
+	at com.kms.katalon.core.main.TestCaseExecutor.accessMainPhase(TestCaseExecutor.java:448)
+	at com.kms.katalon.core.main.TestCaseExecutor.execute(TestCaseExecutor.java:322)
+	at com.kms.katalon.core.common.CommonExecutor.accessTestCaseMainPhase(CommonExecutor.java:71)
+	at com.kms.katalon.core.main.TestSuiteExecutor.accessTestSuiteMainPhase(TestSuiteExecutor.java:160)
+	at com.kms.katalon.core.main.TestSuiteExecutor.execute(TestSuiteExecutor.java:107)
+	at com.kms.katalon.core.main.TestCaseMain.startTestSuite(TestCaseMain.java:186)
+	at TempTestSuite1760529174948.run(TempTestSuite1760529174948.groovy:35)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+Caused by: com.kms.katalon.core.webui.exception.WebElementNotFoundException: Web element with id: 'Object Repository/Transient_Folder/Term_Condition_CB' located by '//input[@id='termsnconds']' not found
+	at com.kms.katalon.core.webui.common.WebUiCommonHelper.findWebElement(WebUiCommonHelper.java:1457)
+	at com.kms.katalon.core.webui.keyword.internal.WebUIAbstractKeyword.findWebElement(WebUIAbstractKeyword.groovy:27)
+	at com.kms.katalon.core.webui.keyword.builtin.ClickKeyword$_click_closure1.doCall(ClickKeyword.groovy:66)
+	at com.kms.katalon.core.webui.keyword.builtin.ClickKeyword$_click_closure1.call(ClickKeyword.groovy)
+	at com.kms.katalon.core.webui.keyword.internal.WebUIKeywordMain.runKeyword(WebUIKeywordMain.groovy:35)
+	... 20 more]]></system-out>
+      <system-err><![CDATA[15-10-2025T17:22:59 - [TEST_SUITE][FAILED] - Staging_Test_Suite_1: Test Cases/New_Staging_Env/Transient Flow_Multi_Partner FAILED.
+Reason:
+com.kms.katalon.core.exception.StepFailedException: Unable to click on object 'Object Repository/Transient_Folder/Term_Condition_CB'
+	at com.kms.katalon.core.webui.keyword.internal.WebUIKeywordMain.stepFailed(WebUIKeywordMain.groovy:117)
+	at com.kms.katalon.core.webui.keyword.internal.WebUIKeywordMain.runKeyword(WebUIKeywordMain.groovy:43)
+	at com.kms.katalon.core.webui.keyword.builtin.ClickKeyword.click(ClickKeyword.groovy:75)
+	at com.kms.katalon.core.webui.keyword.builtin.ClickKeyword.execute(ClickKeyword.groovy:40)
+	at com.kms.katalon.core.keyword.internal.KeywordExecutor.executeKeywordForPlatform(KeywordExecutor.groovy:74)
+	at com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords.click(WebUiBuiltInKeywords.groovy:696)
+	at Transient Flow_Multi_Partner.run(Transient Flow_Multi_Partner:68)
+	at com.kms.katalon.core.main.ScriptEngine.run(ScriptEngine.java:194)
+	at com.kms.katalon.core.main.ScriptEngine.runScriptAsRawText(ScriptEngine.java:119)
+	at com.kms.katalon.core.main.TestCaseExecutor.runScript(TestCaseExecutor.java:486)
+	at com.kms.katalon.core.main.TestCaseExecutor.doExecute(TestCaseExecutor.java:477)
+	at com.kms.katalon.core.main.TestCaseExecutor.processExecutionPhase(TestCaseExecutor.java:456)
+	at com.kms.katalon.core.main.TestCaseExecutor.accessMainPhase(TestCaseExecutor.java:448)
+	at com.kms.katalon.core.main.TestCaseExecutor.execute(TestCaseExecutor.java:322)
+	at com.kms.katalon.core.common.CommonExecutor.accessTestCaseMainPhase(CommonExecutor.java:71)
+	at com.kms.katalon.core.main.TestSuiteExecutor.accessTestSuiteMainPhase(TestSuiteExecutor.java:160)
+	at com.kms.katalon.core.main.TestSuiteExecutor.execute(TestSuiteExecutor.java:107)
+	at com.kms.katalon.core.main.TestCaseMain.startTestSuite(TestCaseMain.java:186)
+	at TempTestSuite1760529174948.run(TempTestSuite1760529174948.groovy:35)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+Caused by: com.kms.katalon.core.webui.exception.WebElementNotFoundException: Web element with id: 'Object Repository/Transient_Folder/Term_Condition_CB' located by '//input[@id='termsnconds']' not found
+	at com.kms.katalon.core.webui.common.WebUiCommonHelper.findWebElement(WebUiCommonHelper.java:1457)
+	at com.kms.katalon.core.webui.keyword.internal.WebUIAbstractKeyword.findWebElement(WebUIAbstractKeyword.groovy:27)
+	at com.kms.katalon.core.webui.keyword.builtin.ClickKeyword$_click_closure1.doCall(ClickKeyword.groovy:66)
+	at com.kms.katalon.core.webui.keyword.builtin.ClickKeyword$_click_closure1.call(ClickKeyword.groovy)
+	at com.kms.katalon.core.webui.keyword.internal.WebUIKeywordMain.runKeyword(WebUIKeywordMain.groovy:35)
+	... 20 more]]></system-err>
+   </testsuite>
+</testsuites>

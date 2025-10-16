@@ -1,0 +1,152 @@
+1
+00:00:00,000 --> 00:00:00,000
+1. openBrowser("")
+
+2
+00:00:00,000 --> 00:00:00,000
+5. maximizeWindow()
+
+3
+00:00:00,000 --> 00:00:00,000
+9. navigateToUrl("https://staging-transient.parkengage.com/parkingpayments/touchless-parking-parking/eyJmYWNpbGl0eV9pZCI6Mjg4LCJnYXRlIjoxMSwiZ2F0ZV90eXBlIjoiMCJ9")
+
+4
+00:00:00,000 --> 00:00:00,000
+13. waitForElementPresent(findTestObject("Transient_Folder/Mobile_Number_Field"), 20)
+
+5
+00:00:00,000 --> 00:00:00,000
+17. mobileNumber = generateMobileNumberWith2233Series()
+
+6
+00:00:00,000 --> 00:00:00,000
+1. rand = new java.util.Random()
+
+7
+00:00:00,000 --> 00:00:00,000
+5. lastSixDigits = new java.lang.StringBuilder()
+
+8
+00:00:00,000 --> 00:00:00,000
+9. for ([i = 0, i < 6, (i++)])
+
+9
+00:00:00,000 --> 00:00:00,000
+1. lastSixDigits.append(rand.nextInt(10))
+
+10
+00:00:00,000 --> 00:00:00,000
+1. lastSixDigits.append(rand.nextInt(10))
+
+11
+00:00:00,000 --> 00:00:00,000
+1. lastSixDigits.append(rand.nextInt(10))
+
+12
+00:00:00,000 --> 00:00:00,000
+1. lastSixDigits.append(rand.nextInt(10))
+
+13
+00:00:00,000 --> 00:00:00,000
+1. lastSixDigits.append(rand.nextInt(10))
+
+14
+00:00:00,000 --> 00:00:00,000
+1. lastSixDigits.append(rand.nextInt(10))
+
+15
+00:00:00,000 --> 00:00:00,000
+13. return (2233 + lastSixDigits.toString())
+
+16
+00:00:00,000 --> 00:00:00,000
+21. println("Generated Mobile Number: " + mobileNumber)
+
+17
+00:00:00,000 --> 00:00:00,000
+25. setText(findTestObject("Transient_Folder/Mobile_Number_Field"), mobileNumber)
+
+18
+00:00:00,000 --> 00:00:00,000
+29. lpNumber = generateLicenseplate()
+
+19
+00:00:00,000 --> 00:00:00,000
+1. chars = "ABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789"
+
+20
+00:00:00,000 --> 00:00:00,000
+5. rand = new java.util.Random()
+
+21
+00:00:00,000 --> 00:00:00,000
+9. lp = new java.lang.StringBuilder()
+
+22
+00:00:00,000 --> 00:00:00,000
+13. for ([i = 0, i < 4, (i++)])
+
+23
+00:00:00,000 --> 00:00:00,000
+1. index = rand.nextInt(chars.length())
+
+24
+00:00:00,000 --> 00:00:00,000
+5. lp.append(chars.charAt(index))
+
+25
+00:00:00,000 --> 00:00:00,000
+1. index = rand.nextInt(chars.length())
+
+26
+00:00:00,000 --> 00:00:00,000
+5. lp.append(chars.charAt(index))
+
+27
+00:00:00,000 --> 00:00:00,000
+1. index = rand.nextInt(chars.length())
+
+28
+00:00:00,000 --> 00:00:00,000
+5. lp.append(chars.charAt(index))
+
+29
+00:00:00,000 --> 00:00:00,000
+1. index = rand.nextInt(chars.length())
+
+30
+00:00:00,000 --> 00:00:00,000
+5. lp.append(chars.charAt(index))
+
+31
+00:00:00,000 --> 00:00:00,000
+17. return lp.toString()
+
+32
+00:00:00,000 --> 00:00:00,000
+33. println("Generated License Plate: " + lpNumber)
+
+33
+00:00:00,000 --> 00:00:00,000
+37. setText(findTestObject("Transient_Folder/License_Plate"), lpNumber)
+
+34
+00:00:00,000 --> 00:00:00,000
+41. element = findWebElement(findTestObject("Object Repository/Transient_Folder/Transient Duration_Increase"), 10)
+
+35
+00:00:00,000 --> 00:00:00,000
+45. executor = getWebDriver()
+
+36
+00:00:00,000 --> 00:00:00,000
+49. executor.executeScript("arguments[0].click();", element)
+
+37
+00:00:00,000 --> 00:00:00,000
+53. waitForElementPresent(findTestObject("Transient_Folder/Term_Condition_CB"), 10)
+
+38
+00:00:00,000 --> 00:00:00,000
+57. click(findTestObject("Transient_Folder/Term_Condition_CB"))
+
