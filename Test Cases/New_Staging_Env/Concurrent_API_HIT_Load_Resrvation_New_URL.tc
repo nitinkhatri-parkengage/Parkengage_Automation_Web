@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>Concurrent_API_HIT_Load_Resrvation_New_URL</name>
+   <tag></tag>
+   <comment></comment>
+   <recordOption>OTHER</recordOption>
+   <testCaseGuid>bde820cb-e7ef-428d-bd6a-0d2807a0256f</testCaseGuid>
+</TestCaseEntity>

@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>Concurrent_API_HIT_Load_Resrvation_Print_Res</name>
+   <tag></tag>
+   <comment></comment>
+   <recordOption>OTHER</recordOption>
+   <testCaseGuid>25e50101-4ed9-45b3-9eae-a908297dde7c</testCaseGuid>
+   <variableLinks>
+      <testDataLinkId></testDataLinkId>
+      <type>DEFAULT</type>
+      <value></value>
+      <variableId>0bd97894-dcbc-45b1-9a5f-2d61b6907a09</variableId>
+   </variableLinks>
+   <variable>
+      <defaultValue>'2025-11-15 00:00:00'</defaultValue>
+      <description></description>
+      <id>0bd97894-dcbc-45b1-9a5f-2d61b6907a09</id>
+      <masked>false</masked>
+      <name>arrival</name>
+   </variable>
+</TestCaseEntity>

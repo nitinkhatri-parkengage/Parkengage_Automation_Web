@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>Concurrent_API_HIT_Load_Resrvation</name>
+   <tag></tag>
+   <comment></comment>
+   <recordOption>OTHER</recordOption>
+   <testCaseGuid>0307c785-fdab-4731-8d8c-413ac2f917e8</testCaseGuid>
+   <variableLinks>
+      <testDataLinkId></testDataLinkId>
+      <type>DEFAULT</type>
+      <value></value>
+      <variableId>e8f12f7c-c6b4-4165-8960-99dd09289da2</variableId>
+   </variableLinks>
+   <variableLinks>
+      <testDataLinkId></testDataLinkId>
+      <type>DEFAULT</type>
+      <value></value>
+      <variableId>0dc3f08e-7904-4130-baaa-1ac543935418</variableId>
+   </variableLinks>
+   <variable>
+      <defaultValue>'2025-11-15 00:00:00'</defaultValue>
+      <description></description>
+      <id>e8f12f7c-c6b4-4165-8960-99dd09289da2</id>
+      <masked>false</masked>
+      <name>arrival</name>
+   </variable>
+   <variable>
+      <defaultValue>'{\\&quot;ct\\&quot;:\\&quot;OSbAWcr52WsGWISB9+GFxfaCT3gz4OWnk2luwJbxQ7BSgkwdx4BXrBmJ0nZT1hqM\\&quot;,\\&quot;iv\\&quot;:\\&quot;371e1aa02b8e80d528be4f22a421e691\\&quot;,\\&quot;s\\&quot;:\\&quot;a881807281ef09bf\\&quot;}'</defaultValue>
+      <description></description>
+      <id>0dc3f08e-7904-4130-baaa-1ac543935418</id>
+      <masked>false</masked>
+      <name>nonce</name>
+   </variable>
+</TestCaseEntity>
