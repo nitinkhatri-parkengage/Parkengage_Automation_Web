@@ -6,4 +6,43 @@
    <comment></comment>
    <recordOption>OTHER</recordOption>
    <testCaseGuid>7e9456b2-712e-4d07-9636-cb56c6476fb6</testCaseGuid>
+   <variableLinks>
+      <testDataLinkId></testDataLinkId>
+      <type>DEFAULT</type>
+      <value></value>
+      <variableId>b27212e3-cd6e-48ad-b014-4638b4a4bea7</variableId>
+   </variableLinks>
+   <variableLinks>
+      <testDataLinkId></testDataLinkId>
+      <type>DEFAULT</type>
+      <value></value>
+      <variableId>54657b5f-2c2c-4e6a-aca7-86e01e40308c</variableId>
+   </variableLinks>
+   <variableLinks>
+      <testDataLinkId></testDataLinkId>
+      <type>DEFAULT</type>
+      <value></value>
+      <variableId>040d29aa-1d4d-424e-b9d6-a3d19bcd2b68</variableId>
+   </variableLinks>
+   <variable>
+      <defaultValue>'Test1'</defaultValue>
+      <description></description>
+      <id>b27212e3-cd6e-48ad-b014-4638b4a4bea7</id>
+      <masked>false</masked>
+      <name>GarageName</name>
+   </variable>
+   <variable>
+      <defaultValue>'SHT Garage'</defaultValue>
+      <description></description>
+      <id>54657b5f-2c2c-4e6a-aca7-86e01e40308c</id>
+      <masked>false</masked>
+      <name>Short_Garage_Name</name>
+   </variable>
+   <variable>
+      <defaultValue>'3232424242'</defaultValue>
+      <description></description>
+      <id>040d29aa-1d4d-424e-b9d6-a3d19bcd2b68</id>
+      <masked>false</masked>
+      <name>Mobile_Number</name>
+   </variable>
 </TestCaseEntity>

@@ -21,7 +21,7 @@ WebUI.openBrowser('')
 
 WebUI.maximizeWindow()
 
-WebUI.navigateToUrl('https://staging-new.parkengage.com/')
+WebUI.navigateToUrl('https://staging-admin.parkengage.com')
 
 WebUI.setText(findTestObject('Login_Page_Objects/Email_Input_Field'), GlobalVariable.G_Email)
 
@@ -31,11 +31,11 @@ WebUI.setEncryptedText(findTestObject('Login_Page_Objects/Email_Password_Field')
 
 WebUI.click(findTestObject('Login_Page_Objects/Login_Submit_Button'))
 
-WebUI.delay(15)
+WebUI.delay(10)
 
 def dashboard_url = WebUI.getUrl()
 
 print(dashboard_url)
 
-WebUI.verifyEqual(dashboard_url, 'https://staging-new.parkengage.com/admin/partners')
+WebUI.verifyEqual(dashboard_url, 'https://staging-admin.parkengage.com/admin/partners')
 

@@ -16,15 +16,15 @@ import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUI
 import com.kms.katalon.core.windows.keyword.WindowsBuiltinKeywords as Windows
 import internal.GlobalVariable as GlobalVariable
 import org.openqa.selenium.Keys as Keys
-import org.apache.commons.lang.RandomStringUtils
+import org.apache.commons.lang.RandomStringUtils as RandomStringUtils
 
 WebUI.openBrowser('')
 
 WebUI.maximizeWindow()
 
-WebUI.navigateToUrl('https://staging-new.parkengage.com/')
+WebUI.navigateToUrl('https://staging-admin.parkengage.com')
 
-WebUI.waitForElementPresent(findTestObject('Login_Page_Objects/Email_Password_Field'), 20)
+WebUI.waitForElementPresent(findTestObject('Login_Page_Objects/Email_Password_Field'), 10)
 
 WebUI.setText(findTestObject('Login_Page_Objects/Email_Input_Field'), GlobalVariable.G_Email)
 
@@ -38,7 +38,7 @@ def dashboard_url = WebUI.getUrl()
 
 print(dashboard_url)
 
-WebUI.verifyEqual(dashboard_url, 'https://staging-new.parkengage.com/admin/partners')
+WebUI.verifyEqual(dashboard_url, 'https://staging-admin.parkengage.com/admin/partners')
 
 WebUI.waitForElementPresent(findTestObject('Login_Page_Objects/ParkEngage_Logo'), 20)
 
@@ -49,17 +49,6 @@ WebUI.click(findTestObject('Add_Partner/Add_New_Partner_BTN'))
 WebUI.verifyElementPresent(findTestObject('Add_Partner/Create_New_Partner_Label'), 10)
 
 // Function to generate random 5-letter company name
-def generateCompanyName() {
-    String chars = "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz"
-    StringBuilder name = new StringBuilder()
-    Random rand = new Random()
-    
-    for (int i = 0; i < 5; i++) {
-        name.append(chars.charAt(rand.nextInt(chars.length())))
-    }
-    return name.toString()
-}
-
 // Generate name
 String companyName = generateCompanyName()
 
@@ -78,7 +67,7 @@ WebUI.setText(findTestObject('Add_Partner/inputEmail'), randomEmail)
 String randomDigits = RandomStringUtils.randomNumeric(6)
 
 // Create phone number starting with 1122
-String phoneNumber = "1122" + randomDigits
+String phoneNumber = '1122' + randomDigits
 
 // Set value in phone number field
 WebUI.setText(findTestObject('Add_Partner/inputPhoneNumber'), phoneNumber)
@@ -148,6 +137,20 @@ WebUI.click(findTestObject('Add_Partner/Delete_Confirm_Button'))
 def partner_Delete_Alert = WebUI.getText(findTestObject('Add_Partner/Partner_Delete_Alert_Text'), FailureHandling.CONTINUE_ON_FAILURE)
 
 println(partner_Delete_Alert)
+
+def generateCompanyName() {
+    String chars = 'ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz'
+
+    StringBuilder name = new StringBuilder()
+
+    Random rand = new Random()
+
+    for (int i = 0; i < 5; i++) {
+        name.append(chars.charAt(rand.nextInt(chars.length())))
+    }
+    
+    return name.toString()
+}
 
 def generateRandomEmail() {
     int randomNum = (Math.random() * 100).toInteger()

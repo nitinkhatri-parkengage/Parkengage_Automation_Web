@@ -16,7 +16,7 @@ import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUI
 import com.kms.katalon.core.windows.keyword.WindowsBuiltinKeywords as Windows
 import internal.GlobalVariable as GlobalVariable
 import org.openqa.selenium.Keys as Keys
-import org.apache.commons.lang.RandomStringUtils
+import org.apache.commons.lang.RandomStringUtils as RandomStringUtils
 
 WebUI.openBrowser('')
 
@@ -43,22 +43,26 @@ WebUI.click(findTestObject('Create_Garrage/Garage_Management_Menu'))
 WebUI.waitForElementPresent(findTestObject('Create_Garrage/Add_New_Button_Garage'), 10)
 
 WebUI.click(findTestObject('Create_Garrage/Add_New_Button_Garage'))
+
 String garageName = generateGarageName()
 
-WebUI.setText(findTestObject('Create_Garrage/Garage_Name_Input_Field'), garageName)
+WebUI.setText(findTestObject('Create_Garrage/Garage_Name_Input_Field'), GarageName)
+
 String garageShortName = generateGarageCode()
 
-WebUI.setText(findTestObject('Create_Garrage/Garage_Short_Name'), garageShortName)
+WebUI.setText(findTestObject('Create_Garrage/Garage_Short_Name'), Short_Garage_Name)
+
 String garageCode = generateGarageCode()
 
 WebUI.setText(findTestObject('Create_Garrage/Garage_Code_Input_Field'), garageCode)
+
 // Generate 6 random digits
 String randomDigits = RandomStringUtils.randomNumeric(6)
 
 // Create phone number starting with 1122
-String phoneNumber = "1122" + randomDigits
+String phoneNumber = '1122' + randomDigits
 
-WebUI.setText(findTestObject('Create_Garrage/Garage_Phone_Number_Input'), phoneNumber)
+WebUI.setText(findTestObject('Create_Garrage/Garage_Phone_Number_Input'), Mobile_Number)
 
 WebUI.delay(2)
 
@@ -79,43 +83,44 @@ WebUI.click(findTestObject('Create_Garrage/Create_BTN_GRG'))
 WebUI.delay(20)
 
 def generateGarageCode() {
-	String chars = 'ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz'
+    String chars = 'ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz'
 
-	StringBuilder name = new StringBuilder()
+    StringBuilder name = new StringBuilder()
 
-	Random rand = new Random()
+    Random rand = new Random()
 
-	for (int i = 0; i < 5; i++) {
-		name.append(chars.charAt(rand.nextInt(chars.length())))
-	}
-	
-	return name.toString()
+    for (int i = 0; i < 5; i++) {
+        name.append(chars.charAt(rand.nextInt(chars.length())))
+    }
+    
+    return name.toString()
 }
 
 def generateShortName() {
-	String chars = 'ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz'
+    String chars = 'ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz'
 
-	StringBuilder name = new StringBuilder()
+    StringBuilder name = new StringBuilder()
 
-	Random rand = new Random()
+    Random rand = new Random()
 
-	for (int i = 0; i < 5; i++) {
-		name.append(chars.charAt(rand.nextInt(chars.length())))
-	}
-	
-	return name.toString()
+    for (int i = 0; i < 5; i++) {
+        name.append(chars.charAt(rand.nextInt(chars.length())))
+    }
+    
+    return name.toString()
 }
 
 def generateGarageName() {
-	String chars = 'ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz'
+    String chars = 'ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz'
 
-	StringBuilder name = new StringBuilder()
+    StringBuilder name = new StringBuilder()
 
-	Random rand = new Random()
+    Random rand = new Random()
 
-	for (int i = 0; i < 5; i++) {
-		name.append(chars.charAt(rand.nextInt(chars.length())))
-	}
-	
-	return name.toString()
+    for (int i = 0; i < 5; i++) {
+        name.append(chars.charAt(rand.nextInt(chars.length())))
+    }
+    
+    return name.toString()
 }
+

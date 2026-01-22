@@ -68,6 +68,24 @@
       <isRun>true</isRun>
       <testCaseId>Test Cases/New_Staging_Env/Garage_Management_Add_New_Garage</testCaseId>
       <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
+      <variableLink>
+         <testDataLinkId></testDataLinkId>
+         <type>DEFAULT</type>
+         <value></value>
+         <variableId>b27212e3-cd6e-48ad-b014-4638b4a4bea7</variableId>
+      </variableLink>
+      <variableLink>
+         <testDataLinkId></testDataLinkId>
+         <type>DEFAULT</type>
+         <value></value>
+         <variableId>54657b5f-2c2c-4e6a-aca7-86e01e40308c</variableId>
+      </variableLink>
+      <variableLink>
+         <testDataLinkId></testDataLinkId>
+         <type>DEFAULT</type>
+         <value></value>
+         <variableId>040d29aa-1d4d-424e-b9d6-a3d19bcd2b68</variableId>
+      </variableLink>
    </testCaseLink>
    <testCaseLink>
       <guid>50aa22b2-949d-46c2-beb3-0084a86e6880</guid>

@@ -9,11 +9,11 @@
    <dataFileGUID>1c227e1e-e49a-4a5e-b718-283e3bad5653</dataFileGUID>
    <dataSourceUrl></dataSourceUrl>
    <driver>InternalData</driver>
-   <data>Test1 TE1 Ungated 1234567890</data>
-   <data>Test2 TE2 Gated 9876543210</data>
+   <data>Test1 TE1 1234567890</data>
+   <data>Test2 TE2 9876543210</data>
    <internalDataColumns>
       <columnIndex>0</columnIndex>
-      <name>GarangeName</name>
+      <name>GarageName</name>
       <size>2</size>
    </internalDataColumns>
    <internalDataColumns>
@@ -23,11 +23,6 @@
    </internalDataColumns>
    <internalDataColumns>
       <columnIndex>2</columnIndex>
-      <name>Gate_Type</name>
-      <size>2</size>
-   </internalDataColumns>
-   <internalDataColumns>
-      <columnIndex>3</columnIndex>
       <name>Mobile_Number</name>
       <size>2</size>
    </internalDataColumns>
